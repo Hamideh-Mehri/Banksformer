@@ -120,17 +120,7 @@ class ResidualLayer(tf.keras.layers.Layer):
         return out
 
 
-class InputEmbedLayer(tf.keras.layers.Layer):
-    def __init__(self, features, dff, d_embedding):
-        super(InputEmbedLayer, self).__init__()
-      
-        self.dense1 = Dense(features, dff, tf.keras.activations.relu)
-        self.dense2 = Dense(dff, d_embedding, tf.keras.activations.linear)
 
-    def call(self, inputs):
-        x = self.dense1(inputs)   
-        x = self.dense2(x)       
-        return x
 
 class InputEmbedLayer_Res(tf.keras.layers.Layer):
     def __init__(self, features, res_dims, d_embedding):
@@ -149,6 +139,18 @@ class InputEmbedLayer_Res(tf.keras.layers.Layer):
         for res_layer in self.res_layers:
             x = res_layer(x)
         x = self.dense(x)
+        return x
+
+class InputEmbedLayer(tf.keras.layers.Layer):
+    def __init__(self, features, dff, d_embedding):
+        super(InputEmbedLayer, self).__init__()
+      
+        self.dense1 = Dense(features, dff, tf.keras.activations.relu)
+        self.dense2 = Dense(dff, d_embedding, tf.keras.activations.linear)
+
+    def call(self, inputs):
+        x = self.dense1(inputs)   
+        x = self.dense2(x)       
         return x
 
 
@@ -257,13 +259,62 @@ class Decoder(tf.keras.layers.Layer):
         return x, attention_weights
 
 class Transformer(object):
-    def __init__(self, features, dff, d_embedding, maximum_position_encoding):
+    def __init__(self, features, dff, d_embedding, d_model, maximum_position_encoding,num_heads, num_layers,config, rate=0.1):
        self.features = features
        self.dff = dff
        self.d_embedding = d_embedding
        self.maximum_position_encoding = maximum_position_encoding
+       self.rate = rate
+       self.num_layers = num_layers
+       self.d_model = d_model
+       self.num_heads = num_heads
 
-    def make_transformer(self,):
+       self.ORDER = config["ORDER"]
+       self.FIELD_STARTS_IN = config["FIELD_STARTS_IN"]
+       self.FIELD_DIMS_IN = config["FIELD_DIMS_IN"] 
+       self.FIELD_STARTS_NET = config["FIELD_STARTS_NET"]
+       self.FIELD_DIMS_NET = config["FIELD_DIMS_NET"]
+       self.ACTIVATIONS = config["ACTIVATIONS"]
+
+       for name, dim in self.FIELD_DIMS_NET.items():
+            acti = self.ACTIVATIONS.get(name, None)
+            self.__setattr__(name, tf.keras.layers.Dense(dim, activation=acti))
+
+    def make_transformer(self, tar, inp):
+        inp_inp = inp[:, :-1] # predict next from this
+        inp_out = inp[:, 1:]
+
         input_ = tf.keras.layers.Input(shape=(None, self.features))
-        x = InputEmbedLayer(self.features, dff , d_embedding)(input_)
-        pos_encoding = positional_encoding(maximum_position_encoding, d_embedding) 
+        x = InputEmbedLayer(self.features, self.dff , self.d_embedding)(input_)
+        pos_encoding = positional_encoding(self.maximum_position_encoding, self.d_embedding) 
+        seq_len = tf.shape(x)[1]
+        x += pos_encoding[:, :seq_len, :]     #x is the output of Input layer
+
+        x = tf.keras.layers.Dropout(self.rate)(x, training=True)
+
+        mask, _ = create_masks(tar)
+        d_inp_decoder = tf.keras.backend.int_shape(x)[-1]
+
+        out, attention_weights = Decoder(self.num_layers, d_inp_decoder, self.d_model, self.num_heads, self.dff)(x, True, mask)
+
+        final_output = tf.keras.layers.Dense(self.d_model, activation=None)(out)
+        preds = {}
+        
+        #print("Final output shape start", final_output.shape)
+        for net_name in self.ORDER:
+            #print("Running net", net_name)
+            pred = self.__getattribute__(net_name)(final_output)
+            #print("pred shape", pred.shape)
+            preds[net_name] = pred
+            
+            st = self.FIELD_STARTS_IN[net_name]
+            end = st + self.FIELD_DIMS_IN[net_name]
+            to_add = inp_out[:, :, st: end]
+            #print("Start and end", st, end)
+            
+            final_output = tf.concat([final_output, to_add], axis=-1)
+            #print("Final output shape after",net_name, "is", final_output.shape, "\n")
+        
+        transformer_model = tf.keras.models.Model(input_, preds)
+
+        return transformer_model
