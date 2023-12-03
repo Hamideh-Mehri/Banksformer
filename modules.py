@@ -281,7 +281,7 @@ class Transformer(object):
             self.__setattr__(name, tf.keras.layers.Dense(dim, activation=acti))
 
     def make_transformer(self, tar, inp):
-        inp_inp = inp[:, :-1] # predict next from this
+        #inp_inp = inp[:, :-1] # predict next from this
         inp_out = inp[:, 1:]
 
         input_ = tf.keras.layers.Input(shape=(None, self.features))

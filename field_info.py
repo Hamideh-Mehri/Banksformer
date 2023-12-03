@@ -38,7 +38,7 @@ class FieldInfo:
         self.FIELD_DIMS_IN, self.FIELD_DIMS_TAR, self.FIELD_DIMS_NET, self.FIELD_STARTS_IN, self.FIELD_STARTS_TAR, self.FIELD_STARTS_NET = self._get_field_dims_and_starts()
         
     def _get_loss_types(self):
-        date_loss = "scce"         # 'scce': sparse categorical cross entropy
+        date_loss = "scce"         # 'scce': sparse categorical cross entropy``
         return {"day": date_loss,
                 "dtme": date_loss,
                 "dow": date_loss,

@@ -99,6 +99,7 @@ class TensorEncoder:
             self.inp_tensor[seq_i, :seq_len, st:st + depth] = x
 
     def seq_to_targ_tensor(self, seq, seq_i, seq_len):
+   
         for k in self.info.DATA_KEY_ORDER:
             depth = self.info.FIELD_DIMS_TAR[k]
             st = self.info.FIELD_STARTS_TAR[k]
