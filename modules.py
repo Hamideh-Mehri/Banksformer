@@ -258,46 +258,47 @@ class Decoder(tf.keras.layers.Layer):
             attention_weights['decoder_layer{}'.format(i+1)] = attentionweights
         return x, attention_weights
 
-class Transformer(object):
+class Transformer(tf.keras.Model):
     def __init__(self, features, dff, d_embedding, d_model, maximum_position_encoding,num_heads, num_layers,config, rate=0.1):
-       self.features = features
-       self.dff = dff
-       self.d_embedding = d_embedding
-       self.maximum_position_encoding = maximum_position_encoding
-       self.rate = rate
-       self.num_layers = num_layers
-       self.d_model = d_model
-       self.num_heads = num_heads
-
+       super(Transformer, self).__init__()
+   
        self.ORDER = config["ORDER"]
        self.FIELD_STARTS_IN = config["FIELD_STARTS_IN"]
        self.FIELD_DIMS_IN = config["FIELD_DIMS_IN"] 
        self.FIELD_STARTS_NET = config["FIELD_STARTS_NET"]
        self.FIELD_DIMS_NET = config["FIELD_DIMS_NET"]
        self.ACTIVATIONS = config["ACTIVATIONS"]
+       
+       self.input_layer = tf.keras.Sequential([tf.keras.layers.Input(shape=(None, features)),  InputEmbedLayer(features, dff, d_embedding)])
+    #    self.InputLayer = tf.keras.layers.Input(shape=(None, features))
+    #    self. InputEmbeddingLayer = InputEmbedLayer(features, dff, d_embedding)
+       self.pos_encoding = positional_encoding(maximum_position_encoding, d_embedding)
+       self.dropout = tf.keras.layers.Dropout(rate)
+       self.DecoderStack = Decoder(num_layers, d_embedding, d_model, num_heads, dff)
+       self.final_layer = tf.keras.layers.Dense(d_model, activation=None)
 
        for name, dim in self.FIELD_DIMS_NET.items():
             acti = self.ACTIVATIONS.get(name, None)
             self.__setattr__(name, tf.keras.layers.Dense(dim, activation=acti))
 
-    def make_transformer(self, tar, inp):
-        #inp_inp = inp[:, :-1] # predict next from this
+    def call(self, inp, tar):
+        inp_inp = inp[:, :-1] # predict next from this
         inp_out = inp[:, 1:]
 
-        input_ = tf.keras.layers.Input(shape=(None, self.features))
-        x = InputEmbedLayer(self.features, self.dff , self.d_embedding)(input_)
-        pos_encoding = positional_encoding(self.maximum_position_encoding, self.d_embedding) 
+        # input_ = self.InputLayer(inp_inp)
+        # x =  self. InputEmbeddingLayer(input_)
+        x = self.input_layer(inp_inp)
+        
         seq_len = tf.shape(x)[1]
-        x += pos_encoding[:, :seq_len, :]     #x is the output of Input layer
+        x += self.pos_encoding[:, :seq_len, :]     #x is the output of Input layer
 
-        x = tf.keras.layers.Dropout(self.rate)(x, training=True)
+        x = self.dropout(x, training=True)
 
         mask, _ = create_masks(tar)
-        d_inp_decoder = tf.keras.backend.int_shape(x)[-1]
 
-        out, attention_weights = Decoder(self.num_layers, d_inp_decoder, self.d_model, self.num_heads, self.dff)(x, True, mask)
+        out, attention_weights = self.DecoderStack(x, True, mask)
 
-        final_output = tf.keras.layers.Dense(self.d_model, activation=None)(out)
+        final_output = self.final_layer(out)
         preds = {}
         
         #print("Final output shape start", final_output.shape)
@@ -315,6 +316,4 @@ class Transformer(object):
             final_output = tf.concat([final_output, to_add], axis=-1)
             #print("Final output shape after",net_name, "is", final_output.shape, "\n")
         
-        transformer_model = tf.keras.models.Model(input_, preds)
-
-        return transformer_model
+        return preds, attention_weights
