@@ -132,7 +132,7 @@ class TensorEncoder:
                 if seq_len >= self.min_seq_len:
                     self.seq_to_inp_tensor(group.iloc[start:start + seq_len], seq_i, seq_len)
                     self.seq_to_targ_tensor(group.iloc[start:start + seq_len], seq_i, seq_len)
-                    self.attributes[seq_i] = group["age"].iloc[0]
+                    self.attributes[seq_i] = group["age_sc"].iloc[0]
                     rows_per_acct[acct_id].append(seq_i)
                     seq_i += 1
                     if seq_i % alert_every == 0:

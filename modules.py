@@ -50,10 +50,10 @@ def create_look_ahead_mask(size):
     return mask  # (seq_len, seq_len), a triangle matrix, upper are ones and, lower and main diagonal are zeroes
 
 def create_padding_mask(seq):
-  seq = tf.cast(tf.math.equal(tf.reduce_sum(seq, axis=2), 0), tf.float32)
+    seq = tf.cast(tf.math.equal(tf.reduce_sum(seq, axis=2), 0), tf.float32)
   
-  # add extra dimensions to add the padding to the attention logits.
-  return seq[:, tf.newaxis, tf.newaxis, :]  # (batch_size, 1, 1, seq_len)
+    # add extra dimensions to add the padding to the attention logits.
+    return seq[:, tf.newaxis, tf.newaxis, :]  # (batch_size, 1, 1, seq_len)
 
 def create_masks(tar):
 
@@ -259,7 +259,7 @@ class Decoder(tf.keras.layers.Layer):
         return x, attention_weights
 
 class Transformer(tf.keras.Model):
-    def __init__(self, features, dff, d_embedding, d_model, maximum_position_encoding,num_heads, num_layers,config, rate=0.1):
+    def __init__(self, features,dff, d_embedding, d_model, maximum_position_encoding,num_heads, num_layers,config, rate=0.1):
        super(Transformer, self).__init__()
    
        self.ORDER = config["ORDER"]
@@ -280,6 +280,9 @@ class Transformer(tf.keras.Model):
        for name, dim in self.FIELD_DIMS_NET.items():
             acti = self.ACTIVATIONS.get(name, None)
             self.__setattr__(name, tf.keras.layers.Dense(dim, activation=acti))
+     
+
+    
 
     def call(self, inp, tar):
         inp_inp = inp[:, :-1] # predict next from this

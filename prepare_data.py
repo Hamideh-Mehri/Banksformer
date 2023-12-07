@@ -36,6 +36,9 @@ def preprocess_data_czech(df):
 
     df["tcode"] = tcode
 
+    ATTR_SCALE = df["age"].std()
+    df["age_sc"] = df["age"] / ATTR_SCALE
+
     df["log_amount"] = np.log10(df["amount"]+1)
     LOG_AMOUNT_SCALE = df["log_amount"].std()
     df["log_amount_sc"] = df["log_amount"] / LOG_AMOUNT_SCALE
@@ -48,4 +51,4 @@ def preprocess_data_czech(df):
 
     df['tcode' + "_num"] = df['tcode'].apply(lambda x: TCODE_TO_NUM[x])
     START_DATE = df["datetime"].min()
-    return df, LOG_AMOUNT_SCALE, TD_SCALE, START_DATE, TCODE_TO_NUM, NUM_TO_TCODE 
+    return df, LOG_AMOUNT_SCALE, TD_SCALE, ATTR_SCALE, START_DATE, TCODE_TO_NUM, NUM_TO_TCODE 
