@@ -1,7 +1,7 @@
 
 
 class FieldInfo:
-    def __init__(self, n_tcode, CAT_FIELDS=['tcode_num'], CONT_FIELDS=['log_amount_sc'], DATE_FIELDS=['dow', 'month', "day", 'dtme', 'td_sc']):
+    def __init__(self, n_tcode=16, CAT_FIELDS=['tcode_num'], CONT_FIELDS=['log_amount_sc'], DATE_FIELDS=['dow', 'month', "day", 'dtme', 'td_sc']):
 
         self.CAT_FIELDS = CAT_FIELDS
         self.CONT_FIELDS = CONT_FIELDS

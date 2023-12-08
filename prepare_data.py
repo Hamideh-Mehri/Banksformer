@@ -15,6 +15,7 @@ def preprocess_data_czech(df):
     df["month"] = df["datetime"].dt.month
     df["day"] = df["datetime"].dt.day
     df["dow"] =  df["datetime"].dt.dayofweek
+    df["year"] = df["datetime"].dt.year
     
     df["td"] = df[["account_id", "datetime"]].groupby("account_id").diff()
     df["td"] = df["td"].apply(lambda x: x.days)

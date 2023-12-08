@@ -1,0 +1,305 @@
+2023-12-08 11:25:30.611828: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2023-12-08 11:26:08.264365: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2023-12-08 11:26:08.265616: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2023-12-08 11:26:08.324626: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: Quadro RTX 8000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 47.45GiB deviceMemoryBandwidth: 625.94GiB/s
+2023-12-08 11:26:08.324833: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
+pciBusID: 0000:af:00.0 name: Quadro RTX 8000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 47.45GiB deviceMemoryBandwidth: 625.94GiB/s
+2023-12-08 11:26:08.324856: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2023-12-08 11:26:08.326427: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2023-12-08 11:26:08.326489: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2023-12-08 11:26:08.327796: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2023-12-08 11:26:08.328024: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2023-12-08 11:26:08.329377: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2023-12-08 11:26:08.330037: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2023-12-08 11:26:08.332916: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2023-12-08 11:26:08.333564: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1
+2023-12-08 11:26:08.333944: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-08 11:26:08.335572: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2023-12-08 11:26:08.478005: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: Quadro RTX 8000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 47.45GiB deviceMemoryBandwidth: 625.94GiB/s
+2023-12-08 11:26:08.478210: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
+pciBusID: 0000:af:00.0 name: Quadro RTX 8000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 47.45GiB deviceMemoryBandwidth: 625.94GiB/s
+2023-12-08 11:26:08.478240: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2023-12-08 11:26:08.478263: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2023-12-08 11:26:08.478272: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2023-12-08 11:26:08.478280: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2023-12-08 11:26:08.478288: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2023-12-08 11:26:08.478296: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2023-12-08 11:26:08.478313: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2023-12-08 11:26:08.478321: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2023-12-08 11:26:08.478850: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1
+2023-12-08 11:26:08.478882: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2023-12-08 11:26:09.456590: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2023-12-08 11:26:09.456634: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 1 
+2023-12-08 11:26:09.456646: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N Y 
+2023-12-08 11:26:09.456649: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 1:   Y N 
+2023-12-08 11:26:09.457434: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 45387 MB memory) -> physical GPU (device: 0, name: Quadro RTX 8000, pci bus id: 0000:3b:00.0, compute capability: 7.5)
+2023-12-08 11:26:09.458067: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 32661 MB memory) -> physical GPU (device: 1, name: Quadro RTX 8000, pci bus id: 0000:af:00.0, compute capability: 7.5)
+Finished encoding 2000 of 14354 seqs
+Finished encoding 4000 of 14354 seqs
+Finished encoding 6000 of 14354 seqs
+Finished encoding 8000 of 14354 seqs
+Finished encoding 10000 of 14354 seqs
+Finished encoding 12000 of 14354 seqs
+Finished encoding 14000 of 14354 seqs
+Took 34.48 secs
+2023-12-08 11:26:43.315452: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+Epoch 1 Batch0 Loss 12.2578
+Epoch 1 Batch50 Loss 7.2405
+Epoch 1 Batch100 Loss 6.6824
+Epoch 1 Batch150 Loss 6.3463
+Epoch 1 Loss 6.1912
+** on validation data loss is 5.2556
+Time taken for 1 epoch: 13.35 secs
+
+Epoch 2 Batch0 Loss 5.2391
+Epoch 2 Batch50 Loss 5.0867
+Epoch 2 Batch100 Loss 4.9237
+Epoch 2 Batch150 Loss 4.7870
+Epoch 2 Loss 4.7257
+** on validation data loss is 4.3494
+Time taken for 1 epoch: 12.69 secs
+
+Epoch 3 Batch0 Loss 4.3645
+Epoch 3 Batch50 Loss 4.2922
+Epoch 3 Batch100 Loss 4.2445
+Epoch 3 Batch150 Loss 4.2066
+Epoch 3 Loss 4.1864
+** on validation data loss is 4.0676
+Time taken for 1 epoch: 12.75 secs
+
+Epoch 4 Batch0 Loss 4.1094
+Epoch 4 Batch50 Loss 4.0591
+Epoch 4 Batch100 Loss 4.0278
+Epoch 4 Batch150 Loss 4.0094
+Epoch 4 Loss 4.0018
+** on validation data loss is 3.9472
+Time taken for 1 epoch: 13.02 secs
+
+Epoch 5 Batch0 Loss 3.9224
+Epoch 5 Batch50 Loss 3.9194
+Epoch 5 Batch100 Loss 3.9145
+Epoch 5 Batch150 Loss 3.9018
+Epoch 5 Loss 3.8966
+** on validation data loss is 3.8470
+Time taken for 1 epoch: 12.97 secs
+
+Epoch 6 Batch0 Loss 3.9056
+Epoch 6 Batch50 Loss 3.8466
+Epoch 6 Batch100 Loss 3.8283
+Epoch 6 Batch150 Loss 3.8245
+Epoch 6 Loss 3.8226
+** on validation data loss is 3.7897
+Time taken for 1 epoch: 12.94 secs
+
+Epoch 7 Batch0 Loss 3.8328
+Epoch 7 Batch50 Loss 3.7914
+Epoch 7 Batch100 Loss 3.7829
+Epoch 7 Batch150 Loss 3.7726
+Epoch 7 Loss 3.7715
+** on validation data loss is 3.7487
+Time taken for 1 epoch: 13.03 secs
+
+Epoch 8 Batch0 Loss 3.7855
+Epoch 8 Batch50 Loss 3.7532
+Epoch 8 Batch100 Loss 3.7455
+Epoch 8 Batch150 Loss 3.7348
+Epoch 8 Loss 3.7323
+** on validation data loss is 3.7142
+Time taken for 1 epoch: 12.94 secs
+
+Epoch 9 Batch0 Loss 3.6906
+Epoch 9 Batch50 Loss 3.7075
+Epoch 9 Batch100 Loss 3.7069
+Epoch 9 Batch150 Loss 3.7001
+Epoch 9 Loss 3.6992
+** on validation data loss is 3.6910
+Time taken for 1 epoch: 12.96 secs
+
+Epoch 10 Batch0 Loss 3.6936
+Epoch 10 Batch50 Loss 3.6755
+Epoch 10 Batch100 Loss 3.6740
+Epoch 10 Batch150 Loss 3.6751
+Epoch 10 Loss 3.6745
+** on validation data loss is 3.6639
+Time taken for 1 epoch: 13.09 secs
+
+Epoch 11 Batch0 Loss 3.7050
+Epoch 11 Batch50 Loss 3.6548
+Epoch 11 Batch100 Loss 3.6585
+Epoch 11 Batch150 Loss 3.6555
+Epoch 11 Loss 3.6532
+** on validation data loss is 3.6452
+Time taken for 1 epoch: 12.82 secs
+
+Epoch 12 Batch0 Loss 3.6432
+Epoch 12 Batch50 Loss 3.6395
+Epoch 12 Batch100 Loss 3.6388
+Epoch 12 Batch150 Loss 3.6376
+Epoch 12 Loss 3.6360
+** on validation data loss is 3.6252
+Time taken for 1 epoch: 12.72 secs
+
+Epoch 13 Batch0 Loss 3.6555
+Epoch 13 Batch50 Loss 3.6193
+Epoch 13 Batch100 Loss 3.6246
+Epoch 13 Batch150 Loss 3.6237
+Epoch 13 Loss 3.6198
+** on validation data loss is 3.6245
+Time taken for 1 epoch: 12.86 secs
+
+Epoch 14 Batch0 Loss 3.6320
+Epoch 14 Batch50 Loss 3.6015
+Epoch 14 Batch100 Loss 3.6108
+Epoch 14 Batch150 Loss 3.6097
+Epoch 14 Loss 3.6102
+** on validation data loss is 3.6122
+Time taken for 1 epoch: 12.79 secs
+
+Epoch 15 Batch0 Loss 3.6317
+Epoch 15 Batch50 Loss 3.6012
+Epoch 15 Batch100 Loss 3.5984
+Epoch 15 Batch150 Loss 3.5981
+Epoch 15 Loss 3.5975
+** on validation data loss is 3.5917
+Time taken for 1 epoch: 12.93 secs
+
+Epoch 16 Batch0 Loss 3.6218
+Epoch 16 Batch50 Loss 3.5946
+Epoch 16 Batch100 Loss 3.5949
+Epoch 16 Batch150 Loss 3.5940
+Epoch 16 Loss 3.5926
+** on validation data loss is 3.5829
+Time taken for 1 epoch: 12.80 secs
+
+Epoch 17 Batch0 Loss 3.5929
+Epoch 17 Batch50 Loss 3.5914
+Epoch 17 Batch100 Loss 3.5826
+Epoch 17 Batch150 Loss 3.5797
+Epoch 17 Loss 3.5794
+** on validation data loss is 3.5841
+Time taken for 1 epoch: 12.84 secs
+
+Epoch 18 Batch0 Loss 3.6656
+Epoch 18 Batch50 Loss 3.5667
+Epoch 18 Batch100 Loss 3.5685
+Epoch 18 Batch150 Loss 3.5683
+Epoch 18 Loss 3.5682
+** on validation data loss is 3.5706
+Time taken for 1 epoch: 12.82 secs
+
+Epoch 19 Batch0 Loss 3.5559
+Epoch 19 Batch50 Loss 3.5662
+Epoch 19 Batch100 Loss 3.5620
+Epoch 19 Batch150 Loss 3.5631
+Epoch 19 Loss 3.5641
+** on validation data loss is 3.5714
+Time taken for 1 epoch: 12.85 secs
+
+Epoch 20 Batch0 Loss 3.5653
+Epoch 20 Batch50 Loss 3.5613
+Epoch 20 Batch100 Loss 3.5586
+Epoch 20 Batch150 Loss 3.5570
+Epoch 20 Loss 3.5547
+** on validation data loss is 3.5532
+Time taken for 1 epoch: 12.66 secs
+
+Epoch 21 Batch0 Loss 3.5206
+Epoch 21 Batch50 Loss 3.5488
+Epoch 21 Batch100 Loss 3.5486
+Epoch 21 Batch150 Loss 3.5478
+Epoch 21 Loss 3.5476
+** on validation data loss is 3.5528
+Time taken for 1 epoch: 12.83 secs
+
+Epoch 22 Batch0 Loss 3.5614
+Epoch 22 Batch50 Loss 3.5461
+Epoch 22 Batch100 Loss 3.5454
+Epoch 22 Batch150 Loss 3.5459
+Epoch 22 Loss 3.5462
+** on validation data loss is 3.5424
+Time taken for 1 epoch: 12.87 secs
+
+Epoch 23 Batch0 Loss 3.5385
+Epoch 23 Batch50 Loss 3.5374
+Epoch 23 Batch100 Loss 3.5353
+Epoch 23 Batch150 Loss 3.5369
+Epoch 23 Loss 3.5364
+** on validation data loss is 3.5426
+Time taken for 1 epoch: 12.82 secs
+
+Epoch 24 Batch0 Loss 3.4844
+Epoch 24 Batch50 Loss 3.5302
+Epoch 24 Batch100 Loss 3.5321
+Epoch 24 Batch150 Loss 3.5317
+Epoch 24 Loss 3.5314
+** on validation data loss is 3.5392
+Time taken for 1 epoch: 12.86 secs
+
+Epoch 25 Batch0 Loss 3.5275
+Epoch 25 Batch50 Loss 3.5273
+Epoch 25 Batch100 Loss 3.5305
+Epoch 25 Batch150 Loss 3.5301
+Epoch 25 Loss 3.5290
+** on validation data loss is 3.5331
+Time taken for 1 epoch: 12.86 secs
+
+Epoch 26 Batch0 Loss 3.4770
+Epoch 26 Batch50 Loss 3.5250
+Epoch 26 Batch100 Loss 3.5252
+Epoch 26 Batch150 Loss 3.5227
+Epoch 26 Loss 3.5221
+** on validation data loss is 3.5287
+Time taken for 1 epoch: 12.86 secs
+
+Epoch 27 Batch0 Loss 3.4862
+Epoch 27 Batch50 Loss 3.5113
+Epoch 27 Batch100 Loss 3.5158
+Epoch 27 Batch150 Loss 3.5186
+Epoch 27 Loss 3.5187
+** on validation data loss is 3.5274
+Time taken for 1 epoch: 12.78 secs
+
+Epoch 28 Batch0 Loss 3.4652
+Epoch 28 Batch50 Loss 3.5199
+Epoch 28 Batch100 Loss 3.5174
+Epoch 28 Batch150 Loss 3.5193
+Epoch 28 Loss 3.5183
+** on validation data loss is 3.5234
+Time taken for 1 epoch: 12.89 secs
+
+Epoch 29 Batch0 Loss 3.5050
+Epoch 29 Batch50 Loss 3.5102
+Epoch 29 Batch100 Loss 3.5073
+Epoch 29 Batch150 Loss 3.5107
+Epoch 29 Loss 3.5118
+** on validation data loss is 3.5144
+Time taken for 1 epoch: 12.76 secs
+
+Epoch 30 Batch0 Loss 3.5127
+Epoch 30 Batch50 Loss 3.5102
+Epoch 30 Batch100 Loss 3.5062
+Epoch 30 Batch150 Loss 3.5066
+Epoch 30 Loss 3.5083
+** on validation data loss is 3.5177
+Time taken for 1 epoch: 12.82 secs
+
+Epoch 31 Batch0 Loss 3.5393
+Epoch 31 Batch50 Loss 3.5067
+Epoch 31 Batch100 Loss 3.5031
+Epoch 31 Batch150 Loss 3.5057
+Epoch 31 Loss 3.5075
+** on validation data loss is 3.5183
+Time taken for 1 epoch: 12.80 secs
+
+Stopping early, last 2 val losses are: [3.5177193, 3.5182786]                       
+Best was 3.514
+
+
+finish
