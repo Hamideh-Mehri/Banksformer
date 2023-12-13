@@ -6,6 +6,7 @@ import tensorflow as tf
 import pandas as pd
 from field_info import FieldInfo
 from modules import create_masks
+import csv
 
 fieldInfo = FieldInfo()
 
@@ -77,7 +78,12 @@ def log_normal_pdf_gen(sample, mean, logvar, raxis=1):
 
 def raw_dates_to_reencoded(raw_preds, start_inds, AD, TD_SCALE, max_days = 100, greedy_decode=False):
 
-    """ Takes raw predictions (info about predicted day, month, dow, and days passed) and start inds (indicate the current date for each of the seqs) 
+    """ 
+    raw_preds: raw predictions (info about predicted day, month, dow, and days passed)
+    start_inds: the index of the previous transaction's date in AD or ALL_DATES
+    max_days:  the next transaction date is sampled among the next 100('max_days') days, starting from start_inds
+    
+    
         Computes a number of days passed for each based on inputs (either greedily or with sampling)
          returns the new_dates (old_dates + days passed) and their indicies   """
     # raw_preds[k][:, -1]-- get the last element in each sequence  
@@ -140,7 +146,8 @@ def reencode_net_prediction(net_name, predictions):
         choices = np.arange(dim)
         ps = tf.nn.softmax(predictions, axis=2).numpy().reshape(-1, dim)
         choosen =  np.array([np.random.choice(choices, p=p) for p in ps])
-        
+        if net_name != 'dtme':
+           choosen = choosen + 1
         x = bulk_encode_time_value(choosen, max_val=dim)
         
         return np.reshape(x, newshape=(batch_size, -1, 2))
@@ -150,11 +157,23 @@ def reencode_net_prediction(net_name, predictions):
 
 
 def call_to_generate(transformer, inp, start_inds, AD, TD_SCALE):
-    """Forward pass through transformer
+    """
+    This function is called 'lenght_of_sequences' times
+    Transformer : trained transformer used for generating synthetic data
+    inp: in the first call, it is a vector of features of dim: #(n_seqs_to_generate, 1, n_feat_inp)
+         in the second call, dim is: #(n_seqs_to_generate, 2, n_feat_inp)
+         and so on.....
+         inp is forwarded pass through transformer 
+    start_inds: #array of shape (n_seqs_to_generate,) specifies the starting date indexes in ALL_DATES array(and also in AD array), 
+                 for each sequence to be generated
+    AD: an array of shape(5478,6), each element is an array contains the information of date(month, day, dow,idx, year, dtme), 
+        spanning 15 years.
+    output: 
+    Forward pass through transformer
     Returns: preds, attn_w, raw_preds, inds
     the returned preds have multiple timesteps, but we only care about the last (it's the only new one)   """
 
-    x = transformer.input_layer(inp)
+    x = transformer.input_layer(inp)                  
     seq_len = tf.shape(x)[1]
     x += transformer.pos_encoding[:, :seq_len, :]     #x is the output of Input layer
     x = transformer.dropout(x, training=True)
@@ -163,8 +182,14 @@ def call_to_generate(transformer, inp, start_inds, AD, TD_SCALE):
     final_output = transformer.final_layer(out)
 
     ### Predict each field  ###
-    preds = {}
+    
+    #raw_preds is the outputs of the last dense layer of transformer. 
     raw_preds = {}
+    #preds is the reencoded raw_preds, 'tcode' converts to one-hot encoded, 'date-features' are converted to clock-wise
+    #and for 'amount' and 'td' the predicted mean is extracted. it is used for conditional generating. 
+    preds = {}
+    #encoded_preds_d is similar to preds for 'tcode', 'td', and 'amount', but for date features , the predicted date is computed 
+    #based on a formula 
     encoded_preds_d = {}
     #encoded_preds = []
 
@@ -187,6 +212,16 @@ def call_to_generate(transformer, inp, start_inds, AD, TD_SCALE):
 
     return preds, attention_weights, raw_preds, inds, encoded_preds, raw_date_info
     
+def save_csv(results):
+    with open('results.csv', 'w', newline='') as file:
+       writer = csv.writer(file)
+
+       # Write the header
+       writer.writerow(results.keys())
+
+       # Write the data
+       for row in zip(*results.values()):
+           writer.writerow(row)
 
 
 class Train(object):
@@ -196,8 +231,9 @@ class Train(object):
         self.validation_loss = tf.keras.metrics.Mean(name='val_loss')
         self.results = dict([(x, []) for x in ["loss", "val_loss"]])
 
-    def train(self, train_batches, val_batches, x_cv, targ_cv, epochs, early_stop):
+    def train(self, train_batches, val_batches, epochs, early_stop):
         optimizer = tf.keras.optimizers.Adam() 
+    
         for epoch in range(epochs):
             start = time.time()
             self.train_loss.reset_states()
@@ -208,7 +244,7 @@ class Train(object):
                     loss = loss_function(tar, predictions)
                 gradients = tape.gradient(loss, self.transformer.trainable_variables)
                 optimizer.apply_gradients(zip(gradients, self.transformer.trainable_variables))
-               
+            
                 self.train_loss(loss)
                 if batch_no % 50 == 0:
                     print(f'Epoch {epoch+1} Batch{batch_no} Loss{self.train_loss.result(): .4f}')
@@ -226,14 +262,15 @@ class Train(object):
             if min(self.results["val_loss"] ) < min(self.results["val_loss"][-early_stop:] ):
                 
                 print(f"Stopping early, last {early_stop} val losses are: {self.results['val_loss'][-early_stop:]} \
-                      \nBest was {min(self.results['val_loss'] ):.3f}\n\n")
+                    \nBest was {min(self.results['val_loss'] ):.3f}\n\n")
+                save_csv(self.results)
                 break
 
     def generate_synthetic_data(self, max_length, n_seqs_to_generate, df, attributes, n_feat_inp):
         """ 
         max_length : length of the generated sequences
         n_seqs_to_generate: number of unique customers in the generated data
-        df: original preprocessed dataframe, it is used for sampling the starting dates of transactions
+        df: original preprocessed dataframe
         attributes: an array of dimension(number_of_seqs_in_training_data,) of scaled attributes(age)
         """
         MAX_YEARS_SPAN = 15
@@ -259,7 +296,7 @@ class Train(object):
         #print(start_inds)
         inp = np.repeat(np.array(seq_ages)[:, None, None], repeats=n_feat_inp, axis=2) / ATTR_SCALE   #(n_seqs_to_generate, 1, n_feat_inp) 
         raw_date_info_list = []
-        for i in range(max_length):
+        for i in range(max_length):     
             predictions, attn, raw_ps, date_inds, enc_preds, raw_date  = call_to_generate(self.transformer, inp, start_inds, AD, TD_SCALE)
             #print(date_inds)
             enc_preds = tf.reshape(tf.constant(enc_preds), shape=(-1,1, n_feat_inp))      #(n_seqs_to_generate, 1, n_feat_inp=26)
@@ -302,6 +339,7 @@ class Train(object):
         years = []
 
         for customer in range(num_customers):
+            print(customer)
             for transaction in range(num_transactions):
                 months.append(raw_date_info_list[transaction]['month'][customer])
                 days.append(raw_date_info_list[transaction]['day'][customer])

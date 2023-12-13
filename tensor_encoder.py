@@ -7,7 +7,7 @@ from field_info import FieldInfo  # Assuming you named the other file as field_i
 
 class TensorEncoder:
     def __init__(self, df, info, max_seq_len, min_seq_len):
-        
+        """df: preprocessed real data   """
         self.df = df
         self.info = info
         self.max_seq_len = max_seq_len

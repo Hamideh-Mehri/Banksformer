@@ -1,0 +1,18 @@
+{
+    "max_seq_len": 80,
+    "min_seq_len": 20,
+    "batch_size": 64,
+    "d_embedding": 128,
+    "dff": 128,
+    "d_model": 128,
+    "maximum_position_encoding": 256,
+    "rate": 0.1,
+    "num_heads": 2,
+    "num_layers": 4,
+    "epochs": 150,
+    "early_stop": 50,
+    "len_generated_seq": 80,
+    "num_generated_seq" : 5000,
+    "data_path": "../DATA/tr_by_acct_w_age.csv",
+    "synth_data_filename": "../DATA/synth_transformer_v3.csv"
+}
