@@ -1,46 +1,46 @@
-2023-12-12 17:08:19.637544: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
-2023-12-12 17:08:55.766602: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
-2023-12-12 17:08:55.767903: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
-2023-12-12 17:08:55.834124: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+2023-12-20 09:23:14.658099: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2023-12-20 09:23:50.893715: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2023-12-20 09:23:50.895023: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2023-12-20 09:23:50.948549: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
 pciBusID: 0000:3b:00.0 name: Quadro RTX 8000 computeCapability: 7.5
 coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 47.45GiB deviceMemoryBandwidth: 625.94GiB/s
-2023-12-12 17:08:55.834326: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
+2023-12-20 09:23:50.948755: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
 pciBusID: 0000:af:00.0 name: Quadro RTX 8000 computeCapability: 7.5
 coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 47.45GiB deviceMemoryBandwidth: 625.94GiB/s
-2023-12-12 17:08:55.834348: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
-2023-12-12 17:08:55.835899: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
-2023-12-12 17:08:55.835965: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
-2023-12-12 17:08:55.837240: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
-2023-12-12 17:08:55.837516: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
-2023-12-12 17:08:55.838786: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
-2023-12-12 17:08:55.839427: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
-2023-12-12 17:08:55.842127: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
-2023-12-12 17:08:55.842785: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1
-2023-12-12 17:08:55.843163: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2023-12-20 09:23:50.948789: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2023-12-20 09:23:50.950531: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2023-12-20 09:23:50.950600: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2023-12-20 09:23:50.952177: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2023-12-20 09:23:50.952431: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2023-12-20 09:23:50.953904: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2023-12-20 09:23:50.954587: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2023-12-20 09:23:50.957773: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2023-12-20 09:23:50.958418: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1
+2023-12-20 09:23:50.958808: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
 To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2023-12-12 17:08:55.844272: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
-2023-12-12 17:08:56.011605: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+2023-12-20 09:23:50.960045: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2023-12-20 09:23:51.128179: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
 pciBusID: 0000:3b:00.0 name: Quadro RTX 8000 computeCapability: 7.5
 coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 47.45GiB deviceMemoryBandwidth: 625.94GiB/s
-2023-12-12 17:08:56.011830: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
+2023-12-20 09:23:51.128392: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
 pciBusID: 0000:af:00.0 name: Quadro RTX 8000 computeCapability: 7.5
 coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 47.45GiB deviceMemoryBandwidth: 625.94GiB/s
-2023-12-12 17:08:56.011859: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
-2023-12-12 17:08:56.011882: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
-2023-12-12 17:08:56.011891: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
-2023-12-12 17:08:56.011898: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
-2023-12-12 17:08:56.011906: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
-2023-12-12 17:08:56.011915: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
-2023-12-12 17:08:56.011932: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
-2023-12-12 17:08:56.011940: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
-2023-12-12 17:08:56.012431: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1
-2023-12-12 17:08:56.012461: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
-2023-12-12 17:08:56.738730: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
-2023-12-12 17:08:56.738778: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 1 
-2023-12-12 17:08:56.738784: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N Y 
-2023-12-12 17:08:56.738788: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 1:   Y N 
-2023-12-12 17:08:56.739574: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 45387 MB memory) -> physical GPU (device: 0, name: Quadro RTX 8000, pci bus id: 0000:3b:00.0, compute capability: 7.5)
-2023-12-12 17:08:56.740228: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 45387 MB memory) -> physical GPU (device: 1, name: Quadro RTX 8000, pci bus id: 0000:af:00.0, compute capability: 7.5)
+2023-12-20 09:23:51.128424: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2023-12-20 09:23:51.128448: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2023-12-20 09:23:51.128456: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2023-12-20 09:23:51.128464: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2023-12-20 09:23:51.128472: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2023-12-20 09:23:51.128479: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2023-12-20 09:23:51.128497: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2023-12-20 09:23:51.128505: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2023-12-20 09:23:51.129005: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1
+2023-12-20 09:23:51.129054: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2023-12-20 09:23:51.891229: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2023-12-20 09:23:51.891275: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 1 
+2023-12-20 09:23:51.891281: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N Y 
+2023-12-20 09:23:51.891284: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 1:   Y N 
+2023-12-20 09:23:51.892081: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 45387 MB memory) -> physical GPU (device: 0, name: Quadro RTX 8000, pci bus id: 0000:3b:00.0, compute capability: 7.5)
+2023-12-20 09:23:51.892781: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 45387 MB memory) -> physical GPU (device: 1, name: Quadro RTX 8000, pci bus id: 0000:af:00.0, compute capability: 7.5)
 Finished encoding 2000 of 14354 seqs
 Finished encoding 4000 of 14354 seqs
 Finished encoding 6000 of 14354 seqs
@@ -48,467 +48,807 @@ Finished encoding 8000 of 14354 seqs
 Finished encoding 10000 of 14354 seqs
 Finished encoding 12000 of 14354 seqs
 Finished encoding 14000 of 14354 seqs
-Took 34.44 secs
-2023-12-12 17:09:30.756266: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
-Epoch 1 Batch0 Loss 11.6339
-Epoch 1 Batch50 Loss 9.6195
-Epoch 1 Batch100 Loss 9.1313
-Epoch 1 Batch150 Loss 8.8691
-Epoch 1 Loss 8.7475
-** on validation data loss is 8.0230
-Time taken for 1 epoch: 12.57 secs
+Took 35.79 secs
+2023-12-20 09:24:27.256940: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+Epoch 1 Batch0 Loss 61.7744
+Epoch 1 Batch50 Loss 9.0273
+Epoch 1 Batch100 Loss 7.2834
+Epoch 1 Batch150 Loss 6.5004
+Epoch 1 Loss 6.1887
+** on validation data loss is 4.4881
+Time taken for 1 epoch: 12.74 secs
 
-Epoch 2 Batch0 Loss 8.0794
-Epoch 2 Batch50 Loss 7.8881
-Epoch 2 Batch100 Loss 7.7605
-Epoch 2 Batch150 Loss 7.6639
-Epoch 2 Loss 7.6141
-** on validation data loss is 7.3578
-Time taken for 1 epoch: 12.18 secs
+Epoch 2 Batch0 Loss 4.4368
+Epoch 2 Batch50 Loss 4.3365
+Epoch 2 Batch100 Loss 4.1586
+Epoch 2 Batch150 Loss 4.0096
+Epoch 2 Loss 3.9259
+** on validation data loss is 3.4088
+Time taken for 1 epoch: 12.33 secs
 
-Epoch 3 Batch0 Loss 7.2621
-Epoch 3 Batch50 Loss 7.2793
-Epoch 3 Batch100 Loss 7.2041
-Epoch 3 Batch150 Loss 6.9172
-Epoch 3 Loss 6.5342
-** on validation data loss is 4.4249
-Time taken for 1 epoch: 12.18 secs
-
-Epoch 4 Batch0 Loss 4.4304
-Epoch 4 Batch50 Loss 4.2973
-Epoch 4 Batch100 Loss 4.2668
-Epoch 4 Batch150 Loss 4.2355
-Epoch 4 Loss 4.2138
-** on validation data loss is 4.0948
-Time taken for 1 epoch: 12.27 secs
-
-Epoch 5 Batch0 Loss 4.0741
-Epoch 5 Batch50 Loss 4.0839
-Epoch 5 Batch100 Loss 4.0537
-Epoch 5 Batch150 Loss 4.0326
-Epoch 5 Loss 4.0207
-** on validation data loss is 3.9667
-Time taken for 1 epoch: 12.41 secs
-
-Epoch 6 Batch0 Loss 4.0428
-Epoch 6 Batch50 Loss 3.9459
-Epoch 6 Batch100 Loss 3.9318
-Epoch 6 Batch150 Loss 3.9188
-Epoch 6 Loss 3.9131
-** on validation data loss is 3.8791
-Time taken for 1 epoch: 12.38 secs
-
-Epoch 7 Batch0 Loss 3.8715
-Epoch 7 Batch50 Loss 3.8575
-Epoch 7 Batch100 Loss 3.8509
-Epoch 7 Batch150 Loss 3.8453
-Epoch 7 Loss 3.8401
-** on validation data loss is 3.8141
-Time taken for 1 epoch: 12.50 secs
-
-Epoch 8 Batch0 Loss 3.8485
-Epoch 8 Batch50 Loss 3.7973
-Epoch 8 Batch100 Loss 3.7960
-Epoch 8 Batch150 Loss 3.7903
-Epoch 8 Loss 3.7842
-** on validation data loss is 3.7715
+Epoch 3 Batch0 Loss 3.4026
+Epoch 3 Batch50 Loss 3.3365
+Epoch 3 Batch100 Loss 3.2717
+Epoch 3 Batch150 Loss 3.2050
+Epoch 3 Loss 3.1623
+** on validation data loss is 2.9113
 Time taken for 1 epoch: 12.40 secs
 
-Epoch 9 Batch0 Loss 3.7927
-Epoch 9 Batch50 Loss 3.7548
-Epoch 9 Batch100 Loss 3.7528
-Epoch 9 Batch150 Loss 3.7467
-Epoch 9 Loss 3.7427
-** on validation data loss is 3.7373
-Time taken for 1 epoch: 12.39 secs
-
-Epoch 10 Batch0 Loss 3.6730
-Epoch 10 Batch50 Loss 3.7343
-Epoch 10 Batch100 Loss 3.7257
-Epoch 10 Batch150 Loss 3.7168
-Epoch 10 Loss 3.7147
-** on validation data loss is 3.7094
-Time taken for 1 epoch: 12.41 secs
-
-Epoch 11 Batch0 Loss 3.7313
-Epoch 11 Batch50 Loss 3.6798
-Epoch 11 Batch100 Loss 3.6865
-Epoch 11 Batch150 Loss 3.6821
-Epoch 11 Loss 3.6829
-** on validation data loss is 3.6863
-Time taken for 1 epoch: 12.31 secs
-
-Epoch 12 Batch0 Loss 3.6019
-Epoch 12 Batch50 Loss 3.6646
-Epoch 12 Batch100 Loss 3.6613
-Epoch 12 Batch150 Loss 3.6628
-Epoch 12 Loss 3.6619
-** on validation data loss is 3.6634
-Time taken for 1 epoch: 12.28 secs
-
-Epoch 13 Batch0 Loss 3.6488
-Epoch 13 Batch50 Loss 3.6549
-Epoch 13 Batch100 Loss 3.6455
-Epoch 13 Batch150 Loss 3.6431
-Epoch 13 Loss 3.6422
-** on validation data loss is 3.6454
-Time taken for 1 epoch: 12.37 secs
-
-Epoch 14 Batch0 Loss 3.7078
-Epoch 14 Batch50 Loss 3.6355
-Epoch 14 Batch100 Loss 3.6301
-Epoch 14 Batch150 Loss 3.6280
-Epoch 14 Loss 3.6266
-** on validation data loss is 3.6396
-Time taken for 1 epoch: 14.14 secs
-
-Epoch 15 Batch0 Loss 3.6233
-Epoch 15 Batch50 Loss 3.6078
-Epoch 15 Batch100 Loss 3.6121
-Epoch 15 Batch150 Loss 3.6119
-Epoch 15 Loss 3.6134
-** on validation data loss is 3.6181
-Time taken for 1 epoch: 14.48 secs
-
-Epoch 16 Batch0 Loss 3.5837
-Epoch 16 Batch50 Loss 3.6039
-Epoch 16 Batch100 Loss 3.6041
-Epoch 16 Batch150 Loss 3.6044
-Epoch 16 Loss 3.6049
-** on validation data loss is 3.6116
-Time taken for 1 epoch: 14.58 secs
-
-Epoch 17 Batch0 Loss 3.5792
-Epoch 17 Batch50 Loss 3.5902
-Epoch 17 Batch100 Loss 3.5940
-Epoch 17 Batch150 Loss 3.5974
-Epoch 17 Loss 3.5955
-** on validation data loss is 3.6055
-Time taken for 1 epoch: 14.49 secs
-
-Epoch 18 Batch0 Loss 3.5360
-Epoch 18 Batch50 Loss 3.5798
-Epoch 18 Batch100 Loss 3.5821
-Epoch 18 Batch150 Loss 3.5886
-Epoch 18 Loss 3.5876
-** on validation data loss is 3.6025
-Time taken for 1 epoch: 14.50 secs
-
-Epoch 19 Batch0 Loss 3.5690
-Epoch 19 Batch50 Loss 3.5741
-Epoch 19 Batch100 Loss 3.5738
-Epoch 19 Batch150 Loss 3.5770
-Epoch 19 Loss 3.5777
-** on validation data loss is 3.5920
-Time taken for 1 epoch: 14.59 secs
-
-Epoch 20 Batch0 Loss 3.6244
-Epoch 20 Batch50 Loss 3.5722
-Epoch 20 Batch100 Loss 3.5761
-Epoch 20 Batch150 Loss 3.5722
-Epoch 20 Loss 3.5723
-** on validation data loss is 3.5921
-Time taken for 1 epoch: 14.07 secs
-
-Epoch 21 Batch0 Loss 3.5131
-Epoch 21 Batch50 Loss 3.5613
-Epoch 21 Batch100 Loss 3.5625
-Epoch 21 Batch150 Loss 3.5622
-Epoch 21 Loss 3.5641
-** on validation data loss is 3.5769
+Epoch 4 Batch0 Loss 2.9659
+Epoch 4 Batch50 Loss 2.8650
+Epoch 4 Batch100 Loss 2.8154
+Epoch 4 Batch150 Loss 2.7731
+Epoch 4 Loss 2.7498
+** on validation data loss is 2.6135
 Time taken for 1 epoch: 12.44 secs
 
-Epoch 22 Batch0 Loss 3.6000
-Epoch 22 Batch50 Loss 3.5588
-Epoch 22 Batch100 Loss 3.5600
-Epoch 22 Batch150 Loss 3.5589
-Epoch 22 Loss 3.5603
-** on validation data loss is 3.5725
-Time taken for 1 epoch: 12.49 secs
+Epoch 5 Batch0 Loss 2.6881
+Epoch 5 Batch50 Loss 2.5855
+Epoch 5 Batch100 Loss 2.5618
+Epoch 5 Batch150 Loss 2.5508
+Epoch 5 Loss 2.5323
+** on validation data loss is 2.4564
+Time taken for 1 epoch: 12.38 secs
 
-Epoch 23 Batch0 Loss 3.5679
-Epoch 23 Batch50 Loss 3.5537
-Epoch 23 Batch100 Loss 3.5506
-Epoch 23 Batch150 Loss 3.5523
-Epoch 23 Loss 3.5524
-** on validation data loss is 3.5706
+Epoch 6 Batch0 Loss 2.5194
+Epoch 6 Batch50 Loss 2.4497
+Epoch 6 Batch100 Loss 2.4316
+Epoch 6 Batch150 Loss 2.4155
+Epoch 6 Loss 2.4056
+** on validation data loss is 2.3526
 Time taken for 1 epoch: 12.40 secs
 
-Epoch 24 Batch0 Loss 3.5665
-Epoch 24 Batch50 Loss 3.5521
-Epoch 24 Batch100 Loss 3.5466
-Epoch 24 Batch150 Loss 3.5478
-Epoch 24 Loss 3.5472
-** on validation data loss is 3.5595
-Time taken for 1 epoch: 12.42 secs
+Epoch 7 Batch0 Loss 2.2787
+Epoch 7 Batch50 Loss 2.3347
+Epoch 7 Batch100 Loss 2.3261
+Epoch 7 Batch150 Loss 2.3136
+Epoch 7 Loss 2.3047
+** on validation data loss is 2.2724
+Time taken for 1 epoch: 12.37 secs
 
-Epoch 25 Batch0 Loss 3.5860
-Epoch 25 Batch50 Loss 3.5392
-Epoch 25 Batch100 Loss 3.5446
-Epoch 25 Batch150 Loss 3.5437
-Epoch 25 Loss 3.5434
-** on validation data loss is 3.5612
-Time taken for 1 epoch: 12.50 secs
+Epoch 8 Batch0 Loss 2.2431
+Epoch 8 Batch50 Loss 2.2520
+Epoch 8 Batch100 Loss 2.2489
+Epoch 8 Batch150 Loss 2.2314
+Epoch 8 Loss 2.2244
+** on validation data loss is 2.2010
+Time taken for 1 epoch: 12.24 secs
 
-Epoch 26 Batch0 Loss 3.4788
-Epoch 26 Batch50 Loss 3.5404
-Epoch 26 Batch100 Loss 3.5364
-Epoch 26 Batch150 Loss 3.5387
-Epoch 26 Loss 3.5403
-** on validation data loss is 3.5569
-Time taken for 1 epoch: 12.40 secs
+Epoch 9 Batch0 Loss 2.1585
+Epoch 9 Batch50 Loss 2.1700
+Epoch 9 Batch100 Loss 2.1714
+Epoch 9 Batch150 Loss 2.1634
+Epoch 9 Loss 2.1634
+** on validation data loss is 2.1447
+Time taken for 1 epoch: 12.25 secs
 
-Epoch 27 Batch0 Loss 3.5238
-Epoch 27 Batch50 Loss 3.5297
-Epoch 27 Batch100 Loss 3.5340
-Epoch 27 Batch150 Loss 3.5327
-Epoch 27 Loss 3.5337
-** on validation data loss is 3.5539
-Time taken for 1 epoch: 12.41 secs
+Epoch 10 Batch0 Loss 2.0923
+Epoch 10 Batch50 Loss 2.1291
+Epoch 10 Batch100 Loss 2.1202
+Epoch 10 Batch150 Loss 2.1155
+Epoch 10 Loss 2.1125
+** on validation data loss is 2.0956
+Time taken for 1 epoch: 12.32 secs
 
-Epoch 28 Batch0 Loss 3.5616
-Epoch 28 Batch50 Loss 3.5328
-Epoch 28 Batch100 Loss 3.5295
-Epoch 28 Batch150 Loss 3.5286
-Epoch 28 Loss 3.5294
-** on validation data loss is 3.5478
-Time taken for 1 epoch: 12.49 secs
-
-Epoch 29 Batch0 Loss 3.5396
-Epoch 29 Batch50 Loss 3.5287
-Epoch 29 Batch100 Loss 3.5341
-Epoch 29 Batch150 Loss 3.5375
-Epoch 29 Loss 3.5379
-** on validation data loss is 3.5502
-Time taken for 1 epoch: 12.41 secs
-
-Epoch 30 Batch0 Loss 3.4958
-Epoch 30 Batch50 Loss 3.5212
-Epoch 30 Batch100 Loss 3.5255
-Epoch 30 Batch150 Loss 3.5249
-Epoch 30 Loss 3.5233
-** on validation data loss is 3.5482
-Time taken for 1 epoch: 12.28 secs
-
-Epoch 31 Batch0 Loss 3.4794
-Epoch 31 Batch50 Loss 3.5276
-Epoch 31 Batch100 Loss 3.5237
-Epoch 31 Batch150 Loss 3.5204
-Epoch 31 Loss 3.5197
-** on validation data loss is 3.5399
-Time taken for 1 epoch: 12.30 secs
-
-Epoch 32 Batch0 Loss 3.4651
-Epoch 32 Batch50 Loss 3.5225
-Epoch 32 Batch100 Loss 3.5201
-Epoch 32 Batch150 Loss 3.5164
-Epoch 32 Loss 3.5202
-** on validation data loss is 3.5639
-Time taken for 1 epoch: 12.28 secs
-
-Epoch 33 Batch0 Loss 3.5106
-Epoch 33 Batch50 Loss 3.5265
-Epoch 33 Batch100 Loss 3.5189
-Epoch 33 Batch150 Loss 3.5198
-Epoch 33 Loss 3.5205
-** on validation data loss is 3.5328
-Time taken for 1 epoch: 12.19 secs
-
-Epoch 34 Batch0 Loss 3.4810
-Epoch 34 Batch50 Loss 3.5097
-Epoch 34 Batch100 Loss 3.5096
-Epoch 34 Batch150 Loss 3.5124
-Epoch 34 Loss 3.5145
-** on validation data loss is 3.5366
-Time taken for 1 epoch: 12.22 secs
-
-Epoch 35 Batch0 Loss 3.4734
-Epoch 35 Batch50 Loss 3.5260
-Epoch 35 Batch100 Loss 3.5166
-Epoch 35 Batch150 Loss 3.5141
-Epoch 35 Loss 3.5112
-** on validation data loss is 3.5252
-Time taken for 1 epoch: 12.27 secs
-
-Epoch 36 Batch0 Loss 3.4315
-Epoch 36 Batch50 Loss 3.5030
-Epoch 36 Batch100 Loss 3.4993
-Epoch 36 Batch150 Loss 3.5006
-Epoch 36 Loss 3.5009
-** on validation data loss is 3.5232
-Time taken for 1 epoch: 12.19 secs
-
-Epoch 37 Batch0 Loss 3.4920
-Epoch 37 Batch50 Loss 3.4925
-Epoch 37 Batch100 Loss 3.4958
-Epoch 37 Batch150 Loss 3.4977
-Epoch 37 Loss 3.4976
-** on validation data loss is 3.5228
+Epoch 11 Batch0 Loss 2.0771
+Epoch 11 Batch50 Loss 2.0865
+Epoch 11 Batch100 Loss 2.0802
+Epoch 11 Batch150 Loss 2.0742
+Epoch 11 Loss 2.0684
+** on validation data loss is 2.0598
 Time taken for 1 epoch: 12.20 secs
 
-Epoch 38 Batch0 Loss 3.5124
-Epoch 38 Batch50 Loss 3.4890
-Epoch 38 Batch100 Loss 3.4938
-Epoch 38 Batch150 Loss 3.4960
-Epoch 38 Loss 3.4956
-** on validation data loss is 3.5248
-Time taken for 1 epoch: 12.28 secs
+Epoch 12 Batch0 Loss 2.0243
+Epoch 12 Batch50 Loss 2.0489
+Epoch 12 Batch100 Loss 2.0431
+Epoch 12 Batch150 Loss 2.0391
+Epoch 12 Loss 2.0347
+** on validation data loss is 2.0288
+Time taken for 1 epoch: 12.17 secs
 
-Epoch 39 Batch0 Loss 3.4983
-Epoch 39 Batch50 Loss 3.4977
-Epoch 39 Batch100 Loss 3.4967
-Epoch 39 Batch150 Loss 3.4929
-Epoch 39 Loss 3.4928
-** on validation data loss is 3.5206
-Time taken for 1 epoch: 12.20 secs
+Epoch 13 Batch0 Loss 1.9937
+Epoch 13 Batch50 Loss 2.0116
+Epoch 13 Batch100 Loss 2.0017
+Epoch 13 Batch150 Loss 1.9998
+Epoch 13 Loss 2.0031
+** on validation data loss is 2.0025
+Time taken for 1 epoch: 12.32 secs
 
-Epoch 40 Batch0 Loss 3.4327
-Epoch 40 Batch50 Loss 3.4884
-Epoch 40 Batch100 Loss 3.4868
-Epoch 40 Batch150 Loss 3.4891
-Epoch 40 Loss 3.4894
-** on validation data loss is 3.5240
+Epoch 14 Batch0 Loss 2.8043
+Epoch 14 Batch50 Loss 1.9986
+Epoch 14 Batch100 Loss 1.9914
+Epoch 14 Batch150 Loss 1.9806
+Epoch 14 Loss 1.9781
+** on validation data loss is 1.9840
+Time taken for 1 epoch: 12.35 secs
+
+Epoch 15 Batch0 Loss 2.0201
+Epoch 15 Batch50 Loss 1.9651
+Epoch 15 Batch100 Loss 1.9527
+Epoch 15 Batch150 Loss 1.9514
+Epoch 15 Loss 1.9518
+** on validation data loss is 1.9577
 Time taken for 1 epoch: 12.40 secs
 
-Epoch 41 Batch0 Loss 3.4699
-Epoch 41 Batch50 Loss 3.4817
-Epoch 41 Batch100 Loss 3.4884
-Epoch 41 Batch150 Loss 3.4966
-Epoch 41 Loss 3.4989
-** on validation data loss is 3.5315
-Time taken for 1 epoch: 12.31 secs
+Epoch 16 Batch0 Loss 1.8972
+Epoch 16 Batch50 Loss 1.9349
+Epoch 16 Batch100 Loss 1.9402
+Epoch 16 Batch150 Loss 1.9417
+Epoch 16 Loss 1.9400
+** on validation data loss is 1.9356
+Time taken for 1 epoch: 12.45 secs
 
-Epoch 42 Batch0 Loss 3.6000
-Epoch 42 Batch50 Loss 3.4970
-Epoch 42 Batch100 Loss 3.4939
-Epoch 42 Batch150 Loss 3.4913
-Epoch 42 Loss 3.4919
-** on validation data loss is 3.5134
-Time taken for 1 epoch: 12.27 secs
-
-Epoch 43 Batch0 Loss 3.5008
-Epoch 43 Batch50 Loss 3.4839
-Epoch 43 Batch100 Loss 3.4802
-Epoch 43 Batch150 Loss 3.4834
-Epoch 43 Loss 3.4835
-** on validation data loss is 3.5139
-Time taken for 1 epoch: 12.29 secs
-
-Epoch 44 Batch0 Loss 3.4779
-Epoch 44 Batch50 Loss 3.4766
-Epoch 44 Batch100 Loss 3.4819
-Epoch 44 Batch150 Loss 3.4830
-Epoch 44 Loss 3.4845
-** on validation data loss is 3.5155
-Time taken for 1 epoch: 12.40 secs
-
-Epoch 45 Batch0 Loss 3.4334
-Epoch 45 Batch50 Loss 3.4778
-Epoch 45 Batch100 Loss 3.4762
-Epoch 45 Batch150 Loss 3.4781
-Epoch 45 Loss 3.4809
-** on validation data loss is 3.5094
-Time taken for 1 epoch: 12.29 secs
-
-Epoch 46 Batch0 Loss 3.5233
-Epoch 46 Batch50 Loss 3.4804
-Epoch 46 Batch100 Loss 3.4761
-Epoch 46 Batch150 Loss 3.4778
-Epoch 46 Loss 3.4776
-** on validation data loss is 3.5074
-Time taken for 1 epoch: 12.30 secs
-
-Epoch 47 Batch0 Loss 3.5117
-Epoch 47 Batch50 Loss 3.4710
-Epoch 47 Batch100 Loss 3.4720
-Epoch 47 Batch150 Loss 3.4744
-Epoch 47 Loss 3.4756
-** on validation data loss is 3.5079
-Time taken for 1 epoch: 12.41 secs
-
-Epoch 48 Batch0 Loss 3.4748
-Epoch 48 Batch50 Loss 3.4691
-Epoch 48 Batch100 Loss 3.4743
-Epoch 48 Batch150 Loss 3.4734
-Epoch 48 Loss 3.4736
-** on validation data loss is 3.5057
-Time taken for 1 epoch: 12.29 secs
-
-Epoch 49 Batch0 Loss 3.4803
-Epoch 49 Batch50 Loss 3.4681
-Epoch 49 Batch100 Loss 3.4738
-Epoch 49 Batch150 Loss 3.4743
-Epoch 49 Loss 3.4748
-** on validation data loss is 3.5052
-Time taken for 1 epoch: 12.29 secs
-
-Epoch 50 Batch0 Loss 3.4093
-Epoch 50 Batch50 Loss 3.4622
-Epoch 50 Batch100 Loss 3.4696
-Epoch 50 Batch150 Loss 3.4697
-Epoch 50 Loss 3.4702
-** on validation data loss is 3.5024
-Time taken for 1 epoch: 12.40 secs
-
-Epoch 51 Batch0 Loss 3.4616
-Epoch 51 Batch50 Loss 3.4675
-Epoch 51 Batch100 Loss 3.4666
-Epoch 51 Batch150 Loss 3.4690
-Epoch 51 Loss 3.4682
-** on validation data loss is 3.5064
-Time taken for 1 epoch: 12.30 secs
-
-Epoch 52 Batch0 Loss 3.4989
-Epoch 52 Batch50 Loss 3.4711
-Epoch 52 Batch100 Loss 3.4685
-Epoch 52 Batch150 Loss 3.4682
-Epoch 52 Loss 3.4662
-** on validation data loss is 3.4995
+Epoch 17 Batch0 Loss 1.8758
+Epoch 17 Batch50 Loss 1.9211
+Epoch 17 Batch100 Loss 1.9162
+Epoch 17 Batch150 Loss 1.9150
+Epoch 17 Loss 1.9156
+** on validation data loss is 1.9182
 Time taken for 1 epoch: 12.39 secs
 
-Epoch 53 Batch0 Loss 3.5022
-Epoch 53 Batch50 Loss 3.4693
-Epoch 53 Batch100 Loss 3.4652
-Epoch 53 Batch150 Loss 3.4679
-Epoch 53 Loss 3.4684
-** on validation data loss is 3.5043
-Time taken for 1 epoch: 12.52 secs
+Epoch 18 Batch0 Loss 1.8288
+Epoch 18 Batch50 Loss 1.9071
+Epoch 18 Batch100 Loss 1.9018
+Epoch 18 Batch150 Loss 1.8966
+Epoch 18 Loss 1.8971
+** on validation data loss is 1.8984
+Time taken for 1 epoch: 12.41 secs
 
-Epoch 54 Batch0 Loss 3.4484
-Epoch 54 Batch50 Loss 3.4702
-Epoch 54 Batch100 Loss 3.4709
-Epoch 54 Batch150 Loss 3.4986
-Epoch 54 Loss 3.5008
-** on validation data loss is 3.5248
-Time taken for 1 epoch: 12.42 secs
+Epoch 19 Batch0 Loss 1.9419
+Epoch 19 Batch50 Loss 1.8861
+Epoch 19 Batch100 Loss 1.8859
+Epoch 19 Batch150 Loss 1.8835
+Epoch 19 Loss 1.8829
+** on validation data loss is 1.8873
+Time taken for 1 epoch: 12.44 secs
 
-Epoch 55 Batch0 Loss 3.5143
-Epoch 55 Batch50 Loss 3.4856
-Epoch 55 Batch100 Loss 3.4844
-Epoch 55 Batch150 Loss 3.4867
-Epoch 55 Loss 3.4868
-** on validation data loss is 3.5051
-Time taken for 1 epoch: 12.42 secs
+Epoch 20 Batch0 Loss 1.8130
+Epoch 20 Batch50 Loss 1.8866
+Epoch 20 Batch100 Loss 1.9035
+Epoch 20 Batch150 Loss 1.8942
+Epoch 20 Loss 1.8909
+** on validation data loss is 1.8822
+Time taken for 1 epoch: 12.36 secs
 
-Epoch 56 Batch0 Loss 3.4415
-Epoch 56 Batch50 Loss 3.4752
-Epoch 56 Batch100 Loss 3.4892
-Epoch 56 Batch150 Loss 3.4897
-Epoch 56 Loss 3.4871
-** on validation data loss is 3.5241
-Time taken for 1 epoch: 12.50 secs
+Epoch 21 Batch0 Loss 1.9091
+Epoch 21 Batch50 Loss 1.8719
+Epoch 21 Batch100 Loss 1.8632
+Epoch 21 Batch150 Loss 1.8658
+Epoch 21 Loss 1.8657
+** on validation data loss is 1.8738
+Time taken for 1 epoch: 12.36 secs
 
-Epoch 57 Batch0 Loss 3.4796
-Epoch 57 Batch50 Loss 3.4751
-Epoch 57 Batch100 Loss 3.4778
-Epoch 57 Batch150 Loss 3.4760
-Epoch 57 Loss 3.4766
-** on validation data loss is 3.5033
+Epoch 22 Batch0 Loss 1.8536
+Epoch 22 Batch50 Loss 1.8599
+Epoch 22 Batch100 Loss 1.8630
+Epoch 22 Batch150 Loss 1.8538
+Epoch 22 Loss 1.8535
+** on validation data loss is 1.8632
 Time taken for 1 epoch: 12.43 secs
 
-Stopping early, last 5 val losses are: [3.504304, 3.5248065, 3.5051336, 3.5241032, 3.5032783]                     
-Best was 3.499
+Epoch 23 Batch0 Loss 1.9320
+Epoch 23 Batch50 Loss 1.8460
+Epoch 23 Batch100 Loss 1.8452
+Epoch 23 Batch150 Loss 1.8437
+Epoch 23 Loss 1.8408
+** on validation data loss is 1.8499
+Time taken for 1 epoch: 12.36 secs
 
+Epoch 24 Batch0 Loss 1.8082
+Epoch 24 Batch50 Loss 1.8351
+Epoch 24 Batch100 Loss 1.8350
+Epoch 24 Batch150 Loss 1.8343
+Epoch 24 Loss 1.8319
+** on validation data loss is 1.8565
+Time taken for 1 epoch: 12.42 secs
+
+Epoch 25 Batch0 Loss 1.7720
+Epoch 25 Batch50 Loss 1.8300
+Epoch 25 Batch100 Loss 1.8250
+Epoch 25 Batch150 Loss 1.8233
+Epoch 25 Loss 1.8243
+** on validation data loss is 1.8342
+Time taken for 1 epoch: 12.42 secs
+
+Epoch 26 Batch0 Loss 1.7810
+Epoch 26 Batch50 Loss 1.8142
+Epoch 26 Batch100 Loss 1.8166
+Epoch 26 Batch150 Loss 1.8178
+Epoch 26 Loss 1.8154
+** on validation data loss is 1.8305
+Time taken for 1 epoch: 12.39 secs
+
+Epoch 27 Batch0 Loss 1.7901
+Epoch 27 Batch50 Loss 1.8201
+Epoch 27 Batch100 Loss 1.8071
+Epoch 27 Batch150 Loss 1.8072
+Epoch 27 Loss 1.8084
+** on validation data loss is 1.8239
+Time taken for 1 epoch: 12.27 secs
+
+Epoch 28 Batch0 Loss 1.7722
+Epoch 28 Batch50 Loss 1.8011
+Epoch 28 Batch100 Loss 1.8029
+Epoch 28 Batch150 Loss 1.8030
+Epoch 28 Loss 1.8023
+** on validation data loss is 1.8140
+Time taken for 1 epoch: 12.37 secs
+
+Epoch 29 Batch0 Loss 1.7211
+Epoch 29 Batch50 Loss 1.7976
+Epoch 29 Batch100 Loss 1.7967
+Epoch 29 Batch150 Loss 1.7962
+Epoch 29 Loss 1.7977
+** on validation data loss is 1.8192
+Time taken for 1 epoch: 12.32 secs
+
+Epoch 30 Batch0 Loss 1.8337
+Epoch 30 Batch50 Loss 1.7931
+Epoch 30 Batch100 Loss 1.7878
+Epoch 30 Batch150 Loss 1.7899
+Epoch 30 Loss 1.7911
+** on validation data loss is 1.8063
+Time taken for 1 epoch: 12.23 secs
+
+Epoch 31 Batch0 Loss 1.7158
+Epoch 31 Batch50 Loss 1.7779
+Epoch 31 Batch100 Loss 1.7840
+Epoch 31 Batch150 Loss 1.7849
+Epoch 31 Loss 1.7874
+** on validation data loss is 1.8053
+Time taken for 1 epoch: 12.27 secs
+
+Epoch 32 Batch0 Loss 1.7717
+Epoch 32 Batch50 Loss 1.7819
+Epoch 32 Batch100 Loss 1.7828
+Epoch 32 Batch150 Loss 1.7831
+Epoch 32 Loss 1.7822
+** on validation data loss is 1.8023
+Time taken for 1 epoch: 12.22 secs
+
+Epoch 33 Batch0 Loss 1.7653
+Epoch 33 Batch50 Loss 1.7749
+Epoch 33 Batch100 Loss 1.7800
+Epoch 33 Batch150 Loss 1.7767
+Epoch 33 Loss 1.7758
+** on validation data loss is 1.7964
+Time taken for 1 epoch: 12.21 secs
+
+Epoch 34 Batch0 Loss 1.7410
+Epoch 34 Batch50 Loss 1.7646
+Epoch 34 Batch100 Loss 1.7707
+Epoch 34 Batch150 Loss 1.7727
+Epoch 34 Loss 1.7741
+** on validation data loss is 1.7921
+Time taken for 1 epoch: 12.24 secs
+
+Epoch 35 Batch0 Loss 1.7489
+Epoch 35 Batch50 Loss 1.7806
+Epoch 35 Batch100 Loss 1.7784
+Epoch 35 Batch150 Loss 1.7740
+Epoch 35 Loss 1.7690
+** on validation data loss is 1.7953
+Time taken for 1 epoch: 12.42 secs
+
+Epoch 36 Batch0 Loss 1.7568
+Epoch 36 Batch50 Loss 1.7635
+Epoch 36 Batch100 Loss 1.7669
+Epoch 36 Batch150 Loss 1.7662
+Epoch 36 Loss 1.7647
+** on validation data loss is 1.7942
+Time taken for 1 epoch: 12.30 secs
+
+Epoch 37 Batch0 Loss 1.8404
+Epoch 37 Batch50 Loss 1.7601
+Epoch 37 Batch100 Loss 1.7586
+Epoch 37 Batch150 Loss 1.7602
+Epoch 37 Loss 1.7622
+** on validation data loss is 1.7838
+Time taken for 1 epoch: 12.28 secs
+
+Epoch 38 Batch0 Loss 1.7457
+Epoch 38 Batch50 Loss 1.7554
+Epoch 38 Batch100 Loss 1.7581
+Epoch 38 Batch150 Loss 1.7592
+Epoch 38 Loss 1.7604
+** on validation data loss is 1.7796
+Time taken for 1 epoch: 12.41 secs
+
+Epoch 39 Batch0 Loss 1.7462
+Epoch 39 Batch50 Loss 1.7493
+Epoch 39 Batch100 Loss 1.7533
+Epoch 39 Batch150 Loss 1.7545
+Epoch 39 Loss 1.7560
+** on validation data loss is 1.7873
+Time taken for 1 epoch: 12.27 secs
+
+Epoch 40 Batch0 Loss 1.7316
+Epoch 40 Batch50 Loss 1.7595
+Epoch 40 Batch100 Loss 1.7543
+Epoch 40 Batch150 Loss 1.7533
+Epoch 40 Loss 1.7532
+** on validation data loss is 1.7742
+Time taken for 1 epoch: 12.28 secs
+
+Epoch 41 Batch0 Loss 1.7777
+Epoch 41 Batch50 Loss 1.7471
+Epoch 41 Batch100 Loss 1.7490
+Epoch 41 Batch150 Loss 1.7488
+Epoch 41 Loss 1.7489
+** on validation data loss is 1.7730
+Time taken for 1 epoch: 12.40 secs
+
+Epoch 42 Batch0 Loss 1.6776
+Epoch 42 Batch50 Loss 1.7451
+Epoch 42 Batch100 Loss 1.7407
+Epoch 42 Batch150 Loss 1.7431
+Epoch 42 Loss 1.7447
+** on validation data loss is 1.7755
+Time taken for 1 epoch: 12.40 secs
+
+Epoch 43 Batch0 Loss 1.7598
+Epoch 43 Batch50 Loss 1.7449
+Epoch 43 Batch100 Loss 1.7441
+Epoch 43 Batch150 Loss 1.7420
+Epoch 43 Loss 1.7425
+** on validation data loss is 1.7720
+Time taken for 1 epoch: 12.41 secs
+
+Epoch 44 Batch0 Loss 1.7134
+Epoch 44 Batch50 Loss 1.7385
+Epoch 44 Batch100 Loss 1.7393
+Epoch 44 Batch150 Loss 1.7412
+Epoch 44 Loss 1.7389
+** on validation data loss is 1.7638
+Time taken for 1 epoch: 12.54 secs
+
+Epoch 45 Batch0 Loss 1.7605
+Epoch 45 Batch50 Loss 1.7342
+Epoch 45 Batch100 Loss 1.7348
+Epoch 45 Batch150 Loss 1.7374
+Epoch 45 Loss 1.7369
+** on validation data loss is 1.7648
+Time taken for 1 epoch: 12.28 secs
+
+Epoch 46 Batch0 Loss 1.7522
+Epoch 46 Batch50 Loss 1.7286
+Epoch 46 Batch100 Loss 1.7345
+Epoch 46 Batch150 Loss 1.7356
+Epoch 46 Loss 1.7360
+** on validation data loss is 1.7628
+Time taken for 1 epoch: 12.30 secs
+
+Epoch 47 Batch0 Loss 1.7511
+Epoch 47 Batch50 Loss 1.7378
+Epoch 47 Batch100 Loss 1.7343
+Epoch 47 Batch150 Loss 1.7299
+Epoch 47 Loss 1.7313
+** on validation data loss is 1.7591
+Time taken for 1 epoch: 12.41 secs
+
+Epoch 48 Batch0 Loss 1.7814
+Epoch 48 Batch50 Loss 1.7213
+Epoch 48 Batch100 Loss 1.7257
+Epoch 48 Batch150 Loss 1.7261
+Epoch 48 Loss 1.7284
+** on validation data loss is 1.7660
+Time taken for 1 epoch: 12.28 secs
+
+Epoch 49 Batch0 Loss 1.6903
+Epoch 49 Batch50 Loss 1.7205
+Epoch 49 Batch100 Loss 1.7239
+Epoch 49 Batch150 Loss 1.7276
+Epoch 49 Loss 1.7264
+** on validation data loss is 1.7599
+Time taken for 1 epoch: 12.28 secs
+
+Epoch 50 Batch0 Loss 1.6948
+Epoch 50 Batch50 Loss 1.7186
+Epoch 50 Batch100 Loss 1.7218
+Epoch 50 Batch150 Loss 1.7248
+Epoch 50 Loss 1.7258
+** on validation data loss is 1.7606
+Time taken for 1 epoch: 12.40 secs
+
+Epoch 51 Batch0 Loss 1.7475
+Epoch 51 Batch50 Loss 1.7185
+Epoch 51 Batch100 Loss 1.7199
+Epoch 51 Batch150 Loss 1.7242
+Epoch 51 Loss 1.7244
+** on validation data loss is 1.7527
+Time taken for 1 epoch: 12.32 secs
+
+Epoch 52 Batch0 Loss 1.7495
+Epoch 52 Batch50 Loss 1.7219
+Epoch 52 Batch100 Loss 1.7230
+Epoch 52 Batch150 Loss 1.7206
+Epoch 52 Loss 1.7194
+** on validation data loss is 1.7474
+Time taken for 1 epoch: 12.41 secs
+
+Epoch 53 Batch0 Loss 1.7208
+Epoch 53 Batch50 Loss 1.7136
+Epoch 53 Batch100 Loss 1.7162
+Epoch 53 Batch150 Loss 1.7150
+Epoch 53 Loss 1.7162
+** on validation data loss is 1.7483
+Time taken for 1 epoch: 12.47 secs
+
+Epoch 54 Batch0 Loss 1.7502
+Epoch 54 Batch50 Loss 1.7148
+Epoch 54 Batch100 Loss 1.7104
+Epoch 54 Batch150 Loss 1.7146
+Epoch 54 Loss 1.7151
+** on validation data loss is 1.7441
+Time taken for 1 epoch: 12.38 secs
+
+Epoch 55 Batch0 Loss 1.7772
+Epoch 55 Batch50 Loss 1.7083
+Epoch 55 Batch100 Loss 1.7132
+Epoch 55 Batch150 Loss 1.7135
+Epoch 55 Loss 1.7128
+** on validation data loss is 1.7528
+Time taken for 1 epoch: 12.37 secs
+
+Epoch 56 Batch0 Loss 1.7022
+Epoch 56 Batch50 Loss 1.7045
+Epoch 56 Batch100 Loss 1.7113
+Epoch 56 Batch150 Loss 1.7105
+Epoch 56 Loss 1.7095
+** on validation data loss is 1.7422
+Time taken for 1 epoch: 12.54 secs
+
+Epoch 57 Batch0 Loss 1.6611
+Epoch 57 Batch50 Loss 1.7083
+Epoch 57 Batch100 Loss 1.7087
+Epoch 57 Batch150 Loss 1.7132
+Epoch 57 Loss 1.7145
+** on validation data loss is 1.7533
+Time taken for 1 epoch: 12.40 secs
+
+Epoch 58 Batch0 Loss 1.6667
+Epoch 58 Batch50 Loss 1.7116
+Epoch 58 Batch100 Loss 1.7081
+Epoch 58 Batch150 Loss 1.7096
+Epoch 58 Loss 1.7101
+** on validation data loss is 1.7412
+Time taken for 1 epoch: 12.31 secs
+
+Epoch 59 Batch0 Loss 1.7297
+Epoch 59 Batch50 Loss 1.7015
+Epoch 59 Batch100 Loss 1.7057
+Epoch 59 Batch150 Loss 1.7093
+Epoch 59 Loss 1.7093
+** on validation data loss is 1.7438
+Time taken for 1 epoch: 12.39 secs
+
+Epoch 60 Batch0 Loss 1.7459
+Epoch 60 Batch50 Loss 1.7128
+Epoch 60 Batch100 Loss 1.7046
+Epoch 60 Batch150 Loss 1.7049
+Epoch 60 Loss 1.7038
+** on validation data loss is 1.7396
+Time taken for 1 epoch: 12.25 secs
+
+Epoch 61 Batch0 Loss 1.6580
+Epoch 61 Batch50 Loss 1.6954
+Epoch 61 Batch100 Loss 1.7011
+Epoch 61 Batch150 Loss 1.7017
+Epoch 61 Loss 1.7014
+** on validation data loss is 1.7369
+Time taken for 1 epoch: 12.20 secs
+
+Epoch 62 Batch0 Loss 1.7115
+Epoch 62 Batch50 Loss 1.6954
+Epoch 62 Batch100 Loss 1.7002
+Epoch 62 Batch150 Loss 1.6991
+Epoch 62 Loss 1.7030
+** on validation data loss is 1.7380
+Time taken for 1 epoch: 12.27 secs
+
+Epoch 63 Batch0 Loss 1.6628
+Epoch 63 Batch50 Loss 1.6988
+Epoch 63 Batch100 Loss 1.7020
+Epoch 63 Batch150 Loss 1.7011
+Epoch 63 Loss 1.7004
+** on validation data loss is 1.7355
+Time taken for 1 epoch: 12.18 secs
+
+Epoch 64 Batch0 Loss 1.6372
+Epoch 64 Batch50 Loss 1.6965
+Epoch 64 Batch100 Loss 1.6924
+Epoch 64 Batch150 Loss 1.6934
+Epoch 64 Loss 1.6938
+** on validation data loss is 1.7317
+Time taken for 1 epoch: 12.21 secs
+
+Epoch 65 Batch0 Loss 1.6707
+Epoch 65 Batch50 Loss 1.6845
+Epoch 65 Batch100 Loss 1.6887
+Epoch 65 Batch150 Loss 1.6927
+Epoch 65 Loss 1.6948
+** on validation data loss is 1.7356
+Time taken for 1 epoch: 12.30 secs
+
+Epoch 66 Batch0 Loss 1.7004
+Epoch 66 Batch50 Loss 1.6940
+Epoch 66 Batch100 Loss 1.6925
+Epoch 66 Batch150 Loss 1.6931
+Epoch 66 Loss 1.6938
+** on validation data loss is 1.7345
+Time taken for 1 epoch: 12.19 secs
+
+Epoch 67 Batch0 Loss 1.6617
+Epoch 67 Batch50 Loss 1.6875
+Epoch 67 Batch100 Loss 1.6861
+Epoch 67 Batch150 Loss 1.6882
+Epoch 67 Loss 1.6913
+** on validation data loss is 1.7334
+Time taken for 1 epoch: 12.18 secs
+
+Epoch 68 Batch0 Loss 1.6522
+Epoch 68 Batch50 Loss 1.6879
+Epoch 68 Batch100 Loss 1.6890
+Epoch 68 Batch150 Loss 1.6908
+Epoch 68 Loss 1.6908
+** on validation data loss is 1.7295
+Time taken for 1 epoch: 12.29 secs
+
+Epoch 69 Batch0 Loss 1.6607
+Epoch 69 Batch50 Loss 1.6867
+Epoch 69 Batch100 Loss 1.6866
+Epoch 69 Batch150 Loss 1.6881
+Epoch 69 Loss 1.6893
+** on validation data loss is 1.7356
+Time taken for 1 epoch: 12.17 secs
+
+Epoch 70 Batch0 Loss 1.6357
+Epoch 70 Batch50 Loss 1.6834
+Epoch 70 Batch100 Loss 1.6869
+Epoch 70 Batch150 Loss 1.6917
+Epoch 70 Loss 1.6934
+** on validation data loss is 1.7312
+Time taken for 1 epoch: 12.20 secs
+
+Epoch 71 Batch0 Loss 1.6824
+Epoch 71 Batch50 Loss 1.6966
+Epoch 71 Batch100 Loss 1.6941
+Epoch 71 Batch150 Loss 1.6900
+Epoch 71 Loss 1.6879
+** on validation data loss is 1.7300
+Time taken for 1 epoch: 12.36 secs
+
+Epoch 72 Batch0 Loss 1.6731
+Epoch 72 Batch50 Loss 1.6873
+Epoch 72 Batch100 Loss 1.6837
+Epoch 72 Batch150 Loss 1.6848
+Epoch 72 Loss 1.6869
+** on validation data loss is 1.7289
+Time taken for 1 epoch: 12.41 secs
+
+Epoch 73 Batch0 Loss 1.6882
+Epoch 73 Batch50 Loss 1.6799
+Epoch 73 Batch100 Loss 1.6844
+Epoch 73 Batch150 Loss 1.6865
+Epoch 73 Loss 1.6849
+** on validation data loss is 1.7285
+Time taken for 1 epoch: 12.43 secs
+
+Epoch 74 Batch0 Loss 1.6769
+Epoch 74 Batch50 Loss 1.6790
+Epoch 74 Batch100 Loss 1.6844
+Epoch 74 Batch150 Loss 1.6846
+Epoch 74 Loss 1.6840
+** on validation data loss is 1.7240
+Time taken for 1 epoch: 12.53 secs
+
+Epoch 75 Batch0 Loss 1.7072
+Epoch 75 Batch50 Loss 1.6756
+Epoch 75 Batch100 Loss 1.6749
+Epoch 75 Batch150 Loss 1.6806
+Epoch 75 Loss 1.6840
+** on validation data loss is 1.7266
+Time taken for 1 epoch: 12.43 secs
+
+Epoch 76 Batch0 Loss 1.7125
+Epoch 76 Batch50 Loss 1.6744
+Epoch 76 Batch100 Loss 1.6758
+Epoch 76 Batch150 Loss 1.6829
+Epoch 76 Loss 1.6817
+** on validation data loss is 1.7247
+Time taken for 1 epoch: 12.42 secs
+
+Epoch 77 Batch0 Loss 1.6538
+Epoch 77 Batch50 Loss 1.6751
+Epoch 77 Batch100 Loss 1.6808
+Epoch 77 Batch150 Loss 1.6820
+Epoch 77 Loss 1.6829
+** on validation data loss is 1.7232
+Time taken for 1 epoch: 12.45 secs
+
+Epoch 78 Batch0 Loss 1.6921
+Epoch 78 Batch50 Loss 1.6783
+Epoch 78 Batch100 Loss 1.6768
+Epoch 78 Batch150 Loss 1.6786
+Epoch 78 Loss 1.6809
+** on validation data loss is 1.7217
+Time taken for 1 epoch: 12.50 secs
+
+Epoch 79 Batch0 Loss 1.7316
+Epoch 79 Batch50 Loss 1.6813
+Epoch 79 Batch100 Loss 1.6805
+Epoch 79 Batch150 Loss 1.6794
+Epoch 79 Loss 1.6816
+** on validation data loss is 1.7332
+Time taken for 1 epoch: 12.43 secs
+
+Epoch 80 Batch0 Loss 1.7088
+Epoch 80 Batch50 Loss 1.6924
+Epoch 80 Batch100 Loss 1.6988
+Epoch 80 Batch150 Loss 1.6922
+Epoch 80 Loss 1.6902
+** on validation data loss is 1.7233
+Time taken for 1 epoch: 12.43 secs
+
+Epoch 81 Batch0 Loss 1.6354
+Epoch 81 Batch50 Loss 1.6679
+Epoch 81 Batch100 Loss 1.6773
+Epoch 81 Batch150 Loss 1.6806
+Epoch 81 Loss 1.6814
+** on validation data loss is 1.7218
+Time taken for 1 epoch: 12.51 secs
+
+Epoch 82 Batch0 Loss 1.6542
+Epoch 82 Batch50 Loss 1.6700
+Epoch 82 Batch100 Loss 1.6772
+Epoch 82 Batch150 Loss 1.6783
+Epoch 82 Loss 1.6793
+** on validation data loss is 1.7227
+Time taken for 1 epoch: 12.44 secs
+
+Epoch 83 Batch0 Loss 1.7187
+Epoch 83 Batch50 Loss 1.6682
+Epoch 83 Batch100 Loss 1.6735
+Epoch 83 Batch150 Loss 1.6742
+Epoch 83 Loss 1.6751
+** on validation data loss is 1.7227
+Time taken for 1 epoch: 12.39 secs
+
+Epoch 84 Batch0 Loss 1.6579
+Epoch 84 Batch50 Loss 1.6804
+Epoch 84 Batch100 Loss 1.6722
+Epoch 84 Batch150 Loss 1.6708
+Epoch 84 Loss 1.6734
+** on validation data loss is 1.7223
+Time taken for 1 epoch: 12.31 secs
+
+Epoch 85 Batch0 Loss 1.6897
+Epoch 85 Batch50 Loss 1.6674
+Epoch 85 Batch100 Loss 1.6704
+Epoch 85 Batch150 Loss 1.6709
+Epoch 85 Loss 1.6713
+** on validation data loss is 1.7171
+Time taken for 1 epoch: 12.24 secs
+
+Epoch 86 Batch0 Loss 1.6825
+Epoch 86 Batch50 Loss 1.6736
+Epoch 86 Batch100 Loss 1.6763
+Epoch 86 Batch150 Loss 1.6736
+Epoch 86 Loss 1.6739
+** on validation data loss is 1.7186
+Time taken for 1 epoch: 12.21 secs
+
+Epoch 87 Batch0 Loss 1.6799
+Epoch 87 Batch50 Loss 1.6624
+Epoch 87 Batch100 Loss 1.6661
+Epoch 87 Batch150 Loss 1.6696
+Epoch 87 Loss 1.6712
+** on validation data loss is 1.7185
+Time taken for 1 epoch: 12.29 secs
+
+Epoch 88 Batch0 Loss 1.6522
+Epoch 88 Batch50 Loss 1.6676
+Epoch 88 Batch100 Loss 1.6689
+Epoch 88 Batch150 Loss 1.6675
+Epoch 88 Loss 1.6693
+** on validation data loss is 1.7182
+Time taken for 1 epoch: 12.13 secs
+
+Epoch 89 Batch0 Loss 1.6654
+Epoch 89 Batch50 Loss 1.6667
+Epoch 89 Batch100 Loss 1.6693
+Epoch 89 Batch150 Loss 1.6721
+Epoch 89 Loss 1.6755
+** on validation data loss is 1.7299
+Time taken for 1 epoch: 12.43 secs
+
+Epoch 90 Batch0 Loss 1.6742
+Epoch 90 Batch50 Loss 1.6795
+Epoch 90 Batch100 Loss 1.6791
+Epoch 90 Batch150 Loss 1.6787
+Epoch 90 Loss 1.6777
+** on validation data loss is 1.7185
+Time taken for 1 epoch: 14.60 secs
+
+Epoch 91 Batch0 Loss 1.6880
+Epoch 91 Batch50 Loss 1.6689
+Epoch 91 Batch100 Loss 1.6697
+Epoch 91 Batch150 Loss 1.6791
+Epoch 91 Loss 1.6816
+** on validation data loss is 1.7258
+Time taken for 1 epoch: 14.56 secs
+
+Epoch 92 Batch0 Loss 1.6868
+Epoch 92 Batch50 Loss 1.6720
+Epoch 92 Batch100 Loss 1.6729
+Epoch 92 Batch150 Loss 1.6737
+Epoch 92 Loss 1.6737
+** on validation data loss is 1.7163
+Time taken for 1 epoch: 14.48 secs
+
+Epoch 93 Batch0 Loss 1.7074
+Epoch 93 Batch50 Loss 1.6672
+Epoch 93 Batch100 Loss 1.6680
+Epoch 93 Batch150 Loss 1.6686
+Epoch 93 Loss 1.6685
+** on validation data loss is 1.7113
+Time taken for 1 epoch: 13.29 secs
+
+Epoch 94 Batch0 Loss 1.7229
+Epoch 94 Batch50 Loss 1.6634
+Epoch 94 Batch100 Loss 1.6625
+Epoch 94 Batch150 Loss 1.6653
+Epoch 94 Loss 1.6649
+** on validation data loss is 1.7137
+Time taken for 1 epoch: 12.49 secs
+
+Epoch 95 Batch0 Loss 1.6559
+Epoch 95 Batch50 Loss 1.6658
+Epoch 95 Batch100 Loss 1.6670
+Epoch 95 Batch150 Loss 1.6667
+Epoch 95 Loss 1.6646
+** on validation data loss is 1.7138
+Time taken for 1 epoch: 12.30 secs
+
+Epoch 96 Batch0 Loss 1.6580
+Epoch 96 Batch50 Loss 1.6554
+Epoch 96 Batch100 Loss 1.6604
+Epoch 96 Batch150 Loss 1.6614
+Epoch 96 Loss 1.6625
+** on validation data loss is 1.7112
+Time taken for 1 epoch: 12.37 secs
+
+Epoch 97 Batch0 Loss 1.6507
+Epoch 97 Batch50 Loss 1.6619
+Epoch 97 Batch100 Loss 1.6588
+Epoch 97 Batch150 Loss 1.6607
+Epoch 97 Loss 1.6618
+** on validation data loss is 1.7080
+Time taken for 1 epoch: 12.33 secs
+
+Epoch 98 Batch0 Loss 1.6624
+Epoch 98 Batch50 Loss 1.6542
+Epoch 98 Batch100 Loss 1.6578
+Epoch 98 Batch150 Loss 1.6612
+Epoch 98 Loss 1.6621
+** on validation data loss is 1.7196
+Time taken for 1 epoch: 12.31 secs
+
+Epoch 99 Batch0 Loss 1.7057
+Epoch 99 Batch50 Loss 1.6701
+Epoch 99 Batch100 Loss 1.6675
+Epoch 99 Batch150 Loss 1.6656
+Epoch 99 Loss 1.6633
+** on validation data loss is 1.7146
+Time taken for 1 epoch: 12.54 secs
+
+Epoch 100 Batch0 Loss 1.6513
+Epoch 100 Batch50 Loss 1.6515
+Epoch 100 Batch100 Loss 1.6576
+Epoch 100 Batch150 Loss 1.6597
+Epoch 100 Loss 1.6617
+** on validation data loss is 1.7143
+Time taken for 1 epoch: 12.41 secs
 
 0
 1

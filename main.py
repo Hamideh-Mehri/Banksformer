@@ -1,13 +1,16 @@
-from prepare_data import preprocess_data_czech
-from field_info import FieldInfo
-from tensor_encoder import TensorEncoder
+import sys
+sys.path.insert(0, '/users/fs2/hmehri/pythonproject/Thesis/synthetic')
+
+from lib.prepare_data import preprocess_data_czech
+from lib.field_info import FieldInfo
+from lib.tensor_encoder import TensorEncoder
 import pandas as pd
 import tensorflow as tf
 import numpy as np
 from sklearn.model_selection import train_test_split
 from train import Train
 import tensorflow as tf
-from modules import Transformer
+from lib.modules import Transformer
 import time
 import json
 
@@ -82,10 +85,7 @@ def main():
 
     train_batches, val_batches = create_tensor_dataset(encoder,batch_size, split=True)
 
-    ACTIVATIONS = {
-    "td_sc": "relu",
-    "log_amount_sc": "relu"
-    }
+    
     fieldInfo = FieldInfo(n_tcodes)
     config = {}
     config["ORDER"] = fieldInfo.DATA_KEY_ORDER
@@ -93,7 +93,7 @@ def main():
     config["FIELD_DIMS_IN"] = fieldInfo.FIELD_DIMS_IN
     config["FIELD_STARTS_NET"] = fieldInfo.FIELD_STARTS_NET
     config["FIELD_DIMS_NET"] = fieldInfo.FIELD_DIMS_NET
-    config["ACTIVATIONS"] = ACTIVATIONS
+    config["ACTIVATIONS"] = fieldInfo.ACTIVATIONS
 
 
     transformer = Transformer(n_feat_inp, dff, d_embedding, d_model, maximum_position_encoding,num_heads, num_layers,config, rate=0.1)

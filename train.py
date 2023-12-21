@@ -4,14 +4,15 @@ import calendar
 import time
 import tensorflow as tf
 import pandas as pd
-from field_info import FieldInfo
-from modules import create_masks
+from lib.field_info import FieldInfo
+from lib.modules import create_masks
 import csv
 
 fieldInfo = FieldInfo()
 
 
 loss_scce_logit = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True, reduction='none')
+loss_mse = tf.keras.losses.MeanSquaredError(reduction='none')
 
 LOSS_WEIGHTS = {
  'td_sc':1.,
@@ -47,6 +48,8 @@ def loss_function(real, preds):
         elif loss_type == "pdf":
            temp = -log_normal_pdf(real[:, :, st:end], k_pred[:,:,0:1], k_pred[:,:,1:2])
            loss_ = -log_normal_pdf(real[:, :, st:end], k_pred[:,:,0:1], k_pred[:,:,1:2])[:,:,0]
+        elif loss_type == 'mse':
+           loss_ = loss_mse(real[:, :, st:end], k_pred)
         mask = tf.cast(mask, dtype=loss_.dtype)
         loss_ *= mask
         loss_ = tf.reduce_sum(loss_)/tf.reduce_sum(mask) 
