@@ -2,7 +2,7 @@ import sys
 sys.path.insert(0, '/users/fs2/hmehri/pythonproject/Thesis/synthetic')
 
 from lib.prepare_data import preprocess_data_czech
-from lib.field_info import FieldInfo
+from lib.field_info import FieldInfo, FIELD_INFO_TCODE, FieldInfo_type2, FIELD_INFO_CATFIELD
 from lib.tensor_encoder import TensorEncoder
 import pandas as pd
 import tensorflow as tf
@@ -13,6 +13,20 @@ import tensorflow as tf
 from lib.modules import Transformer
 import time
 import json
+import random
+import os
+
+# Set seeds
+random.seed(0)
+np.random.seed(0)
+tf.random.set_seed(0)
+os.environ['TF_DETERMINISTIC_OPS'] = '1'
+
+def log_parameters(filename, parameters):
+    log_entry = {'filename': filename, 'parameters': parameters}
+    with open('parameter_log.json', 'a') as file:
+        json.dump(log_entry, file)
+        file.write('\n')  # New line for each entry
 
 def load_config(config_path):
     with open(config_path, 'r') as file:
@@ -65,47 +79,62 @@ def main():
     len_generated_seq = confighyper['len_generated_seq'] 
     num_generated_seq = confighyper['num_generated_seq'] 
     synth_data_filename = confighyper["synth_data_filename"]
+    strategy = confighyper['strategy']
 
-
-    raw_data = pd.read_csv('../DATA/tr_by_acct_w_age.csv')
-    data, LOG_AMOUNT_SCALE, TD_SCALE,ATTR_SCALE, START_DATE, TCODE_TO_NUM, NUM_TO_TCODE = preprocess_data_czech(raw_data)
-    selected_data_columns = data[['account_id','age','age_sc', 'tcode', 'tcode_num', 'datetime', 'month', 'dow', 'day','td', 'dtme', 'log_amount','log_amount_sc','td_sc']]
-    df= selected_data_columns.copy()
-
-    n_tcodes = len(TCODE_TO_NUM)
-
-    info = FieldInfo(n_tcodes)
-
-    
-    encoder = TensorEncoder(df, info, max_seq_len, min_seq_len)
-    encoder.encode()
-
-    n_seqs, seq_len, n_feat_inp = encoder.inp_tensor.shape
-    raw_features = encoder.tar_tensor.shape[-1]    #7
-
-    train_batches, val_batches = create_tensor_dataset(encoder,batch_size, split=True)
-
-    
-    fieldInfo = FieldInfo(n_tcodes)
-    config = {}
-    config["ORDER"] = fieldInfo.DATA_KEY_ORDER
-    config["FIELD_STARTS_IN"] = fieldInfo.FIELD_STARTS_IN
-    config["FIELD_DIMS_IN"] = fieldInfo.FIELD_DIMS_IN
-    config["FIELD_STARTS_NET"] = fieldInfo.FIELD_STARTS_NET
-    config["FIELD_DIMS_NET"] = fieldInfo.FIELD_DIMS_NET
-    config["ACTIVATIONS"] = fieldInfo.ACTIVATIONS
-
-
-    transformer = Transformer(n_feat_inp, dff, d_embedding, d_model, maximum_position_encoding,num_heads, num_layers,config, rate=0.1)
-   
-    train = Train(transformer)
-    with  tf.device('/gpu:0'):
-        train.train(train_batches, val_batches, epochs, early_stop)
-        attributes = encoder.attributes
-        synth = train.generate_synthetic_data(len_generated_seq, num_generated_seq, df, attributes, n_feat_inp)
+    with tf.device('/gpu:1'):
+        raw_data = pd.read_csv('../DATA/tr_by_acct_w_age.csv')
+        data, LOG_AMOUNT_SCALE, TD_SCALE,ATTR_SCALE, START_DATE, field_mappings = preprocess_data_czech(raw_data)
+        selected_data_columns = data[['account_id','age','age_sc', 'tcode', 'tcode_num', 'datetime', 'month', 'dow', 'day','td', 'dtme', 'log_amount','log_amount_sc','td_sc',
+                                 'type','operation', 'k_symbol', 'type_num', 'operation_num', 'k_symbol_num']]
+        #selected_data_columns = data[['account_id', 'tcode_num', 'age_sc', 'tcode', 'age']]
+        #selected_data_columns = data[['account_id',  'type_num', 'operation_num', 'k_symbol_num', 'age_sc', 'age',  'type','operation', 'k_symbol']]
+        df= selected_data_columns.copy()
         
-        synth.to_csv(synth_data_filename, index=False)
+        strategy = 'banksformer'
+        fieldInfo = FieldInfo(strategy)
+        #fieldInfo = FIELD_INFO_TCODE()
+        #fieldInfo = FieldInfo_type2()
+        #fieldInfo = FIELD_INFO_CATFIELD()
+
+        
+        encoder = TensorEncoder(df, fieldInfo, max_seq_len, min_seq_len)
+        encoder.encode()
+
+        n_seqs, seq_len, n_feat_inp = encoder.inp_tensor.shape
+        raw_features = encoder.tar_tensor.shape[-1]    
+
+        train_batches, val_batches = create_tensor_dataset(encoder,batch_size, split=True)
+
+        
+        
+        config = {}
+        config["ORDER"] = fieldInfo.DATA_KEY_ORDER
+        config["FIELD_STARTS_IN"] = fieldInfo.FIELD_STARTS_IN
+        config["FIELD_DIMS_IN"] = fieldInfo.FIELD_DIMS_IN
+        config["FIELD_STARTS_NET"] = fieldInfo.FIELD_STARTS_NET
+        config["FIELD_DIMS_NET"] = fieldInfo.FIELD_DIMS_NET
+        config["ACTIVATIONS"] = fieldInfo.ACTIVATIONS
+
+
+        transformer = Transformer(n_feat_inp, dff, d_embedding, d_model, maximum_position_encoding,num_heads, num_layers,config, rate=0.1)
+    
+        train = Train(transformer)
+        with  tf.device('/gpu:0'):
+            train.train(train_batches, val_batches, epochs, early_stop)
+            attributes = encoder.attributes
+            #synth = train.generate_synthetic_data(len_generated_seq, num_generated_seq, df, attributes, n_feat_inp, encoder.rbf_dict)
+            synth = train.generate_synthetic_data(len_generated_seq, num_generated_seq, df, attributes, n_feat_inp)
+            #synth = train.generate_synthetic_tcode(len_generated_seq, num_generated_seq, df, attributes, n_feat_inp)
+            #synth = train.generate_synthetic_tcode_separated(len_generated_seq,num_generated_seq, df, attributes, n_feat_inp)
+            
+            synth.to_csv(synth_data_filename, index=False)
+            print('finish')
+        
+    
+        
+        log_parameters(synth_data_filename, confighyper)
         print('finish')
+            
 
 if __name__ == "__main__":
     main()

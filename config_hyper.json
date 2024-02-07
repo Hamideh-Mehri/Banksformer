@@ -9,10 +9,14 @@
     "rate": 0.1,
     "num_heads": 2,
     "num_layers": 4,
-    "epochs": 100,
-    "early_stop": 10,
+    "epochs": 80,
+    "early_stop": 5,
     "len_generated_seq": 80,
     "num_generated_seq" : 5000,
+    "AdamoptimizerParameters":"default",
+    "strategy" : "banksformer",
     "data_path": "../DATA/tr_by_acct_w_age.csv",
-    "synth_data_filename": "synth_transformer.csv"
+    "synth_data_filename": "synth_DP1.csv",
+    "loss_data_filename" : "loss_dp1.csv",
+    "description": "no description"
 }

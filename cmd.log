@@ -1,46 +1,46 @@
-2023-12-20 09:23:14.658099: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
-2023-12-20 09:23:50.893715: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
-2023-12-20 09:23:50.895023: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
-2023-12-20 09:23:50.948549: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+2024-01-31 18:31:57.763072: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2024-01-31 18:31:59.165427: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2024-01-31 18:31:59.166494: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2024-01-31 18:31:59.196891: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
 pciBusID: 0000:3b:00.0 name: Quadro RTX 8000 computeCapability: 7.5
 coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 47.45GiB deviceMemoryBandwidth: 625.94GiB/s
-2023-12-20 09:23:50.948755: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
+2024-01-31 18:31:59.197174: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
 pciBusID: 0000:af:00.0 name: Quadro RTX 8000 computeCapability: 7.5
 coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 47.45GiB deviceMemoryBandwidth: 625.94GiB/s
-2023-12-20 09:23:50.948789: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
-2023-12-20 09:23:50.950531: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
-2023-12-20 09:23:50.950600: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
-2023-12-20 09:23:50.952177: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
-2023-12-20 09:23:50.952431: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
-2023-12-20 09:23:50.953904: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
-2023-12-20 09:23:50.954587: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
-2023-12-20 09:23:50.957773: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
-2023-12-20 09:23:50.958418: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1
-2023-12-20 09:23:50.958808: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2024-01-31 18:31:59.197234: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2024-01-31 18:31:59.198957: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2024-01-31 18:31:59.199063: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2024-01-31 18:31:59.200763: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2024-01-31 18:31:59.201075: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2024-01-31 18:31:59.202827: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2024-01-31 18:31:59.203805: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2024-01-31 18:31:59.207593: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2024-01-31 18:31:59.208408: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1
+2024-01-31 18:31:59.208791: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
 To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2023-12-20 09:23:50.960045: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
-2023-12-20 09:23:51.128179: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+2024-01-31 18:31:59.209774: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2024-01-31 18:31:59.466551: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
 pciBusID: 0000:3b:00.0 name: Quadro RTX 8000 computeCapability: 7.5
 coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 47.45GiB deviceMemoryBandwidth: 625.94GiB/s
-2023-12-20 09:23:51.128392: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
+2024-01-31 18:31:59.466888: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
 pciBusID: 0000:af:00.0 name: Quadro RTX 8000 computeCapability: 7.5
 coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 47.45GiB deviceMemoryBandwidth: 625.94GiB/s
-2023-12-20 09:23:51.128424: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
-2023-12-20 09:23:51.128448: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
-2023-12-20 09:23:51.128456: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
-2023-12-20 09:23:51.128464: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
-2023-12-20 09:23:51.128472: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
-2023-12-20 09:23:51.128479: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
-2023-12-20 09:23:51.128497: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
-2023-12-20 09:23:51.128505: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
-2023-12-20 09:23:51.129005: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1
-2023-12-20 09:23:51.129054: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
-2023-12-20 09:23:51.891229: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
-2023-12-20 09:23:51.891275: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 1 
-2023-12-20 09:23:51.891281: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N Y 
-2023-12-20 09:23:51.891284: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 1:   Y N 
-2023-12-20 09:23:51.892081: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 45387 MB memory) -> physical GPU (device: 0, name: Quadro RTX 8000, pci bus id: 0000:3b:00.0, compute capability: 7.5)
-2023-12-20 09:23:51.892781: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 45387 MB memory) -> physical GPU (device: 1, name: Quadro RTX 8000, pci bus id: 0000:af:00.0, compute capability: 7.5)
+2024-01-31 18:31:59.466975: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2024-01-31 18:31:59.467055: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2024-01-31 18:31:59.467099: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2024-01-31 18:31:59.467141: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2024-01-31 18:31:59.467184: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2024-01-31 18:31:59.467226: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2024-01-31 18:31:59.467288: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2024-01-31 18:31:59.467331: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2024-01-31 18:31:59.467953: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1
+2024-01-31 18:31:59.468026: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2024-01-31 18:32:01.142893: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-01-31 18:32:01.143055: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 1 
+2024-01-31 18:32:01.143101: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N Y 
+2024-01-31 18:32:01.143141: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 1:   Y N 
+2024-01-31 18:32:01.146252: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 45387 MB memory) -> physical GPU (device: 0, name: Quadro RTX 8000, pci bus id: 0000:3b:00.0, compute capability: 7.5)
+2024-01-31 18:32:01.154980: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 30650 MB memory) -> physical GPU (device: 1, name: Quadro RTX 8000, pci bus id: 0000:af:00.0, compute capability: 7.5)
 Finished encoding 2000 of 14354 seqs
 Finished encoding 4000 of 14354 seqs
 Finished encoding 6000 of 14354 seqs
@@ -48,808 +48,1076 @@ Finished encoding 8000 of 14354 seqs
 Finished encoding 10000 of 14354 seqs
 Finished encoding 12000 of 14354 seqs
 Finished encoding 14000 of 14354 seqs
-Took 35.79 secs
-2023-12-20 09:24:27.256940: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
-Epoch 1 Batch0 Loss 61.7744
-Epoch 1 Batch50 Loss 9.0273
-Epoch 1 Batch100 Loss 7.2834
-Epoch 1 Batch150 Loss 6.5004
-Epoch 1 Loss 6.1887
-** on validation data loss is 4.4881
-Time taken for 1 epoch: 12.74 secs
-
-Epoch 2 Batch0 Loss 4.4368
-Epoch 2 Batch50 Loss 4.3365
-Epoch 2 Batch100 Loss 4.1586
-Epoch 2 Batch150 Loss 4.0096
-Epoch 2 Loss 3.9259
-** on validation data loss is 3.4088
-Time taken for 1 epoch: 12.33 secs
-
-Epoch 3 Batch0 Loss 3.4026
-Epoch 3 Batch50 Loss 3.3365
-Epoch 3 Batch100 Loss 3.2717
-Epoch 3 Batch150 Loss 3.2050
-Epoch 3 Loss 3.1623
-** on validation data loss is 2.9113
-Time taken for 1 epoch: 12.40 secs
-
-Epoch 4 Batch0 Loss 2.9659
-Epoch 4 Batch50 Loss 2.8650
-Epoch 4 Batch100 Loss 2.8154
-Epoch 4 Batch150 Loss 2.7731
-Epoch 4 Loss 2.7498
-** on validation data loss is 2.6135
-Time taken for 1 epoch: 12.44 secs
-
-Epoch 5 Batch0 Loss 2.6881
-Epoch 5 Batch50 Loss 2.5855
-Epoch 5 Batch100 Loss 2.5618
-Epoch 5 Batch150 Loss 2.5508
-Epoch 5 Loss 2.5323
-** on validation data loss is 2.4564
-Time taken for 1 epoch: 12.38 secs
-
-Epoch 6 Batch0 Loss 2.5194
-Epoch 6 Batch50 Loss 2.4497
-Epoch 6 Batch100 Loss 2.4316
-Epoch 6 Batch150 Loss 2.4155
-Epoch 6 Loss 2.4056
-** on validation data loss is 2.3526
-Time taken for 1 epoch: 12.40 secs
-
-Epoch 7 Batch0 Loss 2.2787
-Epoch 7 Batch50 Loss 2.3347
-Epoch 7 Batch100 Loss 2.3261
-Epoch 7 Batch150 Loss 2.3136
-Epoch 7 Loss 2.3047
-** on validation data loss is 2.2724
-Time taken for 1 epoch: 12.37 secs
-
-Epoch 8 Batch0 Loss 2.2431
-Epoch 8 Batch50 Loss 2.2520
-Epoch 8 Batch100 Loss 2.2489
-Epoch 8 Batch150 Loss 2.2314
-Epoch 8 Loss 2.2244
-** on validation data loss is 2.2010
-Time taken for 1 epoch: 12.24 secs
-
-Epoch 9 Batch0 Loss 2.1585
-Epoch 9 Batch50 Loss 2.1700
-Epoch 9 Batch100 Loss 2.1714
-Epoch 9 Batch150 Loss 2.1634
-Epoch 9 Loss 2.1634
-** on validation data loss is 2.1447
-Time taken for 1 epoch: 12.25 secs
-
-Epoch 10 Batch0 Loss 2.0923
-Epoch 10 Batch50 Loss 2.1291
-Epoch 10 Batch100 Loss 2.1202
-Epoch 10 Batch150 Loss 2.1155
-Epoch 10 Loss 2.1125
-** on validation data loss is 2.0956
-Time taken for 1 epoch: 12.32 secs
-
-Epoch 11 Batch0 Loss 2.0771
-Epoch 11 Batch50 Loss 2.0865
-Epoch 11 Batch100 Loss 2.0802
-Epoch 11 Batch150 Loss 2.0742
-Epoch 11 Loss 2.0684
-** on validation data loss is 2.0598
-Time taken for 1 epoch: 12.20 secs
-
-Epoch 12 Batch0 Loss 2.0243
-Epoch 12 Batch50 Loss 2.0489
-Epoch 12 Batch100 Loss 2.0431
-Epoch 12 Batch150 Loss 2.0391
-Epoch 12 Loss 2.0347
-** on validation data loss is 2.0288
-Time taken for 1 epoch: 12.17 secs
-
-Epoch 13 Batch0 Loss 1.9937
-Epoch 13 Batch50 Loss 2.0116
-Epoch 13 Batch100 Loss 2.0017
-Epoch 13 Batch150 Loss 1.9998
-Epoch 13 Loss 2.0031
-** on validation data loss is 2.0025
-Time taken for 1 epoch: 12.32 secs
-
-Epoch 14 Batch0 Loss 2.8043
-Epoch 14 Batch50 Loss 1.9986
-Epoch 14 Batch100 Loss 1.9914
-Epoch 14 Batch150 Loss 1.9806
-Epoch 14 Loss 1.9781
-** on validation data loss is 1.9840
-Time taken for 1 epoch: 12.35 secs
-
-Epoch 15 Batch0 Loss 2.0201
-Epoch 15 Batch50 Loss 1.9651
-Epoch 15 Batch100 Loss 1.9527
-Epoch 15 Batch150 Loss 1.9514
-Epoch 15 Loss 1.9518
-** on validation data loss is 1.9577
-Time taken for 1 epoch: 12.40 secs
-
-Epoch 16 Batch0 Loss 1.8972
-Epoch 16 Batch50 Loss 1.9349
-Epoch 16 Batch100 Loss 1.9402
-Epoch 16 Batch150 Loss 1.9417
-Epoch 16 Loss 1.9400
-** on validation data loss is 1.9356
-Time taken for 1 epoch: 12.45 secs
-
-Epoch 17 Batch0 Loss 1.8758
-Epoch 17 Batch50 Loss 1.9211
-Epoch 17 Batch100 Loss 1.9162
-Epoch 17 Batch150 Loss 1.9150
-Epoch 17 Loss 1.9156
-** on validation data loss is 1.9182
-Time taken for 1 epoch: 12.39 secs
-
-Epoch 18 Batch0 Loss 1.8288
-Epoch 18 Batch50 Loss 1.9071
-Epoch 18 Batch100 Loss 1.9018
-Epoch 18 Batch150 Loss 1.8966
-Epoch 18 Loss 1.8971
-** on validation data loss is 1.8984
-Time taken for 1 epoch: 12.41 secs
-
-Epoch 19 Batch0 Loss 1.9419
-Epoch 19 Batch50 Loss 1.8861
-Epoch 19 Batch100 Loss 1.8859
-Epoch 19 Batch150 Loss 1.8835
-Epoch 19 Loss 1.8829
-** on validation data loss is 1.8873
-Time taken for 1 epoch: 12.44 secs
-
-Epoch 20 Batch0 Loss 1.8130
-Epoch 20 Batch50 Loss 1.8866
-Epoch 20 Batch100 Loss 1.9035
-Epoch 20 Batch150 Loss 1.8942
-Epoch 20 Loss 1.8909
-** on validation data loss is 1.8822
-Time taken for 1 epoch: 12.36 secs
-
-Epoch 21 Batch0 Loss 1.9091
-Epoch 21 Batch50 Loss 1.8719
-Epoch 21 Batch100 Loss 1.8632
-Epoch 21 Batch150 Loss 1.8658
-Epoch 21 Loss 1.8657
-** on validation data loss is 1.8738
-Time taken for 1 epoch: 12.36 secs
-
-Epoch 22 Batch0 Loss 1.8536
-Epoch 22 Batch50 Loss 1.8599
-Epoch 22 Batch100 Loss 1.8630
-Epoch 22 Batch150 Loss 1.8538
-Epoch 22 Loss 1.8535
-** on validation data loss is 1.8632
-Time taken for 1 epoch: 12.43 secs
-
-Epoch 23 Batch0 Loss 1.9320
-Epoch 23 Batch50 Loss 1.8460
-Epoch 23 Batch100 Loss 1.8452
-Epoch 23 Batch150 Loss 1.8437
-Epoch 23 Loss 1.8408
-** on validation data loss is 1.8499
-Time taken for 1 epoch: 12.36 secs
-
-Epoch 24 Batch0 Loss 1.8082
-Epoch 24 Batch50 Loss 1.8351
-Epoch 24 Batch100 Loss 1.8350
-Epoch 24 Batch150 Loss 1.8343
-Epoch 24 Loss 1.8319
-** on validation data loss is 1.8565
-Time taken for 1 epoch: 12.42 secs
-
-Epoch 25 Batch0 Loss 1.7720
-Epoch 25 Batch50 Loss 1.8300
-Epoch 25 Batch100 Loss 1.8250
-Epoch 25 Batch150 Loss 1.8233
-Epoch 25 Loss 1.8243
-** on validation data loss is 1.8342
-Time taken for 1 epoch: 12.42 secs
-
-Epoch 26 Batch0 Loss 1.7810
-Epoch 26 Batch50 Loss 1.8142
-Epoch 26 Batch100 Loss 1.8166
-Epoch 26 Batch150 Loss 1.8178
-Epoch 26 Loss 1.8154
-** on validation data loss is 1.8305
-Time taken for 1 epoch: 12.39 secs
-
-Epoch 27 Batch0 Loss 1.7901
-Epoch 27 Batch50 Loss 1.8201
-Epoch 27 Batch100 Loss 1.8071
-Epoch 27 Batch150 Loss 1.8072
-Epoch 27 Loss 1.8084
-** on validation data loss is 1.8239
-Time taken for 1 epoch: 12.27 secs
-
-Epoch 28 Batch0 Loss 1.7722
-Epoch 28 Batch50 Loss 1.8011
-Epoch 28 Batch100 Loss 1.8029
-Epoch 28 Batch150 Loss 1.8030
-Epoch 28 Loss 1.8023
-** on validation data loss is 1.8140
-Time taken for 1 epoch: 12.37 secs
-
-Epoch 29 Batch0 Loss 1.7211
-Epoch 29 Batch50 Loss 1.7976
-Epoch 29 Batch100 Loss 1.7967
-Epoch 29 Batch150 Loss 1.7962
-Epoch 29 Loss 1.7977
-** on validation data loss is 1.8192
-Time taken for 1 epoch: 12.32 secs
-
-Epoch 30 Batch0 Loss 1.8337
-Epoch 30 Batch50 Loss 1.7931
-Epoch 30 Batch100 Loss 1.7878
-Epoch 30 Batch150 Loss 1.7899
-Epoch 30 Loss 1.7911
-** on validation data loss is 1.8063
-Time taken for 1 epoch: 12.23 secs
-
-Epoch 31 Batch0 Loss 1.7158
-Epoch 31 Batch50 Loss 1.7779
-Epoch 31 Batch100 Loss 1.7840
-Epoch 31 Batch150 Loss 1.7849
-Epoch 31 Loss 1.7874
-** on validation data loss is 1.8053
-Time taken for 1 epoch: 12.27 secs
-
-Epoch 32 Batch0 Loss 1.7717
-Epoch 32 Batch50 Loss 1.7819
-Epoch 32 Batch100 Loss 1.7828
-Epoch 32 Batch150 Loss 1.7831
-Epoch 32 Loss 1.7822
-** on validation data loss is 1.8023
-Time taken for 1 epoch: 12.22 secs
-
-Epoch 33 Batch0 Loss 1.7653
-Epoch 33 Batch50 Loss 1.7749
-Epoch 33 Batch100 Loss 1.7800
-Epoch 33 Batch150 Loss 1.7767
-Epoch 33 Loss 1.7758
-** on validation data loss is 1.7964
-Time taken for 1 epoch: 12.21 secs
-
-Epoch 34 Batch0 Loss 1.7410
-Epoch 34 Batch50 Loss 1.7646
-Epoch 34 Batch100 Loss 1.7707
-Epoch 34 Batch150 Loss 1.7727
-Epoch 34 Loss 1.7741
-** on validation data loss is 1.7921
-Time taken for 1 epoch: 12.24 secs
-
-Epoch 35 Batch0 Loss 1.7489
-Epoch 35 Batch50 Loss 1.7806
-Epoch 35 Batch100 Loss 1.7784
-Epoch 35 Batch150 Loss 1.7740
-Epoch 35 Loss 1.7690
-** on validation data loss is 1.7953
-Time taken for 1 epoch: 12.42 secs
-
-Epoch 36 Batch0 Loss 1.7568
-Epoch 36 Batch50 Loss 1.7635
-Epoch 36 Batch100 Loss 1.7669
-Epoch 36 Batch150 Loss 1.7662
-Epoch 36 Loss 1.7647
-** on validation data loss is 1.7942
-Time taken for 1 epoch: 12.30 secs
-
-Epoch 37 Batch0 Loss 1.8404
-Epoch 37 Batch50 Loss 1.7601
-Epoch 37 Batch100 Loss 1.7586
-Epoch 37 Batch150 Loss 1.7602
-Epoch 37 Loss 1.7622
-** on validation data loss is 1.7838
-Time taken for 1 epoch: 12.28 secs
-
-Epoch 38 Batch0 Loss 1.7457
-Epoch 38 Batch50 Loss 1.7554
-Epoch 38 Batch100 Loss 1.7581
-Epoch 38 Batch150 Loss 1.7592
-Epoch 38 Loss 1.7604
-** on validation data loss is 1.7796
-Time taken for 1 epoch: 12.41 secs
-
-Epoch 39 Batch0 Loss 1.7462
-Epoch 39 Batch50 Loss 1.7493
-Epoch 39 Batch100 Loss 1.7533
-Epoch 39 Batch150 Loss 1.7545
-Epoch 39 Loss 1.7560
-** on validation data loss is 1.7873
-Time taken for 1 epoch: 12.27 secs
-
-Epoch 40 Batch0 Loss 1.7316
-Epoch 40 Batch50 Loss 1.7595
-Epoch 40 Batch100 Loss 1.7543
-Epoch 40 Batch150 Loss 1.7533
-Epoch 40 Loss 1.7532
-** on validation data loss is 1.7742
-Time taken for 1 epoch: 12.28 secs
-
-Epoch 41 Batch0 Loss 1.7777
-Epoch 41 Batch50 Loss 1.7471
-Epoch 41 Batch100 Loss 1.7490
-Epoch 41 Batch150 Loss 1.7488
-Epoch 41 Loss 1.7489
-** on validation data loss is 1.7730
-Time taken for 1 epoch: 12.40 secs
-
-Epoch 42 Batch0 Loss 1.6776
-Epoch 42 Batch50 Loss 1.7451
-Epoch 42 Batch100 Loss 1.7407
-Epoch 42 Batch150 Loss 1.7431
-Epoch 42 Loss 1.7447
-** on validation data loss is 1.7755
-Time taken for 1 epoch: 12.40 secs
-
-Epoch 43 Batch0 Loss 1.7598
-Epoch 43 Batch50 Loss 1.7449
-Epoch 43 Batch100 Loss 1.7441
-Epoch 43 Batch150 Loss 1.7420
-Epoch 43 Loss 1.7425
-** on validation data loss is 1.7720
-Time taken for 1 epoch: 12.41 secs
-
-Epoch 44 Batch0 Loss 1.7134
-Epoch 44 Batch50 Loss 1.7385
-Epoch 44 Batch100 Loss 1.7393
-Epoch 44 Batch150 Loss 1.7412
-Epoch 44 Loss 1.7389
-** on validation data loss is 1.7638
-Time taken for 1 epoch: 12.54 secs
-
-Epoch 45 Batch0 Loss 1.7605
-Epoch 45 Batch50 Loss 1.7342
-Epoch 45 Batch100 Loss 1.7348
-Epoch 45 Batch150 Loss 1.7374
-Epoch 45 Loss 1.7369
-** on validation data loss is 1.7648
-Time taken for 1 epoch: 12.28 secs
-
-Epoch 46 Batch0 Loss 1.7522
-Epoch 46 Batch50 Loss 1.7286
-Epoch 46 Batch100 Loss 1.7345
-Epoch 46 Batch150 Loss 1.7356
-Epoch 46 Loss 1.7360
-** on validation data loss is 1.7628
-Time taken for 1 epoch: 12.30 secs
-
-Epoch 47 Batch0 Loss 1.7511
-Epoch 47 Batch50 Loss 1.7378
-Epoch 47 Batch100 Loss 1.7343
-Epoch 47 Batch150 Loss 1.7299
-Epoch 47 Loss 1.7313
-** on validation data loss is 1.7591
-Time taken for 1 epoch: 12.41 secs
-
-Epoch 48 Batch0 Loss 1.7814
-Epoch 48 Batch50 Loss 1.7213
-Epoch 48 Batch100 Loss 1.7257
-Epoch 48 Batch150 Loss 1.7261
-Epoch 48 Loss 1.7284
-** on validation data loss is 1.7660
-Time taken for 1 epoch: 12.28 secs
-
-Epoch 49 Batch0 Loss 1.6903
-Epoch 49 Batch50 Loss 1.7205
-Epoch 49 Batch100 Loss 1.7239
-Epoch 49 Batch150 Loss 1.7276
-Epoch 49 Loss 1.7264
-** on validation data loss is 1.7599
-Time taken for 1 epoch: 12.28 secs
-
-Epoch 50 Batch0 Loss 1.6948
-Epoch 50 Batch50 Loss 1.7186
-Epoch 50 Batch100 Loss 1.7218
-Epoch 50 Batch150 Loss 1.7248
-Epoch 50 Loss 1.7258
-** on validation data loss is 1.7606
-Time taken for 1 epoch: 12.40 secs
-
-Epoch 51 Batch0 Loss 1.7475
-Epoch 51 Batch50 Loss 1.7185
-Epoch 51 Batch100 Loss 1.7199
-Epoch 51 Batch150 Loss 1.7242
-Epoch 51 Loss 1.7244
-** on validation data loss is 1.7527
-Time taken for 1 epoch: 12.32 secs
-
-Epoch 52 Batch0 Loss 1.7495
-Epoch 52 Batch50 Loss 1.7219
-Epoch 52 Batch100 Loss 1.7230
-Epoch 52 Batch150 Loss 1.7206
-Epoch 52 Loss 1.7194
-** on validation data loss is 1.7474
-Time taken for 1 epoch: 12.41 secs
-
-Epoch 53 Batch0 Loss 1.7208
-Epoch 53 Batch50 Loss 1.7136
-Epoch 53 Batch100 Loss 1.7162
-Epoch 53 Batch150 Loss 1.7150
-Epoch 53 Loss 1.7162
-** on validation data loss is 1.7483
-Time taken for 1 epoch: 12.47 secs
-
-Epoch 54 Batch0 Loss 1.7502
-Epoch 54 Batch50 Loss 1.7148
-Epoch 54 Batch100 Loss 1.7104
-Epoch 54 Batch150 Loss 1.7146
-Epoch 54 Loss 1.7151
-** on validation data loss is 1.7441
-Time taken for 1 epoch: 12.38 secs
-
-Epoch 55 Batch0 Loss 1.7772
-Epoch 55 Batch50 Loss 1.7083
-Epoch 55 Batch100 Loss 1.7132
-Epoch 55 Batch150 Loss 1.7135
-Epoch 55 Loss 1.7128
-** on validation data loss is 1.7528
-Time taken for 1 epoch: 12.37 secs
-
-Epoch 56 Batch0 Loss 1.7022
-Epoch 56 Batch50 Loss 1.7045
-Epoch 56 Batch100 Loss 1.7113
-Epoch 56 Batch150 Loss 1.7105
-Epoch 56 Loss 1.7095
-** on validation data loss is 1.7422
-Time taken for 1 epoch: 12.54 secs
-
-Epoch 57 Batch0 Loss 1.6611
-Epoch 57 Batch50 Loss 1.7083
-Epoch 57 Batch100 Loss 1.7087
-Epoch 57 Batch150 Loss 1.7132
-Epoch 57 Loss 1.7145
-** on validation data loss is 1.7533
-Time taken for 1 epoch: 12.40 secs
-
-Epoch 58 Batch0 Loss 1.6667
-Epoch 58 Batch50 Loss 1.7116
-Epoch 58 Batch100 Loss 1.7081
-Epoch 58 Batch150 Loss 1.7096
-Epoch 58 Loss 1.7101
-** on validation data loss is 1.7412
-Time taken for 1 epoch: 12.31 secs
-
-Epoch 59 Batch0 Loss 1.7297
-Epoch 59 Batch50 Loss 1.7015
-Epoch 59 Batch100 Loss 1.7057
-Epoch 59 Batch150 Loss 1.7093
-Epoch 59 Loss 1.7093
-** on validation data loss is 1.7438
-Time taken for 1 epoch: 12.39 secs
-
-Epoch 60 Batch0 Loss 1.7459
-Epoch 60 Batch50 Loss 1.7128
-Epoch 60 Batch100 Loss 1.7046
-Epoch 60 Batch150 Loss 1.7049
-Epoch 60 Loss 1.7038
-** on validation data loss is 1.7396
-Time taken for 1 epoch: 12.25 secs
-
-Epoch 61 Batch0 Loss 1.6580
-Epoch 61 Batch50 Loss 1.6954
-Epoch 61 Batch100 Loss 1.7011
-Epoch 61 Batch150 Loss 1.7017
-Epoch 61 Loss 1.7014
-** on validation data loss is 1.7369
-Time taken for 1 epoch: 12.20 secs
-
-Epoch 62 Batch0 Loss 1.7115
-Epoch 62 Batch50 Loss 1.6954
-Epoch 62 Batch100 Loss 1.7002
-Epoch 62 Batch150 Loss 1.6991
-Epoch 62 Loss 1.7030
-** on validation data loss is 1.7380
-Time taken for 1 epoch: 12.27 secs
-
-Epoch 63 Batch0 Loss 1.6628
-Epoch 63 Batch50 Loss 1.6988
-Epoch 63 Batch100 Loss 1.7020
-Epoch 63 Batch150 Loss 1.7011
-Epoch 63 Loss 1.7004
-** on validation data loss is 1.7355
-Time taken for 1 epoch: 12.18 secs
-
-Epoch 64 Batch0 Loss 1.6372
-Epoch 64 Batch50 Loss 1.6965
-Epoch 64 Batch100 Loss 1.6924
-Epoch 64 Batch150 Loss 1.6934
-Epoch 64 Loss 1.6938
-** on validation data loss is 1.7317
-Time taken for 1 epoch: 12.21 secs
-
-Epoch 65 Batch0 Loss 1.6707
-Epoch 65 Batch50 Loss 1.6845
-Epoch 65 Batch100 Loss 1.6887
-Epoch 65 Batch150 Loss 1.6927
-Epoch 65 Loss 1.6948
-** on validation data loss is 1.7356
-Time taken for 1 epoch: 12.30 secs
-
-Epoch 66 Batch0 Loss 1.7004
-Epoch 66 Batch50 Loss 1.6940
-Epoch 66 Batch100 Loss 1.6925
-Epoch 66 Batch150 Loss 1.6931
-Epoch 66 Loss 1.6938
-** on validation data loss is 1.7345
-Time taken for 1 epoch: 12.19 secs
-
-Epoch 67 Batch0 Loss 1.6617
-Epoch 67 Batch50 Loss 1.6875
-Epoch 67 Batch100 Loss 1.6861
-Epoch 67 Batch150 Loss 1.6882
-Epoch 67 Loss 1.6913
-** on validation data loss is 1.7334
-Time taken for 1 epoch: 12.18 secs
-
-Epoch 68 Batch0 Loss 1.6522
-Epoch 68 Batch50 Loss 1.6879
-Epoch 68 Batch100 Loss 1.6890
-Epoch 68 Batch150 Loss 1.6908
-Epoch 68 Loss 1.6908
-** on validation data loss is 1.7295
-Time taken for 1 epoch: 12.29 secs
-
-Epoch 69 Batch0 Loss 1.6607
-Epoch 69 Batch50 Loss 1.6867
-Epoch 69 Batch100 Loss 1.6866
-Epoch 69 Batch150 Loss 1.6881
-Epoch 69 Loss 1.6893
-** on validation data loss is 1.7356
-Time taken for 1 epoch: 12.17 secs
-
-Epoch 70 Batch0 Loss 1.6357
-Epoch 70 Batch50 Loss 1.6834
-Epoch 70 Batch100 Loss 1.6869
-Epoch 70 Batch150 Loss 1.6917
-Epoch 70 Loss 1.6934
-** on validation data loss is 1.7312
-Time taken for 1 epoch: 12.20 secs
-
-Epoch 71 Batch0 Loss 1.6824
-Epoch 71 Batch50 Loss 1.6966
-Epoch 71 Batch100 Loss 1.6941
-Epoch 71 Batch150 Loss 1.6900
-Epoch 71 Loss 1.6879
-** on validation data loss is 1.7300
-Time taken for 1 epoch: 12.36 secs
-
-Epoch 72 Batch0 Loss 1.6731
-Epoch 72 Batch50 Loss 1.6873
-Epoch 72 Batch100 Loss 1.6837
-Epoch 72 Batch150 Loss 1.6848
-Epoch 72 Loss 1.6869
-** on validation data loss is 1.7289
-Time taken for 1 epoch: 12.41 secs
-
-Epoch 73 Batch0 Loss 1.6882
-Epoch 73 Batch50 Loss 1.6799
-Epoch 73 Batch100 Loss 1.6844
-Epoch 73 Batch150 Loss 1.6865
-Epoch 73 Loss 1.6849
-** on validation data loss is 1.7285
-Time taken for 1 epoch: 12.43 secs
-
-Epoch 74 Batch0 Loss 1.6769
-Epoch 74 Batch50 Loss 1.6790
-Epoch 74 Batch100 Loss 1.6844
-Epoch 74 Batch150 Loss 1.6846
-Epoch 74 Loss 1.6840
-** on validation data loss is 1.7240
-Time taken for 1 epoch: 12.53 secs
-
-Epoch 75 Batch0 Loss 1.7072
-Epoch 75 Batch50 Loss 1.6756
-Epoch 75 Batch100 Loss 1.6749
-Epoch 75 Batch150 Loss 1.6806
-Epoch 75 Loss 1.6840
-** on validation data loss is 1.7266
-Time taken for 1 epoch: 12.43 secs
-
-Epoch 76 Batch0 Loss 1.7125
-Epoch 76 Batch50 Loss 1.6744
-Epoch 76 Batch100 Loss 1.6758
-Epoch 76 Batch150 Loss 1.6829
-Epoch 76 Loss 1.6817
-** on validation data loss is 1.7247
-Time taken for 1 epoch: 12.42 secs
-
-Epoch 77 Batch0 Loss 1.6538
-Epoch 77 Batch50 Loss 1.6751
-Epoch 77 Batch100 Loss 1.6808
-Epoch 77 Batch150 Loss 1.6820
-Epoch 77 Loss 1.6829
-** on validation data loss is 1.7232
-Time taken for 1 epoch: 12.45 secs
-
-Epoch 78 Batch0 Loss 1.6921
-Epoch 78 Batch50 Loss 1.6783
-Epoch 78 Batch100 Loss 1.6768
-Epoch 78 Batch150 Loss 1.6786
-Epoch 78 Loss 1.6809
-** on validation data loss is 1.7217
-Time taken for 1 epoch: 12.50 secs
-
-Epoch 79 Batch0 Loss 1.7316
-Epoch 79 Batch50 Loss 1.6813
-Epoch 79 Batch100 Loss 1.6805
-Epoch 79 Batch150 Loss 1.6794
-Epoch 79 Loss 1.6816
-** on validation data loss is 1.7332
-Time taken for 1 epoch: 12.43 secs
-
-Epoch 80 Batch0 Loss 1.7088
-Epoch 80 Batch50 Loss 1.6924
-Epoch 80 Batch100 Loss 1.6988
-Epoch 80 Batch150 Loss 1.6922
-Epoch 80 Loss 1.6902
-** on validation data loss is 1.7233
-Time taken for 1 epoch: 12.43 secs
-
-Epoch 81 Batch0 Loss 1.6354
-Epoch 81 Batch50 Loss 1.6679
-Epoch 81 Batch100 Loss 1.6773
-Epoch 81 Batch150 Loss 1.6806
-Epoch 81 Loss 1.6814
-** on validation data loss is 1.7218
-Time taken for 1 epoch: 12.51 secs
-
-Epoch 82 Batch0 Loss 1.6542
-Epoch 82 Batch50 Loss 1.6700
-Epoch 82 Batch100 Loss 1.6772
-Epoch 82 Batch150 Loss 1.6783
-Epoch 82 Loss 1.6793
-** on validation data loss is 1.7227
-Time taken for 1 epoch: 12.44 secs
-
-Epoch 83 Batch0 Loss 1.7187
-Epoch 83 Batch50 Loss 1.6682
-Epoch 83 Batch100 Loss 1.6735
-Epoch 83 Batch150 Loss 1.6742
-Epoch 83 Loss 1.6751
-** on validation data loss is 1.7227
-Time taken for 1 epoch: 12.39 secs
-
-Epoch 84 Batch0 Loss 1.6579
-Epoch 84 Batch50 Loss 1.6804
-Epoch 84 Batch100 Loss 1.6722
-Epoch 84 Batch150 Loss 1.6708
-Epoch 84 Loss 1.6734
-** on validation data loss is 1.7223
-Time taken for 1 epoch: 12.31 secs
-
-Epoch 85 Batch0 Loss 1.6897
-Epoch 85 Batch50 Loss 1.6674
-Epoch 85 Batch100 Loss 1.6704
-Epoch 85 Batch150 Loss 1.6709
-Epoch 85 Loss 1.6713
-** on validation data loss is 1.7171
-Time taken for 1 epoch: 12.24 secs
-
-Epoch 86 Batch0 Loss 1.6825
-Epoch 86 Batch50 Loss 1.6736
-Epoch 86 Batch100 Loss 1.6763
-Epoch 86 Batch150 Loss 1.6736
-Epoch 86 Loss 1.6739
-** on validation data loss is 1.7186
-Time taken for 1 epoch: 12.21 secs
-
-Epoch 87 Batch0 Loss 1.6799
-Epoch 87 Batch50 Loss 1.6624
-Epoch 87 Batch100 Loss 1.6661
-Epoch 87 Batch150 Loss 1.6696
-Epoch 87 Loss 1.6712
-** on validation data loss is 1.7185
-Time taken for 1 epoch: 12.29 secs
-
-Epoch 88 Batch0 Loss 1.6522
-Epoch 88 Batch50 Loss 1.6676
-Epoch 88 Batch100 Loss 1.6689
-Epoch 88 Batch150 Loss 1.6675
-Epoch 88 Loss 1.6693
-** on validation data loss is 1.7182
-Time taken for 1 epoch: 12.13 secs
-
-Epoch 89 Batch0 Loss 1.6654
-Epoch 89 Batch50 Loss 1.6667
-Epoch 89 Batch100 Loss 1.6693
-Epoch 89 Batch150 Loss 1.6721
-Epoch 89 Loss 1.6755
-** on validation data loss is 1.7299
-Time taken for 1 epoch: 12.43 secs
-
-Epoch 90 Batch0 Loss 1.6742
-Epoch 90 Batch50 Loss 1.6795
-Epoch 90 Batch100 Loss 1.6791
-Epoch 90 Batch150 Loss 1.6787
-Epoch 90 Loss 1.6777
-** on validation data loss is 1.7185
-Time taken for 1 epoch: 14.60 secs
-
-Epoch 91 Batch0 Loss 1.6880
-Epoch 91 Batch50 Loss 1.6689
-Epoch 91 Batch100 Loss 1.6697
-Epoch 91 Batch150 Loss 1.6791
-Epoch 91 Loss 1.6816
-** on validation data loss is 1.7258
-Time taken for 1 epoch: 14.56 secs
-
-Epoch 92 Batch0 Loss 1.6868
-Epoch 92 Batch50 Loss 1.6720
-Epoch 92 Batch100 Loss 1.6729
-Epoch 92 Batch150 Loss 1.6737
-Epoch 92 Loss 1.6737
-** on validation data loss is 1.7163
-Time taken for 1 epoch: 14.48 secs
-
-Epoch 93 Batch0 Loss 1.7074
-Epoch 93 Batch50 Loss 1.6672
-Epoch 93 Batch100 Loss 1.6680
-Epoch 93 Batch150 Loss 1.6686
-Epoch 93 Loss 1.6685
-** on validation data loss is 1.7113
-Time taken for 1 epoch: 13.29 secs
-
-Epoch 94 Batch0 Loss 1.7229
-Epoch 94 Batch50 Loss 1.6634
-Epoch 94 Batch100 Loss 1.6625
-Epoch 94 Batch150 Loss 1.6653
-Epoch 94 Loss 1.6649
-** on validation data loss is 1.7137
-Time taken for 1 epoch: 12.49 secs
-
-Epoch 95 Batch0 Loss 1.6559
-Epoch 95 Batch50 Loss 1.6658
-Epoch 95 Batch100 Loss 1.6670
-Epoch 95 Batch150 Loss 1.6667
-Epoch 95 Loss 1.6646
-** on validation data loss is 1.7138
-Time taken for 1 epoch: 12.30 secs
-
-Epoch 96 Batch0 Loss 1.6580
-Epoch 96 Batch50 Loss 1.6554
-Epoch 96 Batch100 Loss 1.6604
-Epoch 96 Batch150 Loss 1.6614
-Epoch 96 Loss 1.6625
-** on validation data loss is 1.7112
-Time taken for 1 epoch: 12.37 secs
-
-Epoch 97 Batch0 Loss 1.6507
-Epoch 97 Batch50 Loss 1.6619
-Epoch 97 Batch100 Loss 1.6588
-Epoch 97 Batch150 Loss 1.6607
-Epoch 97 Loss 1.6618
-** on validation data loss is 1.7080
-Time taken for 1 epoch: 12.33 secs
-
-Epoch 98 Batch0 Loss 1.6624
-Epoch 98 Batch50 Loss 1.6542
-Epoch 98 Batch100 Loss 1.6578
-Epoch 98 Batch150 Loss 1.6612
-Epoch 98 Loss 1.6621
-** on validation data loss is 1.7196
-Time taken for 1 epoch: 12.31 secs
-
-Epoch 99 Batch0 Loss 1.7057
-Epoch 99 Batch50 Loss 1.6701
-Epoch 99 Batch100 Loss 1.6675
-Epoch 99 Batch150 Loss 1.6656
-Epoch 99 Loss 1.6633
-** on validation data loss is 1.7146
-Time taken for 1 epoch: 12.54 secs
-
-Epoch 100 Batch0 Loss 1.6513
-Epoch 100 Batch50 Loss 1.6515
-Epoch 100 Batch100 Loss 1.6576
-Epoch 100 Batch150 Loss 1.6597
-Epoch 100 Loss 1.6617
-** on validation data loss is 1.7143
-Time taken for 1 epoch: 12.41 secs
-
+Took 65.73 secs
+2024-01-31 18:33:47.377009: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+Epoch 1 Batch0 Loss 15.6281
+Epoch 1 Batch50 Loss 7.8463
+Epoch 1 Batch100 Loss 7.1034
+Epoch 1 Batch150 Loss 6.6809
+Epoch 1 Loss 6.4895
+** on validation data loss is 5.3867
+Time taken for 1 epoch: 20.16 secs
+
+Epoch 2 Batch0 Loss 5.2818
+Epoch 2 Batch50 Loss 5.2146
+Epoch 2 Batch100 Loss 5.1131
+Epoch 2 Batch150 Loss 4.9980
+Epoch 2 Loss 4.9239
+** on validation data loss is 4.5454
+Time taken for 1 epoch: 18.75 secs
+
+Epoch 3 Batch0 Loss 4.5180
+Epoch 3 Batch50 Loss 4.3899
+Epoch 3 Batch100 Loss 4.3332
+Epoch 3 Batch150 Loss 4.2886
+Epoch 3 Loss 4.2647
+** on validation data loss is 4.1190
+Time taken for 1 epoch: 19.13 secs
+
+Epoch 4 Batch0 Loss 4.1013
+Epoch 4 Batch50 Loss 4.0797
+Epoch 4 Batch100 Loss 4.0594
+Epoch 4 Batch150 Loss 4.0394
+Epoch 4 Loss 4.0308
+** on validation data loss is 3.9721
+Time taken for 1 epoch: 19.48 secs
+
+Epoch 5 Batch0 Loss 4.0081
+Epoch 5 Batch50 Loss 3.9435
+Epoch 5 Batch100 Loss 3.9311
+Epoch 5 Batch150 Loss 3.9207
+Epoch 5 Loss 3.9136
+** on validation data loss is 3.8779
+Time taken for 1 epoch: 18.69 secs
+
+Epoch 6 Batch0 Loss 3.8598
+Epoch 6 Batch50 Loss 3.8518
+Epoch 6 Batch100 Loss 3.8462
+Epoch 6 Batch150 Loss 3.8327
+Epoch 6 Loss 3.8295
+** on validation data loss is 3.8164
+Time taken for 1 epoch: 18.78 secs
+
+Epoch 7 Batch0 Loss 3.8650
+Epoch 7 Batch50 Loss 3.8008
+Epoch 7 Batch100 Loss 3.7910
+Epoch 7 Batch150 Loss 3.7815
+Epoch 7 Loss 3.7755
+** on validation data loss is 3.7665
+Time taken for 1 epoch: 18.66 secs
+
+Epoch 8 Batch0 Loss 3.8065
+Epoch 8 Batch50 Loss 3.7487
+Epoch 8 Batch100 Loss 3.7412
+Epoch 8 Batch150 Loss 3.7331
+Epoch 8 Loss 3.7323
+** on validation data loss is 3.7280
+Time taken for 1 epoch: 18.93 secs
+
+Epoch 9 Batch0 Loss 3.7299
+Epoch 9 Batch50 Loss 3.7163
+Epoch 9 Batch100 Loss 3.7113
+Epoch 9 Batch150 Loss 3.7049
+Epoch 9 Loss 3.7012
+** on validation data loss is 3.7015
+Time taken for 1 epoch: 18.75 secs
+
+Epoch 10 Batch0 Loss 3.6612
+Epoch 10 Batch50 Loss 3.6867
+Epoch 10 Batch100 Loss 3.6834
+Epoch 10 Batch150 Loss 3.6774
+Epoch 10 Loss 3.6756
+** on validation data loss is 3.6805
+Time taken for 1 epoch: 19.28 secs
+
+Epoch 11 Batch0 Loss 3.6301
+Epoch 11 Batch50 Loss 3.6633
+Epoch 11 Batch100 Loss 3.6543
+Epoch 11 Batch150 Loss 3.6548
+Epoch 11 Loss 3.6530
+** on validation data loss is 3.6569
+Time taken for 1 epoch: 19.23 secs
+
+Epoch 12 Batch0 Loss 3.6532
+Epoch 12 Batch50 Loss 3.6386
+Epoch 12 Batch100 Loss 3.6379
+Epoch 12 Batch150 Loss 3.6366
+Epoch 12 Loss 3.6353
+** on validation data loss is 3.6500
+Time taken for 1 epoch: 18.80 secs
+
+Epoch 13 Batch0 Loss 3.5939
+Epoch 13 Batch50 Loss 3.6250
+Epoch 13 Batch100 Loss 3.6258
+Epoch 13 Batch150 Loss 3.6212
+Epoch 13 Loss 3.6209
+** on validation data loss is 3.6369
+Time taken for 1 epoch: 19.13 secs
+
+Epoch 14 Batch0 Loss 3.5777
+Epoch 14 Batch50 Loss 3.6112
+Epoch 14 Batch100 Loss 3.6089
+Epoch 14 Batch150 Loss 3.6097
+Epoch 14 Loss 3.6076
+** on validation data loss is 3.6209
+Time taken for 1 epoch: 19.17 secs
+
+Epoch 15 Batch0 Loss 3.5696
+Epoch 15 Batch50 Loss 3.5948
+Epoch 15 Batch100 Loss 3.5915
+Epoch 15 Batch150 Loss 3.5998
+Epoch 15 Loss 3.6031
+** on validation data loss is 3.6148
+Time taken for 1 epoch: 19.03 secs
+
+Epoch 16 Batch0 Loss 3.5504
+Epoch 16 Batch50 Loss 3.5985
+Epoch 16 Batch100 Loss 3.6013
+Epoch 16 Batch150 Loss 3.5956
+Epoch 16 Loss 3.5932
+** on validation data loss is 3.6032
+Time taken for 1 epoch: 18.62 secs
+
+Epoch 17 Batch0 Loss 3.5819
+Epoch 17 Batch50 Loss 3.5857
+Epoch 17 Batch100 Loss 3.5891
+Epoch 17 Batch150 Loss 3.5860
+Epoch 17 Loss 3.5846
+** on validation data loss is 3.5974
+Time taken for 1 epoch: 18.68 secs
+
+Epoch 18 Batch0 Loss 3.5464
+Epoch 18 Batch50 Loss 3.5665
+Epoch 18 Batch100 Loss 3.5715
+Epoch 18 Batch150 Loss 3.5741
+Epoch 18 Loss 3.5716
+** on validation data loss is 3.5839
+Time taken for 1 epoch: 18.77 secs
+
+Epoch 19 Batch0 Loss 3.5967
+Epoch 19 Batch50 Loss 3.5619
+Epoch 19 Batch100 Loss 3.5607
+Epoch 19 Batch150 Loss 3.5618
+Epoch 19 Loss 3.5632
+** on validation data loss is 3.5873
+Time taken for 1 epoch: 18.71 secs
+
+Epoch 20 Batch0 Loss 3.5851
+Epoch 20 Batch50 Loss 3.5612
+Epoch 20 Batch100 Loss 3.5603
+Epoch 20 Batch150 Loss 3.5578
+Epoch 20 Loss 3.5595
+** on validation data loss is 3.5911
+Time taken for 1 epoch: 18.87 secs
+
+Epoch 21 Batch0 Loss 3.5323
+Epoch 21 Batch50 Loss 3.5646
+Epoch 21 Batch100 Loss 3.5578
+Epoch 21 Batch150 Loss 3.5568
+Epoch 21 Loss 3.5573
+** on validation data loss is 3.5787
+Time taken for 1 epoch: 18.84 secs
+
+Epoch 22 Batch0 Loss 3.6000
+Epoch 22 Batch50 Loss 3.5464
+Epoch 22 Batch100 Loss 3.5471
+Epoch 22 Batch150 Loss 3.5472
+Epoch 22 Loss 3.5473
+** on validation data loss is 3.5686
+Time taken for 1 epoch: 18.87 secs
+
+Epoch 23 Batch0 Loss 3.4988
+Epoch 23 Batch50 Loss 3.5501
+Epoch 23 Batch100 Loss 3.5419
+Epoch 23 Batch150 Loss 3.5403
+Epoch 23 Loss 3.5414
+** on validation data loss is 3.5651
+Time taken for 1 epoch: 18.38 secs
+
+Epoch 24 Batch0 Loss 3.5651
+Epoch 24 Batch50 Loss 3.5420
+Epoch 24 Batch100 Loss 3.5393
+Epoch 24 Batch150 Loss 3.5385
+Epoch 24 Loss 3.5382
+** on validation data loss is 3.5564
+Time taken for 1 epoch: 18.78 secs
+
+Epoch 25 Batch0 Loss 3.5293
+Epoch 25 Batch50 Loss 3.5328
+Epoch 25 Batch100 Loss 3.5327
+Epoch 25 Batch150 Loss 3.5341
+Epoch 25 Loss 3.5328
+** on validation data loss is 3.5558
+Time taken for 1 epoch: 19.25 secs
+
+Epoch 26 Batch0 Loss 3.5362
+Epoch 26 Batch50 Loss 3.5256
+Epoch 26 Batch100 Loss 3.5245
+Epoch 26 Batch150 Loss 3.5241
+Epoch 26 Loss 3.5242
+** on validation data loss is 3.5456
+Time taken for 1 epoch: 18.99 secs
+
+Epoch 27 Batch0 Loss 3.4945
+Epoch 27 Batch50 Loss 3.5117
+Epoch 27 Batch100 Loss 3.5211
+Epoch 27 Batch150 Loss 3.5211
+Epoch 27 Loss 3.5208
+** on validation data loss is 3.5471
+Time taken for 1 epoch: 18.67 secs
+
+Epoch 28 Batch0 Loss 3.5054
+Epoch 28 Batch50 Loss 3.5101
+Epoch 28 Batch100 Loss 3.5173
+Epoch 28 Batch150 Loss 3.5192
+Epoch 28 Loss 3.5200
+** on validation data loss is 3.5419
+Time taken for 1 epoch: 19.12 secs
+
+Epoch 29 Batch0 Loss 3.5069
+Epoch 29 Batch50 Loss 3.5128
+Epoch 29 Batch100 Loss 3.5081
+Epoch 29 Batch150 Loss 3.5134
+Epoch 29 Loss 3.5168
+** on validation data loss is 3.5428
+Time taken for 1 epoch: 18.69 secs
+
+Epoch 30 Batch0 Loss 3.5081
+Epoch 30 Batch50 Loss 3.5109
+Epoch 30 Batch100 Loss 3.5096
+Epoch 30 Batch150 Loss 3.5107
+Epoch 30 Loss 3.5156
+** on validation data loss is 3.5564
+Time taken for 1 epoch: 18.95 secs
+
+Epoch 31 Batch0 Loss 3.5082
+Epoch 31 Batch50 Loss 3.5187
+Epoch 31 Batch100 Loss 3.5180
+Epoch 31 Batch150 Loss 3.5156
+Epoch 31 Loss 3.5143
+** on validation data loss is 3.5654
+Time taken for 1 epoch: 18.97 secs
+
+Epoch 32 Batch0 Loss 3.5552
+Epoch 32 Batch50 Loss 3.5215
+Epoch 32 Batch100 Loss 3.5158
+Epoch 32 Batch150 Loss 3.5156
+Epoch 32 Loss 3.5128
+** on validation data loss is 3.5290
+Time taken for 1 epoch: 19.02 secs
+
+Epoch 33 Batch0 Loss 3.5730
+Epoch 33 Batch50 Loss 3.4952
+Epoch 33 Batch100 Loss 3.5046
+Epoch 33 Batch150 Loss 3.5020
+Epoch 33 Loss 3.5008
+** on validation data loss is 3.5300
+Time taken for 1 epoch: 18.96 secs
+
+Epoch 34 Batch0 Loss 3.5608
+Epoch 34 Batch50 Loss 3.4973
+Epoch 34 Batch100 Loss 3.4962
+Epoch 34 Batch150 Loss 3.4952
+Epoch 34 Loss 3.4963
+** on validation data loss is 3.5265
+Time taken for 1 epoch: 19.08 secs
+
+Epoch 35 Batch0 Loss 3.4713
+Epoch 35 Batch50 Loss 3.4911
+Epoch 35 Batch100 Loss 3.4929
+Epoch 35 Batch150 Loss 3.4953
+Epoch 35 Loss 3.4935
+** on validation data loss is 3.5226
+Time taken for 1 epoch: 18.57 secs
+
+Epoch 36 Batch0 Loss 3.5126
+Epoch 36 Batch50 Loss 3.4864
+Epoch 36 Batch100 Loss 3.4880
+Epoch 36 Batch150 Loss 3.4886
+Epoch 36 Loss 3.4895
+** on validation data loss is 3.5229
+Time taken for 1 epoch: 19.08 secs
+
+Epoch 37 Batch0 Loss 3.4619
+Epoch 37 Batch50 Loss 3.4842
+Epoch 37 Batch100 Loss 3.4877
+Epoch 37 Batch150 Loss 3.4886
+Epoch 37 Loss 3.4879
+** on validation data loss is 3.5173
+Time taken for 1 epoch: 19.07 secs
+
+Epoch 38 Batch0 Loss 3.4695
+Epoch 38 Batch50 Loss 3.4825
+Epoch 38 Batch100 Loss 3.4846
+Epoch 38 Batch150 Loss 3.4831
+Epoch 38 Loss 3.4839
+** on validation data loss is 3.5214
+Time taken for 1 epoch: 18.62 secs
+
+Epoch 39 Batch0 Loss 3.4624
+Epoch 39 Batch50 Loss 3.4764
+Epoch 39 Batch100 Loss 3.4816
+Epoch 39 Batch150 Loss 3.4846
+Epoch 39 Loss 3.4858
+** on validation data loss is 3.5191
+Time taken for 1 epoch: 19.55 secs
+
+Epoch 40 Batch0 Loss 3.4685
+Epoch 40 Batch50 Loss 3.4826
+Epoch 40 Batch100 Loss 3.4827
+Epoch 40 Batch150 Loss 3.4806
+Epoch 40 Loss 3.4817
+** on validation data loss is 3.5110
+Time taken for 1 epoch: 18.97 secs
+
+Epoch 41 Batch0 Loss 3.5278
+Epoch 41 Batch50 Loss 3.4698
+Epoch 41 Batch100 Loss 3.4768
+Epoch 41 Batch150 Loss 3.4799
+Epoch 41 Loss 3.4800
+** on validation data loss is 3.5123
+Time taken for 1 epoch: 18.88 secs
+
+Epoch 42 Batch0 Loss 3.4662
+Epoch 42 Batch50 Loss 3.4702
+Epoch 42 Batch100 Loss 3.4720
+Epoch 42 Batch150 Loss 3.4745
+Epoch 42 Loss 3.4784
+** on validation data loss is 3.5157
+Time taken for 1 epoch: 18.89 secs
+
+Epoch 43 Batch0 Loss 3.4991
+Epoch 43 Batch50 Loss 3.4868
+Epoch 43 Batch100 Loss 3.4818
+Epoch 43 Batch150 Loss 3.4776
+Epoch 43 Loss 3.4778
+** on validation data loss is 3.5062
+Time taken for 1 epoch: 18.56 secs
+
+Epoch 44 Batch0 Loss 3.4533
+Epoch 44 Batch50 Loss 3.4922
+Epoch 44 Batch100 Loss 3.5076
+Epoch 44 Batch150 Loss 3.5149
+Epoch 44 Loss 3.5137
+** on validation data loss is 3.5213
+Time taken for 1 epoch: 19.17 secs
+
+Epoch 45 Batch0 Loss 3.5030
+Epoch 45 Batch50 Loss 3.4980
+Epoch 45 Batch100 Loss 3.4886
+Epoch 45 Batch150 Loss 3.4873
+Epoch 45 Loss 3.4866
+** on validation data loss is 3.5080
+Time taken for 1 epoch: 19.33 secs
+
+Epoch 46 Batch0 Loss 3.5027
+Epoch 46 Batch50 Loss 3.4819
+Epoch 46 Batch100 Loss 3.4766
+Epoch 46 Batch150 Loss 3.4761
+Epoch 46 Loss 3.4783
+** on validation data loss is 3.5492
+Time taken for 1 epoch: 19.07 secs
+
+Epoch 47 Batch0 Loss 3.4709
+Epoch 47 Batch50 Loss 3.4858
+Epoch 47 Batch100 Loss 3.4778
+Epoch 47 Batch150 Loss 3.4797
+Epoch 47 Loss 3.4823
+** on validation data loss is 3.5115
+Time taken for 1 epoch: 18.36 secs
+
+Epoch 48 Batch0 Loss 3.5083
+Epoch 48 Batch50 Loss 3.4752
+Epoch 48 Batch100 Loss 3.4725
+Epoch 48 Batch150 Loss 3.4722
+Epoch 48 Loss 3.4712
+** on validation data loss is 3.5012
+Time taken for 1 epoch: 18.99 secs
+
+Epoch 49 Batch0 Loss 3.4769
+Epoch 49 Batch50 Loss 3.4638
+Epoch 49 Batch100 Loss 3.4674
+Epoch 49 Batch150 Loss 3.4671
+Epoch 49 Loss 3.4670
+** on validation data loss is 3.5009
+Time taken for 1 epoch: 18.92 secs
+
+Epoch 50 Batch0 Loss 3.4097
+Epoch 50 Batch50 Loss 3.4541
+Epoch 50 Batch100 Loss 3.4581
+Epoch 50 Batch150 Loss 3.4603
+Epoch 50 Loss 3.4625
+** on validation data loss is 3.4996
+Time taken for 1 epoch: 18.83 secs
+
+Epoch 51 Batch0 Loss 3.4735
+Epoch 51 Batch50 Loss 3.4558
+Epoch 51 Batch100 Loss 3.4650
+Epoch 51 Batch150 Loss 3.4704
+Epoch 51 Loss 3.4724
+** on validation data loss is 3.5117
+Time taken for 1 epoch: 18.87 secs
+
+Epoch 52 Batch0 Loss 3.4382
+Epoch 52 Batch50 Loss 3.4681
+Epoch 52 Batch100 Loss 3.4685
+Epoch 52 Batch150 Loss 3.4666
+Epoch 52 Loss 3.4674
+** on validation data loss is 3.4987
+Time taken for 1 epoch: 19.10 secs
+
+Epoch 53 Batch0 Loss 3.4868
+Epoch 53 Batch50 Loss 3.4592
+Epoch 53 Batch100 Loss 3.4629
+Epoch 53 Batch150 Loss 3.4657
+Epoch 53 Loss 3.4648
+** on validation data loss is 3.5028
+Time taken for 1 epoch: 18.75 secs
+
+Epoch 54 Batch0 Loss 3.4638
+Epoch 54 Batch50 Loss 3.4581
+Epoch 54 Batch100 Loss 3.4582
+Epoch 54 Batch150 Loss 3.4577
+Epoch 54 Loss 3.4589
+** on validation data loss is 3.4961
+Time taken for 1 epoch: 18.96 secs
+
+Epoch 55 Batch0 Loss 3.4050
+Epoch 55 Batch50 Loss 3.4549
+Epoch 55 Batch100 Loss 3.4537
+Epoch 55 Batch150 Loss 3.4570
+Epoch 55 Loss 3.4593
+** on validation data loss is 3.4966
+Time taken for 1 epoch: 19.22 secs
+
+Epoch 56 Batch0 Loss 3.4459
+Epoch 56 Batch50 Loss 3.4574
+Epoch 56 Batch100 Loss 3.4595
+Epoch 56 Batch150 Loss 3.4568
+Epoch 56 Loss 3.4573
+** on validation data loss is 3.4934
+Time taken for 1 epoch: 19.39 secs
+
+Epoch 57 Batch0 Loss 3.4500
+Epoch 57 Batch50 Loss 3.4578
+Epoch 57 Batch100 Loss 3.4571
+Epoch 57 Batch150 Loss 3.4554
+Epoch 57 Loss 3.4535
+** on validation data loss is 3.4909
+Time taken for 1 epoch: 19.09 secs
+
+Epoch 58 Batch0 Loss 3.4298
+Epoch 58 Batch50 Loss 3.4430
+Epoch 58 Batch100 Loss 3.4457
+Epoch 58 Batch150 Loss 3.4523
+Epoch 58 Loss 3.4523
+** on validation data loss is 3.4879
+Time taken for 1 epoch: 18.84 secs
+
+Epoch 59 Batch0 Loss 3.4630
+Epoch 59 Batch50 Loss 3.4507
+Epoch 59 Batch100 Loss 3.4502
+Epoch 59 Batch150 Loss 3.4521
+Epoch 59 Loss 3.4524
+** on validation data loss is 3.4910
+Time taken for 1 epoch: 18.80 secs
+
+Epoch 60 Batch0 Loss 3.3675
+Epoch 60 Batch50 Loss 3.4450
+Epoch 60 Batch100 Loss 3.4479
+Epoch 60 Batch150 Loss 3.4506
+Epoch 60 Loss 3.4507
+** on validation data loss is 3.4951
+Time taken for 1 epoch: 18.90 secs
+
+Epoch 61 Batch0 Loss 3.4637
+Epoch 61 Batch50 Loss 3.4494
+Epoch 61 Batch100 Loss 3.4500
+Epoch 61 Batch150 Loss 3.4487
+Epoch 61 Loss 3.4494
+** on validation data loss is 3.4916
+Time taken for 1 epoch: 18.96 secs
+
+Epoch 62 Batch0 Loss 3.4847
+Epoch 62 Batch50 Loss 3.4494
+Epoch 62 Batch100 Loss 3.4479
+Epoch 62 Batch150 Loss 3.4477
+Epoch 62 Loss 3.4479
+** on validation data loss is 3.4891
+Time taken for 1 epoch: 18.93 secs
+
+Epoch 63 Batch0 Loss 3.3852
+Epoch 63 Batch50 Loss 3.4360
+Epoch 63 Batch100 Loss 3.4414
+Epoch 63 Batch150 Loss 3.4445
+Epoch 63 Loss 3.4457
+** on validation data loss is 3.4890
+Time taken for 1 epoch: 19.09 secs
+
+Stopping early, last 5 val losses are: [3.4910479, 3.4951077, 3.4915948, 3.4890552, 3.4890418]                     
+Best was 3.488
+
+
+reencode_net_prediction: tcode_num (5000, 1, 16)
+reencode_net_prediction: dow (5000, 1, 7)
+reencode_net_prediction: month (5000, 1, 12)
+reencode_net_prediction: day (5000, 1, 31)
+reencode_net_prediction: dtme (5000, 1, 31)
+reencode_net_prediction: td_sc (5000, 1, 2)
+reencode_net_prediction: log_amount_sc (5000, 1, 2)
+reencode_net_prediction: tcode_num (5000, 2, 16)
+reencode_net_prediction: dow (5000, 2, 7)
+reencode_net_prediction: month (5000, 2, 12)
+reencode_net_prediction: day (5000, 2, 31)
+reencode_net_prediction: dtme (5000, 2, 31)
+reencode_net_prediction: td_sc (5000, 2, 2)
+reencode_net_prediction: log_amount_sc (5000, 2, 2)
+reencode_net_prediction: tcode_num (5000, 3, 16)
+reencode_net_prediction: dow (5000, 3, 7)
+reencode_net_prediction: month (5000, 3, 12)
+reencode_net_prediction: day (5000, 3, 31)
+reencode_net_prediction: dtme (5000, 3, 31)
+reencode_net_prediction: td_sc (5000, 3, 2)
+reencode_net_prediction: log_amount_sc (5000, 3, 2)
+reencode_net_prediction: tcode_num (5000, 4, 16)
+reencode_net_prediction: dow (5000, 4, 7)
+reencode_net_prediction: month (5000, 4, 12)
+reencode_net_prediction: day (5000, 4, 31)
+reencode_net_prediction: dtme (5000, 4, 31)
+reencode_net_prediction: td_sc (5000, 4, 2)
+reencode_net_prediction: log_amount_sc (5000, 4, 2)
+reencode_net_prediction: tcode_num (5000, 5, 16)
+reencode_net_prediction: dow (5000, 5, 7)
+reencode_net_prediction: month (5000, 5, 12)
+reencode_net_prediction: day (5000, 5, 31)
+reencode_net_prediction: dtme (5000, 5, 31)
+reencode_net_prediction: td_sc (5000, 5, 2)
+reencode_net_prediction: log_amount_sc (5000, 5, 2)
+reencode_net_prediction: tcode_num (5000, 6, 16)
+reencode_net_prediction: dow (5000, 6, 7)
+reencode_net_prediction: month (5000, 6, 12)
+reencode_net_prediction: day (5000, 6, 31)
+reencode_net_prediction: dtme (5000, 6, 31)
+reencode_net_prediction: td_sc (5000, 6, 2)
+reencode_net_prediction: log_amount_sc (5000, 6, 2)
+reencode_net_prediction: tcode_num (5000, 7, 16)
+reencode_net_prediction: dow (5000, 7, 7)
+reencode_net_prediction: month (5000, 7, 12)
+reencode_net_prediction: day (5000, 7, 31)
+reencode_net_prediction: dtme (5000, 7, 31)
+reencode_net_prediction: td_sc (5000, 7, 2)
+reencode_net_prediction: log_amount_sc (5000, 7, 2)
+reencode_net_prediction: tcode_num (5000, 8, 16)
+reencode_net_prediction: dow (5000, 8, 7)
+reencode_net_prediction: month (5000, 8, 12)
+reencode_net_prediction: day (5000, 8, 31)
+reencode_net_prediction: dtme (5000, 8, 31)
+reencode_net_prediction: td_sc (5000, 8, 2)
+reencode_net_prediction: log_amount_sc (5000, 8, 2)
+reencode_net_prediction: tcode_num (5000, 9, 16)
+reencode_net_prediction: dow (5000, 9, 7)
+reencode_net_prediction: month (5000, 9, 12)
+reencode_net_prediction: day (5000, 9, 31)
+reencode_net_prediction: dtme (5000, 9, 31)
+reencode_net_prediction: td_sc (5000, 9, 2)
+reencode_net_prediction: log_amount_sc (5000, 9, 2)
+reencode_net_prediction: tcode_num (5000, 10, 16)
+reencode_net_prediction: dow (5000, 10, 7)
+reencode_net_prediction: month (5000, 10, 12)
+reencode_net_prediction: day (5000, 10, 31)
+reencode_net_prediction: dtme (5000, 10, 31)
+reencode_net_prediction: td_sc (5000, 10, 2)
+reencode_net_prediction: log_amount_sc (5000, 10, 2)
+reencode_net_prediction: tcode_num (5000, 11, 16)
+reencode_net_prediction: dow (5000, 11, 7)
+reencode_net_prediction: month (5000, 11, 12)
+reencode_net_prediction: day (5000, 11, 31)
+reencode_net_prediction: dtme (5000, 11, 31)
+reencode_net_prediction: td_sc (5000, 11, 2)
+reencode_net_prediction: log_amount_sc (5000, 11, 2)
+reencode_net_prediction: tcode_num (5000, 12, 16)
+reencode_net_prediction: dow (5000, 12, 7)
+reencode_net_prediction: month (5000, 12, 12)
+reencode_net_prediction: day (5000, 12, 31)
+reencode_net_prediction: dtme (5000, 12, 31)
+reencode_net_prediction: td_sc (5000, 12, 2)
+reencode_net_prediction: log_amount_sc (5000, 12, 2)
+reencode_net_prediction: tcode_num (5000, 13, 16)
+reencode_net_prediction: dow (5000, 13, 7)
+reencode_net_prediction: month (5000, 13, 12)
+reencode_net_prediction: day (5000, 13, 31)
+reencode_net_prediction: dtme (5000, 13, 31)
+reencode_net_prediction: td_sc (5000, 13, 2)
+reencode_net_prediction: log_amount_sc (5000, 13, 2)
+reencode_net_prediction: tcode_num (5000, 14, 16)
+reencode_net_prediction: dow (5000, 14, 7)
+reencode_net_prediction: month (5000, 14, 12)
+reencode_net_prediction: day (5000, 14, 31)
+reencode_net_prediction: dtme (5000, 14, 31)
+reencode_net_prediction: td_sc (5000, 14, 2)
+reencode_net_prediction: log_amount_sc (5000, 14, 2)
+reencode_net_prediction: tcode_num (5000, 15, 16)
+reencode_net_prediction: dow (5000, 15, 7)
+reencode_net_prediction: month (5000, 15, 12)
+reencode_net_prediction: day (5000, 15, 31)
+reencode_net_prediction: dtme (5000, 15, 31)
+reencode_net_prediction: td_sc (5000, 15, 2)
+reencode_net_prediction: log_amount_sc (5000, 15, 2)
+reencode_net_prediction: tcode_num (5000, 16, 16)
+reencode_net_prediction: dow (5000, 16, 7)
+reencode_net_prediction: month (5000, 16, 12)
+reencode_net_prediction: day (5000, 16, 31)
+reencode_net_prediction: dtme (5000, 16, 31)
+reencode_net_prediction: td_sc (5000, 16, 2)
+reencode_net_prediction: log_amount_sc (5000, 16, 2)
+reencode_net_prediction: tcode_num (5000, 17, 16)
+reencode_net_prediction: dow (5000, 17, 7)
+reencode_net_prediction: month (5000, 17, 12)
+reencode_net_prediction: day (5000, 17, 31)
+reencode_net_prediction: dtme (5000, 17, 31)
+reencode_net_prediction: td_sc (5000, 17, 2)
+reencode_net_prediction: log_amount_sc (5000, 17, 2)
+reencode_net_prediction: tcode_num (5000, 18, 16)
+reencode_net_prediction: dow (5000, 18, 7)
+reencode_net_prediction: month (5000, 18, 12)
+reencode_net_prediction: day (5000, 18, 31)
+reencode_net_prediction: dtme (5000, 18, 31)
+reencode_net_prediction: td_sc (5000, 18, 2)
+reencode_net_prediction: log_amount_sc (5000, 18, 2)
+reencode_net_prediction: tcode_num (5000, 19, 16)
+reencode_net_prediction: dow (5000, 19, 7)
+reencode_net_prediction: month (5000, 19, 12)
+reencode_net_prediction: day (5000, 19, 31)
+reencode_net_prediction: dtme (5000, 19, 31)
+reencode_net_prediction: td_sc (5000, 19, 2)
+reencode_net_prediction: log_amount_sc (5000, 19, 2)
+reencode_net_prediction: tcode_num (5000, 20, 16)
+reencode_net_prediction: dow (5000, 20, 7)
+reencode_net_prediction: month (5000, 20, 12)
+reencode_net_prediction: day (5000, 20, 31)
+reencode_net_prediction: dtme (5000, 20, 31)
+reencode_net_prediction: td_sc (5000, 20, 2)
+reencode_net_prediction: log_amount_sc (5000, 20, 2)
+reencode_net_prediction: tcode_num (5000, 21, 16)
+reencode_net_prediction: dow (5000, 21, 7)
+reencode_net_prediction: month (5000, 21, 12)
+reencode_net_prediction: day (5000, 21, 31)
+reencode_net_prediction: dtme (5000, 21, 31)
+reencode_net_prediction: td_sc (5000, 21, 2)
+reencode_net_prediction: log_amount_sc (5000, 21, 2)
+reencode_net_prediction: tcode_num (5000, 22, 16)
+reencode_net_prediction: dow (5000, 22, 7)
+reencode_net_prediction: month (5000, 22, 12)
+reencode_net_prediction: day (5000, 22, 31)
+reencode_net_prediction: dtme (5000, 22, 31)
+reencode_net_prediction: td_sc (5000, 22, 2)
+reencode_net_prediction: log_amount_sc (5000, 22, 2)
+reencode_net_prediction: tcode_num (5000, 23, 16)
+reencode_net_prediction: dow (5000, 23, 7)
+reencode_net_prediction: month (5000, 23, 12)
+reencode_net_prediction: day (5000, 23, 31)
+reencode_net_prediction: dtme (5000, 23, 31)
+reencode_net_prediction: td_sc (5000, 23, 2)
+reencode_net_prediction: log_amount_sc (5000, 23, 2)
+reencode_net_prediction: tcode_num (5000, 24, 16)
+reencode_net_prediction: dow (5000, 24, 7)
+reencode_net_prediction: month (5000, 24, 12)
+reencode_net_prediction: day (5000, 24, 31)
+reencode_net_prediction: dtme (5000, 24, 31)
+reencode_net_prediction: td_sc (5000, 24, 2)
+reencode_net_prediction: log_amount_sc (5000, 24, 2)
+reencode_net_prediction: tcode_num (5000, 25, 16)
+reencode_net_prediction: dow (5000, 25, 7)
+reencode_net_prediction: month (5000, 25, 12)
+reencode_net_prediction: day (5000, 25, 31)
+reencode_net_prediction: dtme (5000, 25, 31)
+reencode_net_prediction: td_sc (5000, 25, 2)
+reencode_net_prediction: log_amount_sc (5000, 25, 2)
+reencode_net_prediction: tcode_num (5000, 26, 16)
+reencode_net_prediction: dow (5000, 26, 7)
+reencode_net_prediction: month (5000, 26, 12)
+reencode_net_prediction: day (5000, 26, 31)
+reencode_net_prediction: dtme (5000, 26, 31)
+reencode_net_prediction: td_sc (5000, 26, 2)
+reencode_net_prediction: log_amount_sc (5000, 26, 2)
+reencode_net_prediction: tcode_num (5000, 27, 16)
+reencode_net_prediction: dow (5000, 27, 7)
+reencode_net_prediction: month (5000, 27, 12)
+reencode_net_prediction: day (5000, 27, 31)
+reencode_net_prediction: dtme (5000, 27, 31)
+reencode_net_prediction: td_sc (5000, 27, 2)
+reencode_net_prediction: log_amount_sc (5000, 27, 2)
+reencode_net_prediction: tcode_num (5000, 28, 16)
+reencode_net_prediction: dow (5000, 28, 7)
+reencode_net_prediction: month (5000, 28, 12)
+reencode_net_prediction: day (5000, 28, 31)
+reencode_net_prediction: dtme (5000, 28, 31)
+reencode_net_prediction: td_sc (5000, 28, 2)
+reencode_net_prediction: log_amount_sc (5000, 28, 2)
+reencode_net_prediction: tcode_num (5000, 29, 16)
+reencode_net_prediction: dow (5000, 29, 7)
+reencode_net_prediction: month (5000, 29, 12)
+reencode_net_prediction: day (5000, 29, 31)
+reencode_net_prediction: dtme (5000, 29, 31)
+reencode_net_prediction: td_sc (5000, 29, 2)
+reencode_net_prediction: log_amount_sc (5000, 29, 2)
+reencode_net_prediction: tcode_num (5000, 30, 16)
+reencode_net_prediction: dow (5000, 30, 7)
+reencode_net_prediction: month (5000, 30, 12)
+reencode_net_prediction: day (5000, 30, 31)
+reencode_net_prediction: dtme (5000, 30, 31)
+reencode_net_prediction: td_sc (5000, 30, 2)
+reencode_net_prediction: log_amount_sc (5000, 30, 2)
+reencode_net_prediction: tcode_num (5000, 31, 16)
+reencode_net_prediction: dow (5000, 31, 7)
+reencode_net_prediction: month (5000, 31, 12)
+reencode_net_prediction: day (5000, 31, 31)
+reencode_net_prediction: dtme (5000, 31, 31)
+reencode_net_prediction: td_sc (5000, 31, 2)
+reencode_net_prediction: log_amount_sc (5000, 31, 2)
+reencode_net_prediction: tcode_num (5000, 32, 16)
+reencode_net_prediction: dow (5000, 32, 7)
+reencode_net_prediction: month (5000, 32, 12)
+reencode_net_prediction: day (5000, 32, 31)
+reencode_net_prediction: dtme (5000, 32, 31)
+reencode_net_prediction: td_sc (5000, 32, 2)
+reencode_net_prediction: log_amount_sc (5000, 32, 2)
+reencode_net_prediction: tcode_num (5000, 33, 16)
+reencode_net_prediction: dow (5000, 33, 7)
+reencode_net_prediction: month (5000, 33, 12)
+reencode_net_prediction: day (5000, 33, 31)
+reencode_net_prediction: dtme (5000, 33, 31)
+reencode_net_prediction: td_sc (5000, 33, 2)
+reencode_net_prediction: log_amount_sc (5000, 33, 2)
+reencode_net_prediction: tcode_num (5000, 34, 16)
+reencode_net_prediction: dow (5000, 34, 7)
+reencode_net_prediction: month (5000, 34, 12)
+reencode_net_prediction: day (5000, 34, 31)
+reencode_net_prediction: dtme (5000, 34, 31)
+reencode_net_prediction: td_sc (5000, 34, 2)
+reencode_net_prediction: log_amount_sc (5000, 34, 2)
+reencode_net_prediction: tcode_num (5000, 35, 16)
+reencode_net_prediction: dow (5000, 35, 7)
+reencode_net_prediction: month (5000, 35, 12)
+reencode_net_prediction: day (5000, 35, 31)
+reencode_net_prediction: dtme (5000, 35, 31)
+reencode_net_prediction: td_sc (5000, 35, 2)
+reencode_net_prediction: log_amount_sc (5000, 35, 2)
+reencode_net_prediction: tcode_num (5000, 36, 16)
+reencode_net_prediction: dow (5000, 36, 7)
+reencode_net_prediction: month (5000, 36, 12)
+reencode_net_prediction: day (5000, 36, 31)
+reencode_net_prediction: dtme (5000, 36, 31)
+reencode_net_prediction: td_sc (5000, 36, 2)
+reencode_net_prediction: log_amount_sc (5000, 36, 2)
+reencode_net_prediction: tcode_num (5000, 37, 16)
+reencode_net_prediction: dow (5000, 37, 7)
+reencode_net_prediction: month (5000, 37, 12)
+reencode_net_prediction: day (5000, 37, 31)
+reencode_net_prediction: dtme (5000, 37, 31)
+reencode_net_prediction: td_sc (5000, 37, 2)
+reencode_net_prediction: log_amount_sc (5000, 37, 2)
+reencode_net_prediction: tcode_num (5000, 38, 16)
+reencode_net_prediction: dow (5000, 38, 7)
+reencode_net_prediction: month (5000, 38, 12)
+reencode_net_prediction: day (5000, 38, 31)
+reencode_net_prediction: dtme (5000, 38, 31)
+reencode_net_prediction: td_sc (5000, 38, 2)
+reencode_net_prediction: log_amount_sc (5000, 38, 2)
+reencode_net_prediction: tcode_num (5000, 39, 16)
+reencode_net_prediction: dow (5000, 39, 7)
+reencode_net_prediction: month (5000, 39, 12)
+reencode_net_prediction: day (5000, 39, 31)
+reencode_net_prediction: dtme (5000, 39, 31)
+reencode_net_prediction: td_sc (5000, 39, 2)
+reencode_net_prediction: log_amount_sc (5000, 39, 2)
+reencode_net_prediction: tcode_num (5000, 40, 16)
+reencode_net_prediction: dow (5000, 40, 7)
+reencode_net_prediction: month (5000, 40, 12)
+reencode_net_prediction: day (5000, 40, 31)
+reencode_net_prediction: dtme (5000, 40, 31)
+reencode_net_prediction: td_sc (5000, 40, 2)
+reencode_net_prediction: log_amount_sc (5000, 40, 2)
+reencode_net_prediction: tcode_num (5000, 41, 16)
+reencode_net_prediction: dow (5000, 41, 7)
+reencode_net_prediction: month (5000, 41, 12)
+reencode_net_prediction: day (5000, 41, 31)
+reencode_net_prediction: dtme (5000, 41, 31)
+reencode_net_prediction: td_sc (5000, 41, 2)
+reencode_net_prediction: log_amount_sc (5000, 41, 2)
+reencode_net_prediction: tcode_num (5000, 42, 16)
+reencode_net_prediction: dow (5000, 42, 7)
+reencode_net_prediction: month (5000, 42, 12)
+reencode_net_prediction: day (5000, 42, 31)
+reencode_net_prediction: dtme (5000, 42, 31)
+reencode_net_prediction: td_sc (5000, 42, 2)
+reencode_net_prediction: log_amount_sc (5000, 42, 2)
+reencode_net_prediction: tcode_num (5000, 43, 16)
+reencode_net_prediction: dow (5000, 43, 7)
+reencode_net_prediction: month (5000, 43, 12)
+reencode_net_prediction: day (5000, 43, 31)
+reencode_net_prediction: dtme (5000, 43, 31)
+reencode_net_prediction: td_sc (5000, 43, 2)
+reencode_net_prediction: log_amount_sc (5000, 43, 2)
+reencode_net_prediction: tcode_num (5000, 44, 16)
+reencode_net_prediction: dow (5000, 44, 7)
+reencode_net_prediction: month (5000, 44, 12)
+reencode_net_prediction: day (5000, 44, 31)
+reencode_net_prediction: dtme (5000, 44, 31)
+reencode_net_prediction: td_sc (5000, 44, 2)
+reencode_net_prediction: log_amount_sc (5000, 44, 2)
+reencode_net_prediction: tcode_num (5000, 45, 16)
+reencode_net_prediction: dow (5000, 45, 7)
+reencode_net_prediction: month (5000, 45, 12)
+reencode_net_prediction: day (5000, 45, 31)
+reencode_net_prediction: dtme (5000, 45, 31)
+reencode_net_prediction: td_sc (5000, 45, 2)
+reencode_net_prediction: log_amount_sc (5000, 45, 2)
+reencode_net_prediction: tcode_num (5000, 46, 16)
+reencode_net_prediction: dow (5000, 46, 7)
+reencode_net_prediction: month (5000, 46, 12)
+reencode_net_prediction: day (5000, 46, 31)
+reencode_net_prediction: dtme (5000, 46, 31)
+reencode_net_prediction: td_sc (5000, 46, 2)
+reencode_net_prediction: log_amount_sc (5000, 46, 2)
+reencode_net_prediction: tcode_num (5000, 47, 16)
+reencode_net_prediction: dow (5000, 47, 7)
+reencode_net_prediction: month (5000, 47, 12)
+reencode_net_prediction: day (5000, 47, 31)
+reencode_net_prediction: dtme (5000, 47, 31)
+reencode_net_prediction: td_sc (5000, 47, 2)
+reencode_net_prediction: log_amount_sc (5000, 47, 2)
+reencode_net_prediction: tcode_num (5000, 48, 16)
+reencode_net_prediction: dow (5000, 48, 7)
+reencode_net_prediction: month (5000, 48, 12)
+reencode_net_prediction: day (5000, 48, 31)
+reencode_net_prediction: dtme (5000, 48, 31)
+reencode_net_prediction: td_sc (5000, 48, 2)
+reencode_net_prediction: log_amount_sc (5000, 48, 2)
+reencode_net_prediction: tcode_num (5000, 49, 16)
+reencode_net_prediction: dow (5000, 49, 7)
+reencode_net_prediction: month (5000, 49, 12)
+reencode_net_prediction: day (5000, 49, 31)
+reencode_net_prediction: dtme (5000, 49, 31)
+reencode_net_prediction: td_sc (5000, 49, 2)
+reencode_net_prediction: log_amount_sc (5000, 49, 2)
+reencode_net_prediction: tcode_num (5000, 50, 16)
+reencode_net_prediction: dow (5000, 50, 7)
+reencode_net_prediction: month (5000, 50, 12)
+reencode_net_prediction: day (5000, 50, 31)
+reencode_net_prediction: dtme (5000, 50, 31)
+reencode_net_prediction: td_sc (5000, 50, 2)
+reencode_net_prediction: log_amount_sc (5000, 50, 2)
+reencode_net_prediction: tcode_num (5000, 51, 16)
+reencode_net_prediction: dow (5000, 51, 7)
+reencode_net_prediction: month (5000, 51, 12)
+reencode_net_prediction: day (5000, 51, 31)
+reencode_net_prediction: dtme (5000, 51, 31)
+reencode_net_prediction: td_sc (5000, 51, 2)
+reencode_net_prediction: log_amount_sc (5000, 51, 2)
+reencode_net_prediction: tcode_num (5000, 52, 16)
+reencode_net_prediction: dow (5000, 52, 7)
+reencode_net_prediction: month (5000, 52, 12)
+reencode_net_prediction: day (5000, 52, 31)
+reencode_net_prediction: dtme (5000, 52, 31)
+reencode_net_prediction: td_sc (5000, 52, 2)
+reencode_net_prediction: log_amount_sc (5000, 52, 2)
+reencode_net_prediction: tcode_num (5000, 53, 16)
+reencode_net_prediction: dow (5000, 53, 7)
+reencode_net_prediction: month (5000, 53, 12)
+reencode_net_prediction: day (5000, 53, 31)
+reencode_net_prediction: dtme (5000, 53, 31)
+reencode_net_prediction: td_sc (5000, 53, 2)
+reencode_net_prediction: log_amount_sc (5000, 53, 2)
+reencode_net_prediction: tcode_num (5000, 54, 16)
+reencode_net_prediction: dow (5000, 54, 7)
+reencode_net_prediction: month (5000, 54, 12)
+reencode_net_prediction: day (5000, 54, 31)
+reencode_net_prediction: dtme (5000, 54, 31)
+reencode_net_prediction: td_sc (5000, 54, 2)
+reencode_net_prediction: log_amount_sc (5000, 54, 2)
+reencode_net_prediction: tcode_num (5000, 55, 16)
+reencode_net_prediction: dow (5000, 55, 7)
+reencode_net_prediction: month (5000, 55, 12)
+reencode_net_prediction: day (5000, 55, 31)
+reencode_net_prediction: dtme (5000, 55, 31)
+reencode_net_prediction: td_sc (5000, 55, 2)
+reencode_net_prediction: log_amount_sc (5000, 55, 2)
+reencode_net_prediction: tcode_num (5000, 56, 16)
+reencode_net_prediction: dow (5000, 56, 7)
+reencode_net_prediction: month (5000, 56, 12)
+reencode_net_prediction: day (5000, 56, 31)
+reencode_net_prediction: dtme (5000, 56, 31)
+reencode_net_prediction: td_sc (5000, 56, 2)
+reencode_net_prediction: log_amount_sc (5000, 56, 2)
+reencode_net_prediction: tcode_num (5000, 57, 16)
+reencode_net_prediction: dow (5000, 57, 7)
+reencode_net_prediction: month (5000, 57, 12)
+reencode_net_prediction: day (5000, 57, 31)
+reencode_net_prediction: dtme (5000, 57, 31)
+reencode_net_prediction: td_sc (5000, 57, 2)
+reencode_net_prediction: log_amount_sc (5000, 57, 2)
+reencode_net_prediction: tcode_num (5000, 58, 16)
+reencode_net_prediction: dow (5000, 58, 7)
+reencode_net_prediction: month (5000, 58, 12)
+reencode_net_prediction: day (5000, 58, 31)
+reencode_net_prediction: dtme (5000, 58, 31)
+reencode_net_prediction: td_sc (5000, 58, 2)
+reencode_net_prediction: log_amount_sc (5000, 58, 2)
+reencode_net_prediction: tcode_num (5000, 59, 16)
+reencode_net_prediction: dow (5000, 59, 7)
+reencode_net_prediction: month (5000, 59, 12)
+reencode_net_prediction: day (5000, 59, 31)
+reencode_net_prediction: dtme (5000, 59, 31)
+reencode_net_prediction: td_sc (5000, 59, 2)
+reencode_net_prediction: log_amount_sc (5000, 59, 2)
+reencode_net_prediction: tcode_num (5000, 60, 16)
+reencode_net_prediction: dow (5000, 60, 7)
+reencode_net_prediction: month (5000, 60, 12)
+reencode_net_prediction: day (5000, 60, 31)
+reencode_net_prediction: dtme (5000, 60, 31)
+reencode_net_prediction: td_sc (5000, 60, 2)
+reencode_net_prediction: log_amount_sc (5000, 60, 2)
+reencode_net_prediction: tcode_num (5000, 61, 16)
+reencode_net_prediction: dow (5000, 61, 7)
+reencode_net_prediction: month (5000, 61, 12)
+reencode_net_prediction: day (5000, 61, 31)
+reencode_net_prediction: dtme (5000, 61, 31)
+reencode_net_prediction: td_sc (5000, 61, 2)
+reencode_net_prediction: log_amount_sc (5000, 61, 2)
+reencode_net_prediction: tcode_num (5000, 62, 16)
+reencode_net_prediction: dow (5000, 62, 7)
+reencode_net_prediction: month (5000, 62, 12)
+reencode_net_prediction: day (5000, 62, 31)
+reencode_net_prediction: dtme (5000, 62, 31)
+reencode_net_prediction: td_sc (5000, 62, 2)
+reencode_net_prediction: log_amount_sc (5000, 62, 2)
+reencode_net_prediction: tcode_num (5000, 63, 16)
+reencode_net_prediction: dow (5000, 63, 7)
+reencode_net_prediction: month (5000, 63, 12)
+reencode_net_prediction: day (5000, 63, 31)
+reencode_net_prediction: dtme (5000, 63, 31)
+reencode_net_prediction: td_sc (5000, 63, 2)
+reencode_net_prediction: log_amount_sc (5000, 63, 2)
+reencode_net_prediction: tcode_num (5000, 64, 16)
+reencode_net_prediction: dow (5000, 64, 7)
+reencode_net_prediction: month (5000, 64, 12)
+reencode_net_prediction: day (5000, 64, 31)
+reencode_net_prediction: dtme (5000, 64, 31)
+reencode_net_prediction: td_sc (5000, 64, 2)
+reencode_net_prediction: log_amount_sc (5000, 64, 2)
+reencode_net_prediction: tcode_num (5000, 65, 16)
+reencode_net_prediction: dow (5000, 65, 7)
+reencode_net_prediction: month (5000, 65, 12)
+reencode_net_prediction: day (5000, 65, 31)
+reencode_net_prediction: dtme (5000, 65, 31)
+reencode_net_prediction: td_sc (5000, 65, 2)
+reencode_net_prediction: log_amount_sc (5000, 65, 2)
+reencode_net_prediction: tcode_num (5000, 66, 16)
+reencode_net_prediction: dow (5000, 66, 7)
+reencode_net_prediction: month (5000, 66, 12)
+reencode_net_prediction: day (5000, 66, 31)
+reencode_net_prediction: dtme (5000, 66, 31)
+reencode_net_prediction: td_sc (5000, 66, 2)
+reencode_net_prediction: log_amount_sc (5000, 66, 2)
+reencode_net_prediction: tcode_num (5000, 67, 16)
+reencode_net_prediction: dow (5000, 67, 7)
+reencode_net_prediction: month (5000, 67, 12)
+reencode_net_prediction: day (5000, 67, 31)
+reencode_net_prediction: dtme (5000, 67, 31)
+reencode_net_prediction: td_sc (5000, 67, 2)
+reencode_net_prediction: log_amount_sc (5000, 67, 2)
+reencode_net_prediction: tcode_num (5000, 68, 16)
+reencode_net_prediction: dow (5000, 68, 7)
+reencode_net_prediction: month (5000, 68, 12)
+reencode_net_prediction: day (5000, 68, 31)
+reencode_net_prediction: dtme (5000, 68, 31)
+reencode_net_prediction: td_sc (5000, 68, 2)
+reencode_net_prediction: log_amount_sc (5000, 68, 2)
+reencode_net_prediction: tcode_num (5000, 69, 16)
+reencode_net_prediction: dow (5000, 69, 7)
+reencode_net_prediction: month (5000, 69, 12)
+reencode_net_prediction: day (5000, 69, 31)
+reencode_net_prediction: dtme (5000, 69, 31)
+reencode_net_prediction: td_sc (5000, 69, 2)
+reencode_net_prediction: log_amount_sc (5000, 69, 2)
+reencode_net_prediction: tcode_num (5000, 70, 16)
+reencode_net_prediction: dow (5000, 70, 7)
+reencode_net_prediction: month (5000, 70, 12)
+reencode_net_prediction: day (5000, 70, 31)
+reencode_net_prediction: dtme (5000, 70, 31)
+reencode_net_prediction: td_sc (5000, 70, 2)
+reencode_net_prediction: log_amount_sc (5000, 70, 2)
+reencode_net_prediction: tcode_num (5000, 71, 16)
+reencode_net_prediction: dow (5000, 71, 7)
+reencode_net_prediction: month (5000, 71, 12)
+reencode_net_prediction: day (5000, 71, 31)
+reencode_net_prediction: dtme (5000, 71, 31)
+reencode_net_prediction: td_sc (5000, 71, 2)
+reencode_net_prediction: log_amount_sc (5000, 71, 2)
+reencode_net_prediction: tcode_num (5000, 72, 16)
+reencode_net_prediction: dow (5000, 72, 7)
+reencode_net_prediction: month (5000, 72, 12)
+reencode_net_prediction: day (5000, 72, 31)
+reencode_net_prediction: dtme (5000, 72, 31)
+reencode_net_prediction: td_sc (5000, 72, 2)
+reencode_net_prediction: log_amount_sc (5000, 72, 2)
+reencode_net_prediction: tcode_num (5000, 73, 16)
+reencode_net_prediction: dow (5000, 73, 7)
+reencode_net_prediction: month (5000, 73, 12)
+reencode_net_prediction: day (5000, 73, 31)
+reencode_net_prediction: dtme (5000, 73, 31)
+reencode_net_prediction: td_sc (5000, 73, 2)
+reencode_net_prediction: log_amount_sc (5000, 73, 2)
+reencode_net_prediction: tcode_num (5000, 74, 16)
+reencode_net_prediction: dow (5000, 74, 7)
+reencode_net_prediction: month (5000, 74, 12)
+reencode_net_prediction: day (5000, 74, 31)
+reencode_net_prediction: dtme (5000, 74, 31)
+reencode_net_prediction: td_sc (5000, 74, 2)
+reencode_net_prediction: log_amount_sc (5000, 74, 2)
+reencode_net_prediction: tcode_num (5000, 75, 16)
+reencode_net_prediction: dow (5000, 75, 7)
+reencode_net_prediction: month (5000, 75, 12)
+reencode_net_prediction: day (5000, 75, 31)
+reencode_net_prediction: dtme (5000, 75, 31)
+reencode_net_prediction: td_sc (5000, 75, 2)
+reencode_net_prediction: log_amount_sc (5000, 75, 2)
+reencode_net_prediction: tcode_num (5000, 76, 16)
+reencode_net_prediction: dow (5000, 76, 7)
+reencode_net_prediction: month (5000, 76, 12)
+reencode_net_prediction: day (5000, 76, 31)
+reencode_net_prediction: dtme (5000, 76, 31)
+reencode_net_prediction: td_sc (5000, 76, 2)
+reencode_net_prediction: log_amount_sc (5000, 76, 2)
+reencode_net_prediction: tcode_num (5000, 77, 16)
+reencode_net_prediction: dow (5000, 77, 7)
+reencode_net_prediction: month (5000, 77, 12)
+reencode_net_prediction: day (5000, 77, 31)
+reencode_net_prediction: dtme (5000, 77, 31)
+reencode_net_prediction: td_sc (5000, 77, 2)
+reencode_net_prediction: log_amount_sc (5000, 77, 2)
+reencode_net_prediction: tcode_num (5000, 78, 16)
+reencode_net_prediction: dow (5000, 78, 7)
+reencode_net_prediction: month (5000, 78, 12)
+reencode_net_prediction: day (5000, 78, 31)
+reencode_net_prediction: dtme (5000, 78, 31)
+reencode_net_prediction: td_sc (5000, 78, 2)
+reencode_net_prediction: log_amount_sc (5000, 78, 2)
+reencode_net_prediction: tcode_num (5000, 79, 16)
+reencode_net_prediction: dow (5000, 79, 7)
+reencode_net_prediction: month (5000, 79, 12)
+reencode_net_prediction: day (5000, 79, 31)
+reencode_net_prediction: dtme (5000, 79, 31)
+reencode_net_prediction: td_sc (5000, 79, 2)
+reencode_net_prediction: log_amount_sc (5000, 79, 2)
+reencode_net_prediction: tcode_num (5000, 80, 16)
+reencode_net_prediction: dow (5000, 80, 7)
+reencode_net_prediction: month (5000, 80, 12)
+reencode_net_prediction: day (5000, 80, 31)
+reencode_net_prediction: dtme (5000, 80, 31)
+reencode_net_prediction: td_sc (5000, 80, 2)
+reencode_net_prediction: log_amount_sc (5000, 80, 2)
 0
 1
 2
@@ -5850,4 +6118,5 @@ Time taken for 1 epoch: 12.41 secs
 4997
 4998
 4999
+finish
 finish
