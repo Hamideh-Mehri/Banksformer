@@ -17,10 +17,10 @@ import random
 import os
 
 # Set seeds
-random.seed(0)
-np.random.seed(0)
-tf.random.set_seed(0)
-os.environ['TF_DETERMINISTIC_OPS'] = '1'
+# random.seed(0)
+# np.random.seed(0)
+# tf.random.set_seed(0)
+# os.environ['TF_DETERMINISTIC_OPS'] = '1'
 
 def log_parameters(filename, parameters):
     log_entry = {'filename': filename, 'parameters': parameters}
@@ -81,7 +81,7 @@ def main():
     synth_data_filename = confighyper["synth_data_filename"]
     strategy = confighyper['strategy']
 
-    with tf.device('/gpu:1'):
+    with tf.device('/gpu:0'):
         raw_data = pd.read_csv('../DATA/tr_by_acct_w_age.csv')
         data, LOG_AMOUNT_SCALE, TD_SCALE,ATTR_SCALE, START_DATE, field_mappings = preprocess_data_czech(raw_data)
         selected_data_columns = data[['account_id','age','age_sc', 'tcode', 'tcode_num', 'datetime', 'month', 'dow', 'day','td', 'dtme', 'log_amount','log_amount_sc','td_sc',
@@ -91,8 +91,8 @@ def main():
         df= selected_data_columns.copy()
         
         strategy = 'banksformer'
-        fieldInfo = FieldInfo(strategy)
-        #fieldInfo = FIELD_INFO_TCODE()
+        #fieldInfo = FieldInfo(strategy)
+        fieldInfo = FIELD_INFO_TCODE()
         #fieldInfo = FieldInfo_type2()
         #fieldInfo = FIELD_INFO_CATFIELD()
 

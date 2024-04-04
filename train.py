@@ -12,10 +12,10 @@ import json
 import random
 import os
 
-random.seed(0)
-np.random.seed(0)
-tf.random.set_seed(0)
-os.environ['TF_DETERMINISTIC_OPS'] = '1'
+# random.seed(0)
+# np.random.seed(0)
+# tf.random.set_seed(0)
+# os.environ['TF_DETERMINISTIC_OPS'] = '1'
 
 def load_config(config_path):
     with open(config_path, 'r') as file:
@@ -26,8 +26,8 @@ confighyper = load_config('config_hyper.json')
 strategy = confighyper['strategy']
 loss_data_filename = confighyper['loss_data_filename']
 
-fieldInfo = FieldInfo(strategy)
-#fieldInfo = FIELD_INFO_TCODE()
+#fieldInfo = FieldInfo(strategy)
+fieldInfo = FIELD_INFO_TCODE()
 #fieldInfo = FieldInfo_type2()
 #fieldInfo = FIELD_INFO_CATFIELD()
 
@@ -404,15 +404,13 @@ class Train(object):
 
     def train(self, train_batches, val_batches, epochs, early_stop):
         #optimizer = tf.keras.optimizers.Adam(learning_rate = 2e-4, beta_1=0.5, beta_2=0.9, decay = 1e-6) 
-        #optimizer = tf.keras.optimizers.Adam() 
-        l2_norm_clip = 1.0
-        noise_multiplier = 3
-        num_microbatches = 64
+        optimizer = tf.keras.optimizers.Adam() 
+        # l2_norm_clip = 1.0
+        # noise_multiplier = 2.2
         
-        optimizer = DPKerasAdamOptimizer(
-                l2_norm_clip=l2_norm_clip,
-                noise_multiplier=noise_multiplier,
-                num_microbatches=num_microbatches)
+        # optimizer = DPKerasAdamOptimizer(
+        #         l2_norm_clip=l2_norm_clip,
+        #         noise_multiplier=noise_multiplier)
         
         for epoch in range(epochs):
             start = time.time()
